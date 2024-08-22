@@ -3,9 +3,9 @@ import HeroSection from "./HeroSection";
 import Navbar from "./Navbar";
 import SliderSection from "./SliderSection";
 import Slider2 from "./Slider2";
-import Priority from "./priority";
 import Slider3 from "./Slider3";
 import TeamGrid from "./TeamGrid";
+import FAQWithImpactFilm from "./FAQSection";
 
 function Home() {
   return (
@@ -17,6 +17,7 @@ function Home() {
         <SliderSection />
         <Slider3/>
         <TeamGrid/>
+        <FAQWithImpactFilm/>
         <div className=" w-full">
           <div className="relative w-full py-12 text-center font-bold">
             {/* Heading */}
