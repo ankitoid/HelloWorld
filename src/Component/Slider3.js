@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import Img1 from '../Assets/solution-explorer-customers.sm.webp';
 import Img2 from '../Assets/solution-explorer-customers.sm.webp';
@@ -35,28 +35,34 @@ const Slider3 = () => {
     setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 3000); // Slide changes every 3 seconds
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="container mx-auto mt-10">
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
         Explore how <span className="italic">transformation</span> comes to <span className="italic">life</span>
       </h1>
-      <div className="flex justify-center items-start">
+      <div className="flex flex-col md:flex-row justify-center items-start">
         {/* Left Side Slider */}
-        <div className="w-full sm:w-2/3 p-4">
-          <div className="relative w-full">
-            <div className="flex overflow-hidden justify-center items-center">
-              {slides.map((slide, index) => (
+        <div className="w-full md:w-2/3 p-4">
+          <div className="relative w-full overflow-hidden">
+            <div className="flex transition-transform duration-500 ease-in-out"
+                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+              {slides.map((slide) => (
                 <div
                   key={slide.id}
-                  className={`flex-none w-full transition-transform duration-500 ease-in-out ${
-                    index === currentSlide ? 'block' : 'hidden'
-                  }`}
+                  className="w-full flex-shrink-0"
                 >
                   <div className="relative bg-black rounded-lg overflow-hidden text-white">
-                    <img src={slide.img} alt={`Slide ${slide.id}`} className="w-full h-full object-cover opacity-50" />
+                    <img src={slide.img} alt={`Slide ${slide.id}`} className="w-full h-[300px] md:h-[400px] object-cover" />
                     <div className="absolute top-0 left-0 p-8">
-                      <h2 className="text-4xl font-bold">{slide.percentage}</h2>
-                      <p className="text-xl">{slide.description}</p>
+                      <h2 className="text-2xl md:text-4xl font-bold">{slide.percentage}</h2>
+                      <p className="text-lg md:text-xl">{slide.description}</p>
                       <a href="#" className="text-white mt-4 block hover:underline">Learn more →</a>
                     </div>
                   </div>
@@ -80,7 +86,7 @@ const Slider3 = () => {
         </div>
 
         {/* Right Side Boxes */}
-        <div className="w-full sm:w-1/3 p-4">
+        <div className="w-full md:w-1/3 p-4">
           <div className="mb-4">
             <div className="bg-gray-100 rounded-lg p-6">
               <h3 className="text-2xl font-bold mb-4">Generative AI</h3>
@@ -88,7 +94,7 @@ const Slider3 = () => {
               <a href="#" className="text-blue-500 hover:underline mt-2 block">Get ahead of the game →</a>
             </div>
           </div>
-          <div>
+          <div className='mt-14'>
             <div className="bg-gray-100 rounded-lg p-6">
               <h3 className="text-2xl font-bold mb-4">2024 Industry Insights</h3>
               <p>2024 Industry Insights, Trends, and Guidance.</p>

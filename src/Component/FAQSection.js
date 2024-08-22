@@ -11,7 +11,7 @@ const FAQSection = () => {
         {[
           {
             question: "What does GlobalXperts do?",
-            answer: "Publicis Sapient helps businesses transform digitally through strategy, consulting, and technology services."
+            answer: "GlobalXperts helps businesses transform digitally through strategy, consulting, and technology services."
           },
           {
             question: "What is digital business transformation (DBT)?",
@@ -23,7 +23,7 @@ const FAQSection = () => {
           },
           {
             question: "Does the GlobalXperts team partner with Presidio, Adobe and others?",
-            answer: "Yes, Publicis Sapient partners with leading technology companies like Salesforce, Adobe, and others to deliver cutting-edge digital solutions."
+            answer: "Yes, GlobalXperts partners with leading technology companies like Presidio, Adobe, and others to deliver cutting-edge digital solutions."
           }
         ].map((item, index) => (
           <details key={index} className="group border-t border-gray-300">

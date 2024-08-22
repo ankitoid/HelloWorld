@@ -1,7 +1,8 @@
 import React from "react";
 import b3 from "../Assets/Untitled design (2).mp4";
 import b1 from "../Assets/Untitled design.mp4";
-
+import { Link } from "react-router-dom";
+import CloudDevOps from "./Contents/CloudDevOps";
 function SliderSection() {
   return (
     <>
@@ -25,19 +26,19 @@ function SliderSection() {
           {/* Right Section */}
           <div className="w-full md:w-2/5 bg-white flex items-center justify-center p-8 md:p-12">
             <div className="max-w-lg text-center md:text-left">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Service 1</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Cloud & DevOps</h2>
               <p className="text-gray-600 text-base md:text-lg mb-6">
-                At the heart of Slack are channels: organised spaces for
-                everyone and everything that you need for work. In channels,
-                it's easier to connect across departments, offices, time zones
-                and even other companies.
+                Using its extensive knowledge of the cloud, Globalxperts assists
+                customers worldwide at various phases of their cloud journey,
+                such as consultancy, migration, managed services that are available
+                around-the-clock, DevOps, and cost optimization.
               </p>
-              <a
-                href="#"
+              <Link
+                to="/CloudDevOps" // Updated to path string
                 className="text-blue-500 hover:text-blue-700 font-bold"
               >
-                Learn more about channels →
-              </a>
+                Learn more →
+              </Link>
             </div>
           </div>
         </div>
