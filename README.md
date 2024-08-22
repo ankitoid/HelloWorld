@@ -20,5 +20,23 @@ To get started with this project, follow these steps:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/your-repository-name.git
-   cd your-repository-name
+   git clone https://github.com/ankitoid/HelloWorld.git
+   cd HelloWorld
+
+
+
+### Customization Instructions
+
+1. **[your-ankitsinghghoshi1234@gmail.com]**.
+
+
+## Getting Started
+
+To get started with the GlobalXperts:
+
+1. Clone the repository `git clone <Link>`.
+2. Install dependencies using `npm install`.
+3. Run the app using `npm start` .
+
+
+**Bon Appétit!**
