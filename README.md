@@ -27,7 +27,7 @@ To get started with this project, follow these steps:
 
 ### Customization Instructions
 
-1. **[your-ankitsinghghoshi1234@gmail.com]**.
+1. **ankitsinghghoshi1234@gmail.com**.
 
 
 ## Getting Started
