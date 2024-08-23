@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Tvideo from '../Assets/Tvideo.mp4';
 import { FaPhone } from 'react-icons/fa';
-
 const HeroSection = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState('');

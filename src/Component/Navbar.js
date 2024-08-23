@@ -2,45 +2,61 @@ import React, { useState, useEffect } from "react";
 import { FaHome, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../Assets/gxiLogo.svg";
- 
+
 const Navbar = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const [inSliderSection, setInSliderSection] = useState(false);
- 
+  const [scrollDirection, setScrollDirection] = useState("up");
+
+  let lastScrollY = window.pageYOffset;
+
   const handleToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
- 
+
   const handleMouseEnter = (index) => {
     setOpenIndex(index);
   };
- 
+
   const handleMouseLeave = () => {
     setOpenIndex(null);
   };
- 
+
   const handleScroll = () => {
     const offset = window.scrollY;
     setIsScrolled(offset > 0);
- 
+
     const sliderSection = document.getElementById("slider-section");
     if (sliderSection) {
       const rect = sliderSection.getBoundingClientRect();
       setInSliderSection(rect.top <= 0 && rect.bottom >= 0);
     }
+
+    // Determine scroll direction
+    if (offset > lastScrollY) {
+      setScrollDirection("down");
+    } else {
+      setScrollDirection("up");
+    }
+
+    lastScrollY = offset;
   };
- 
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
- 
+
   return (
     <div
       className={`${
+        isScrolled && scrollDirection === "down"
+          ? "-translate-y-full"
+          : "translate-y-0"
+      } ${
         isScrolled
           ? inSliderSection
             ? "rounded-lg bg-white/80 shadow-lg"
@@ -48,14 +64,14 @@ const Navbar = () => {
           : "bg-gradient-to-r from-pink-200 via-pink-50 to-blue-200"
       } transition-all duration-300 w-full h-16 fixed top-0 z-50`}
     >
-      <nav className="container mx-auto flex justify-between items-center  h-full">
+      <nav className="container mx-auto flex justify-between items-center h-full">
         {/* Logo */}
         <div className="flex items-center h-full mt-4">
           <Link to="/" className="flex items-center">
             <img src={logo} alt="Logo" className="h-60 w-60" />
           </Link>
         </div>
-       
+
         {/* Navigation Links */}
         <ul className="hidden md:flex space-x-4 items-center ml-8">
           <li
@@ -177,7 +193,7 @@ const Navbar = () => {
             )}
           </li>
         </ul>
- 
+
         {/* Get Started Link */}
         <div className="flex items-center ">
           <div className="py-5 px-4 md:px-6 hover:rounded-l-full hover:bg-greenCustomColor bg-greenCustomColor2 transition-all duration-300">
@@ -193,7 +209,5 @@ const Navbar = () => {
     </div>
   );
 };
- 
+
 export default Navbar;
- 
- 

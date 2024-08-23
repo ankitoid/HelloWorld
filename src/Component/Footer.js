@@ -9,13 +9,13 @@ const Footer = () => {
           <img
             src="https://www.shutterstock.com/image-illustration/devops-devsecops-approach-app-development-600nw-2200985385.jpg"
             alt="Placeholder Image 1"
-            className="w-1/3 md:w-1/4 rounded-md"
+            className="w-full md:w-1/4 rounded-md"
           />
-          <h2 className="text-5xl font-bold">Footer With US</h2>
+          <h2 className="text-5xl font-bold mx-4 md:mx-8">Footer With US</h2>
           <img
             src="https://thumbs.dreamstime.com/b/business-management-success-concept-gears-showing-steps-creative-vision-innovation-idea-to-financial-personal-185365905.jpg"
             alt="Placeholder Image 2"
-            className="w-1/3 md:w-1/4 rounded-md"
+            className="w-full md:w-1/4 rounded-md"
           />
         </div>
 

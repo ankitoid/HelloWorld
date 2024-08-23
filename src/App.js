@@ -12,7 +12,7 @@ import Footer from "./Component/Footer";
 import Benefit from "./Component/Benefit";
 import Home from "./Component/Home";
 import CloudDevOps from "./Component/Contents/CloudDevOps";
-import cdWorkflow from "./Component/WorkFlow/cdWorkflow";
+import CdWorkflow from './Component/WorkFlow/cdWorkflow';
 export default function App() {
   return (
     <Router>
@@ -28,7 +28,7 @@ export default function App() {
             <Route exact path="/about" element={<AboutUs />} /> */}
             <Route exact path="/CloudDevOps" element={<CloudDevOps />} />
             
-            <Route exact path="/cdWorkflow" element={<cdWorkflow />} />
+            <Route exact path="/workflow/cloud-dev" element={<CdWorkflow />} />
 
           </Routes>
          
