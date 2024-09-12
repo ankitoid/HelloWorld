@@ -37,6 +37,10 @@ import BlogPost1 from "./Component/Insights/BlogPage/BlogPost1";
 import BlogPost2 from "./Component/Insights/BlogPage/BlogPost2";
 import BlogPost3 from "./Component/Insights/BlogPage/Blogpost3";
 import BlogPost4 from "./Component/Insights/BlogPage/BlogPost4";
+import CaseStudies from './Component/Insights/CaseStudies'
+import CaseStudies1 from "./Component/Insights/CaseStdies/CaseStudies1";
+import CaseStudies2 from "./Component/Insights/CaseStdies/CaseStudies2";
+import MediaLib from './Component/Insights/MediaLib'
 export default function App() {
   return (
     <Router>
@@ -86,13 +90,20 @@ export default function App() {
           <Route path="/AWS-Migration" element={<AWSMigration />} />
 
           {/* Insights */}
-          <Route path="/Insights/Blog" element={<Blog   />} />
+          <Route path="/Insights/Blog" element={<Blog/>} />
+          <Route path="/Insights/CaseStudies" element={<CaseStudies/>} />
+          <Route path="/Insights/Media" element={<MediaLib/>} />
 
           {/* BlogPost */}
           <Route path="/Blog-post1" element={<BlogPost1/>} />
           <Route path="/Blog-post2" element={<BlogPost2/>} />
           <Route path="/Blog-post3" element={<BlogPost3/>} />
           <Route path="/Blog-post4" element={<BlogPost4/>} />
+
+
+          {/* CaseS Study */}
+          <Route path="/CaseStudies1" element={<CaseStudies1/>} />
+          <Route path="/CaseStudies2" element={<CaseStudies2/>} />
 
           {/* 404 Route */}
           <Route path="*" element={<NotFound />} />

@@ -325,7 +325,7 @@ const Navbar = () => {
 
                   <li>
                     <Link
-                      to="/Insights/Case-Studies"
+                      to="/Insights/CaseStudies"
                       className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Case Studies
