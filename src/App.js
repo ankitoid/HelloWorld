@@ -40,7 +40,12 @@ import BlogPost4 from "./Component/Insights/BlogPage/BlogPost4";
 import CaseStudies from './Component/Insights/CaseStudies'
 import CaseStudies1 from "./Component/Insights/CaseStdies/CaseStudies1";
 import CaseStudies2 from "./Component/Insights/CaseStdies/CaseStudies2";
+import CaseStudies3 from "./Component/Insights/CaseStdies/CaseStudies3";
+
 import MediaLib from './Component/Insights/MediaLib'
+import CaseStudies4 from "./Component/Insights/CaseStdies/CaseStudies4";
+import PartnerInfo from "./Component/Insights/CaseStdies/PartnerInfo";
+import Networking from "./Component/Solutions/Networking";
 export default function App() {
   return (
     <Router>
@@ -59,6 +64,7 @@ export default function App() {
           <Route path="/solutions/cyber-security" element={<CyberSecurity />} />
           <Route path="/solutions/small-medium-business" element={<SmallandMediumBusiness />} />
           <Route path="/solutions/GenAI" element={<GenAI />} />
+          <Route path="/solutions/Networking" element={<Networking />} />
 
           {/* Industries */}
           <Route path="/Industries/Education" element={<Education />} />
@@ -92,7 +98,7 @@ export default function App() {
           {/* Insights */}
           <Route path="/Insights/Blog" element={<Blog/>} />
           <Route path="/Insights/CaseStudies" element={<CaseStudies/>} />
-          <Route path="/Insights/Media" element={<MediaLib/>} />
+          <Route path="/Insights/Media-Library" element={<MediaLib/>} />
 
           {/* BlogPost */}
           <Route path="/Blog-post1" element={<BlogPost1/>} />
@@ -104,6 +110,10 @@ export default function App() {
           {/* CaseS Study */}
           <Route path="/CaseStudies1" element={<CaseStudies1/>} />
           <Route path="/CaseStudies2" element={<CaseStudies2/>} />
+          <Route path="/CaseStudies3" element={<CaseStudies3/>} />
+          <Route path="/CaseStudies4" element={<CaseStudies4/>} />
+
+          <Route path="/CaseStudies2/partner-info" element={<PartnerInfo/>} />
 
           {/* 404 Route */}
           <Route path="*" element={<NotFound />} />

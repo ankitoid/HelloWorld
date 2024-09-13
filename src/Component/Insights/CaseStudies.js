@@ -8,20 +8,19 @@ import ServiceImgage from "../../Assets/casestudy.png"
 
 const CaseStudies = () => {
   return (
-    <>
+    <div className="bg-gray-100">
       <Navbar />
-      <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 mt-14">
+      <div className="bg-gray-200 py-12 px-4 sm:px-6 lg:px-8 mt-14">
               <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
                 {/* Text Section */}
                 <div className="text-center lg:text-left lg:w-1/2 lg:pr-8">
                   <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-                    Blog
+                    Case Studies
                   </h2>
                   <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-                    Discover the latest news and updates from GlobalXperts.
-                    Learn how we are revolutionizing the service provider
-                    industry with cutting-edge technologies and expert
-                    solutions.
+                  “Unleashing the power of technology: Real-world success stories from our IT solutions.”
+
+
                   </p>
                 </div>
                 {/* Image Section */}
@@ -34,9 +33,9 @@ const CaseStudies = () => {
                 </div>
               </div>
               </div>
-      <div className="bg-gray-100 min-h-screen mt-10">
+      <div className="bg-gray-100 ">
         
-        <div className="bg-gradient-to-r from-pink-200 via-pink-50 to-blue-200 p-1 flex items-center justify-center">
+        <div className="bg-gradient-to-r from-pink-200 via-pink-100 to-blue-200 p-1 flex items-center justify-center">
           <img
             src={AwsLogo}
             alt="AWS Partner Logo"
@@ -57,7 +56,7 @@ const CaseStudies = () => {
               games.
             </p>
             <a
-              href="#"
+              href="/CaseStudies3"
               className="text-green-600 font-bold mt-2 block hover:underline"
             >
               READ MORE »
@@ -67,7 +66,7 @@ const CaseStudies = () => {
 
           {/* Card 2 */}
           <div className="bg-blue-100 p-6 rounded-lg shadow-lg w-80">
-            <h2 className="text-lg font-semibold mb-2">
+            <h2 className="text-lg font-semibold mb-8">
               Case Study: Close Up Foundation AWS EC2 Project
             </h2>
             <p className="text-sm text-gray-700">
@@ -77,18 +76,18 @@ const CaseStudies = () => {
               organization.
             </p>
             <a
-              href="#"
+              href="/CaseStudies4"
               className="text-green-600 font-bold mt-2 block hover:underline"
             >
               READ MORE »
             </a>
-            <p className="text-xs text-gray-500 mt-2">April 25, 2021</p>
+            <p className="text-xs text-gray-500 mt-2 ">April 25, 2021</p>
           </div>
         </div>
       </div>
 
-      <div className="bg-gray-100 min-h-screen">
-        <div className="bg-gradient-to-r from-pink-200 via-pink-50 to-blue-200 p-2 flex items-center justify-center">
+      <div className="bg-gray-100 mt-10">
+        <div className="bg-gradient-to-r from-pink-200 via-pink-50 to-blue-200 p-2 flex items-center justify-center ">
           <img
             src={AristaLogo}
             alt="AWS Partner Logo"
@@ -104,7 +103,7 @@ const CaseStudies = () => {
             </h2>
             <p className="text-sm text-gray-700"></p>
             <a
-              href="#"
+              href="/CaseStudies1"
               className="text-green-600 font-bold mt-32 block hover:underline"
             >
               READ MORE »
@@ -125,7 +124,7 @@ const CaseStudies = () => {
               implementation, and travel, as well as
             </p>
             <a
-              href="#"
+              href="/CaseStudies2"
               className="text-green-600 font-bold mt-2 block hover:underline"
             >
               READ MORE »
@@ -135,10 +134,10 @@ const CaseStudies = () => {
         </div>
       </div>
 
-      <div>
+      <div className="mt-5">
         <ContactCard />
       </div>
-    </>
+    </div>
   );
 };
 

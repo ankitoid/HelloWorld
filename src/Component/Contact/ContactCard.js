@@ -3,7 +3,7 @@ import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 
 const ContactCard = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center bg-gray-200 p-4 md:p-10">
+    <div className=" flex flex-col md:flex-row justify-center bg-gray-200 p-4 md:p-10">
       {/* Contact Form Section */}
       <div className="w-full md:w-1/2 max-w-lg p-4 md:p-6 bg-white shadow-md rounded-lg mb-6 md:mb-0">
         <h2 className="text-xl md:text-2xl font-bold mb-4">Get In Touch</h2>

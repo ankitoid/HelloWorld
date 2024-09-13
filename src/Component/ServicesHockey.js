@@ -125,7 +125,7 @@ function ThoughtCard({
         <h2
           className={`text-xl font-medium mb-4 ${
             hoverEffect
-              ? "group-hover:opacity-70 transition-opacity duration-300"
+              ? "group-hover:opacity-100 transition-opacity duration-300"
               : ""
           }`}
         >

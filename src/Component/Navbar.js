@@ -150,6 +150,14 @@ const Navbar = () => {
                       GenAI
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      to="/solutions/Networking"
+                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap hover:px-2"
+                    >
+                      Networking
+                    </Link>
+                  </li>
                 </ul>
               </div>
             )}
@@ -335,6 +343,14 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/Insights/Media-Library"
+                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
+                    >
+                      Media Library
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/Insights/Partners"
                       className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Media Library
