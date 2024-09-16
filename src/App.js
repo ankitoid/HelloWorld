@@ -31,8 +31,8 @@ import GXconnect from './Component/Solutions/SmallMediumBusiness/GxCustomer'
 import TitanGx from './Component/Solutions/SmallMediumBusiness/TitanGx'
 import AWSMigration from './Component/Solutions/SmallMediumBusiness/AWSMigration';
 import VirtualWorks from './Component/Solutions/SmallMediumBusiness/VirtualWork'
-import ContactCard from './Component/Contact/ContactCard'
 import Blog from "./Component/Insights/Blog";
+import Partner from './Component/Insights/Partner'
 import BlogPost1 from "./Component/Insights/BlogPage/BlogPost1";
 import BlogPost2 from "./Component/Insights/BlogPage/BlogPost2";
 import BlogPost3 from "./Component/Insights/BlogPage/Blogpost3";
@@ -97,7 +97,6 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact-us" element={<ContactUs />} />
-          {/* <Route path="/ContactCard" element={<ContactCard />} /> */}
 
 
           {/* small medium business inside routes */}
@@ -111,6 +110,7 @@ export default function App() {
           <Route path="/Insights/Blog" element={<Blog/>} />
           <Route path="/Insights/CaseStudies" element={<CaseStudies/>} />
           <Route path="/Insights/Media-Library" element={<MediaLib/>} />
+          <Route path="/Insights/Partners" element={<Partner/>} />
 
           {/* BlogPost */}
           <Route path="/Blog-post1" element={<BlogPost1/>} />

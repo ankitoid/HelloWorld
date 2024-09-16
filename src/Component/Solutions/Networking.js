@@ -193,7 +193,7 @@ const Networking = () => {
       <p className="text-gray-600 mb-4">
         Arista Compact Wired Switches offer high-performance switching with compact designs, perfect for space-constrained environments. They provide excellent connectivity and network efficiency while ensuring ease of deployment and management.
       </p>
-      <a href="/Networking/ArtistaSwitches" className="text-blue-500 font-semibold">Read More</a>
+      <a href="/Networking/AristaWifi" className="text-blue-500 font-semibold">Read More</a>
     </div>
 
     {/* Plate 8 */}
@@ -203,7 +203,7 @@ const Networking = () => {
       <p className="text-gray-600 mb-4">
         Arista Cognitive Wi-Fi Access Points deliver high-performance wireless solutions with AI-powered analytics. These access points enhance user experiences and optimize network performance with real-time insights and automation.
       </p>
-      <a href="/Networking/AristaWifi" className="text-blue-500 font-semibold">Read More</a>
+      <a href="/Networking/ArtistaSwitches" className="text-blue-500 font-semibold">Read More</a>
     </div>
     <div className="bg-white rounded-lg shadow-md p-6 max-w-sm mx-auto">
       <img src={arista9} alt="Arista Cognitive Wi-Fi Access Points" className="w-full h-40 object-cover rounded-md mb-4" />
