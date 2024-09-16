@@ -353,7 +353,7 @@ const Navbar = () => {
                       to="/Insights/Partners"
                       className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
                     >
-                      Media Library
+                      Partners
                     </Link>
                   </li>
                 </ul>
@@ -392,7 +392,7 @@ const Navbar = () => {
 
                   <li>
                     <Link
-                      to="/Company/Careers"
+                      to="/Careers"
                       className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Careers

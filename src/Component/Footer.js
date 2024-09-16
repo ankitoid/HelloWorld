@@ -1,6 +1,5 @@
 import React from "react";
-import v1 from "../Assets/footerV.mp4";
-import v2 from "../Assets/FooterStreaming.mp4";
+
 import NetworkingVideo from "../Assets/NetworkingVideo.mp4";
 import { Link } from "react-router-dom";
 

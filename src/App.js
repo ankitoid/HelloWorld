@@ -46,6 +46,18 @@ import MediaLib from './Component/Insights/MediaLib'
 import CaseStudies4 from "./Component/Insights/CaseStdies/CaseStudies4";
 import PartnerInfo from "./Component/Insights/CaseStdies/PartnerInfo";
 import Networking from "./Component/Solutions/Networking";
+
+import AcloudVision from './Component/Solutions/Networking/AcloudVision'
+import AristaEdge from './Component/Solutions/Networking/AristaEdge'
+import ArtistaSwitches from './Component/Solutions/Networking/AristaSwiches'
+import AristaWAN from "./Component/Solutions/Networking/AristaWAN";
+import AristaWifi from './Component/Solutions/Networking/AristaWifi'
+import Mkcamera from './Component/Solutions/Networking/MkCamers'
+import MkWireless from "./Component/Solutions/Networking/MkWireless";
+import MkSwitches from "./Component/Solutions/Networking/MkSwitches";
+import MkFirewall from "./Component/Solutions/Networking/MkFirewall";
+
+
 export default function App() {
   return (
     <Router>
@@ -114,6 +126,18 @@ export default function App() {
           <Route path="/CaseStudies4" element={<CaseStudies4/>} />
 
           <Route path="/CaseStudies2/partner-info" element={<PartnerInfo/>} />
+
+          {/* Networking Pages */}
+          <Route path="/Networking/AcloudVision"element={<AcloudVision/>} />
+          <Route path="/Networking/AristaEdge"element={<AristaEdge/>} />
+          <Route path="/Networking/ArtistaSwitches"element={<ArtistaSwitches/>} />
+          <Route path="/Networking/aristaWAN"element={<AristaWAN/>} />
+          <Route path="/Networking/AristaWifi"element={<AristaWifi/>} />
+          <Route path="/Networking/Mkcamera"element={<Mkcamera/>} />
+          <Route path="/Networking/mkFirewall"element={<MkFirewall/>} />
+          <Route path="/Networking/mkswitches"element={<MkSwitches/>} />
+          <Route path="/Networking/mkwireless"element={<MkWireless/>} />
+
 
           {/* 404 Route */}
           <Route path="*" element={<NotFound />} />
