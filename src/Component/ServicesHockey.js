@@ -1,6 +1,5 @@
 import React from "react";
 
-// Import images from the src folder
 import medtechImage from "../Assets/nhl.jpg";
 import complianceImage from "../Assets/servers.jfif";
 import kubernetesImage from "../Assets/AI2.jpg";
@@ -31,14 +30,16 @@ function ServicesHockey() {
           alt="Innovation Image"
           description="Explore our wide range of services tailored to meet the needs of businesses across various industries."
           className="row-span-2"
+          textColor="white" 
         />
 
         <ThoughtCard
           title="Sports Live Streaming"
           imageUrl={medtechImage}
           alt="NHL Image"
-          description="GlobalXperts provides cutting-edge technology solutions to enhance the live streaming and broadcasting  operational efficiency and fan engagement through advanced analytics and digital transformation."
+          description="GlobalXperts provides cutting-edge technology solutions to enhance the live streaming and broadcasting operational efficiency and fan engagement through advanced analytics and digital transformation."
           hoverEffect={true}
+          textColor="black" 
         />
 
         <ThoughtCard
@@ -47,6 +48,7 @@ function ServicesHockey() {
           alt="Cloud Server Image"
           description="Leverage our expertise in cloud server management to optimize performance, reliability, and scalability, ensuring a seamless cloud experience for your business."
           hoverEffect={true}
+          textColor="white"
         />
 
         <ThoughtCard
@@ -55,6 +57,7 @@ function ServicesHockey() {
           alt="AI and Cloud Image"
           description="Discover how our AI-powered cloud solutions drive automation, improve decision-making, and enhance operational workflows for businesses of all sizes."
           hoverEffect={true}
+          textColor="white" 
         />
 
         <ThoughtCard
@@ -63,6 +66,7 @@ function ServicesHockey() {
           alt="Professional Management Image"
           description="GlobalXperts offers comprehensive management and development services to streamline your operations. Our expert solutions integrate management strategies with advanced development practices to help you achieve your goals efficiently."
           hoverEffect={true}
+          textColor="black" 
         />
       </div>
     </div>
@@ -78,6 +82,7 @@ function ThoughtCard({
   description,
   className,
   hoverEffect,
+  textColor,
 }) {
   return (
     <div
@@ -86,7 +91,7 @@ function ThoughtCard({
       }`}
       style={{
         backgroundImage: `url(${imageUrl})`,
-        backgroundSize: "cover", // Ensures the image covers the box
+        backgroundSize: "cover", 
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         minHeight: "300px",
@@ -119,11 +124,13 @@ function ThoughtCard({
       <div className="relative z-10 flex flex-col justify-between h-full p-4">
         {/* Heading for ThoughtCard */}
         {heading && (
-          <h2 className="text-3xl font-bold text-center">{heading}</h2>
+          <h2 className={`text-3xl font-bold text-center text-${textColor}`}>
+            {heading}
+          </h2>
         )}
 
         <h2
-          className={`text-xl font-medium mb-4 ${
+          className={`text-xl font-medium mb-4 text-${textColor} ${
             hoverEffect
               ? "group-hover:opacity-100 transition-opacity duration-300"
               : ""
@@ -142,14 +149,12 @@ function ThoughtCard({
         {/* Additional content visible on hover with slide-up effect */}
         {hoverEffect && (
           <div className="transform translate-y-full group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out mt-auto">
-            <p className="text-gray-900 mb-8 font-bold ">{description}</p>
+            <p className={`text-${textColor} mb-8 font-bold`}>{description}</p>
           </div>
         )}
       </div>
     </div>
   );
 }
-
-
 
 export default ServicesHockey;

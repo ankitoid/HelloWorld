@@ -11,8 +11,6 @@ import img3 from "../Assets/img3.jfif";
 import img4 from "../Assets/img4.png";
 import Footer from "./Footer";
 
-import lg from "../Assets/lg.png";
-import { FaAws } from "react-icons/fa";
 import Icn from "../Assets/awsi.svg";
 import Icn2 from "../Assets/google1.png";
 import Icn3 from "../Assets/62067060d7b91b0004122615.png";
@@ -64,12 +62,9 @@ function Home() {
       {showNavbar && <Navbar />}
       <div className="w-full h-screen overflow-x-hidden">
         <HeroSection />
-
         <Slider2 />
         <SliderSection />
-
         <TeamGrid />
-
         <div className="relative overflow-hidden w-full h-16 bg-white mt-14    ">
           <div className="absolute flex whitespace-nowrap animate-slide">
             <div className="flex items-center space-x-4 gap-10 mt-2">
@@ -89,9 +84,7 @@ function Home() {
             </div>
           </div>
         </div>
-
         <FAQWithImpactFilm />
-
         <div className="w-full bg-greenCustomColor2 p-6 md:p-10 py-10 md:py-16">
           <div className="flex flex-col md:flex-row items-center md:justify-between">
             <div className="text-center md:text-left mb-8 md:mb-0">

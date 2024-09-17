@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
- 
+
 import c1 from "../../Assets/audit.png";
 import c2 from "../../Assets/awsfunction.png";
 import c3 from "../../Assets/experties.png";
@@ -10,12 +10,12 @@ import v1 from "../../Assets/CYBERVID.mp4";
 import { Link } from "react-router-dom";
 function DataCenterDesign() {
   const [activeQuestion, setActiveQuestion] = useState(null);
- 
+
   const handleToggle = (index) => {
     setActiveQuestion(activeQuestion === index ? null : index);
   };
-  const nbsp= (count) =>Array(count).fill("\u00A0").join("");
- 
+  const nbsp = (count) => Array(count).fill("\u00A0").join("");
+
   return (
     <div>
       <div className=" w-full  h-screen">
@@ -30,18 +30,11 @@ function DataCenterDesign() {
                 Data Center Design/Build
               </h2>
               <p className=" mt-8 text-xl text-gray-500 ">
-                At GlobalXperts Enterprise Solutions, we excel in designing and
-                building state-of-the-art data centers tailored to your business
-                requirements.<br/> Our experienced team delivers on-time,
-                within-budget projects with precision and efficiency. We craft
-                customized network architectures, implement advanced security
-                protocols, and provide ongoing maintenance to ensure seamless
-                operations. Additionally, we offer comprehensive IT staff
-                training to empower your team with the skills they need to
-                manage your infrastructure.<br/> Trust us for reliable,
-                high-performance data center solutions that drive your business
-                forward. Contact us today to learn how we can support your data
-                center needs.
+                At GlobalXperts, we design and build state-of-the-art data
+                centers tailored to your business, delivering on-time,
+                within-budget projects with precision. Our customized network
+                architectures, advanced security, and ongoing support ensure
+                seamless operations for your business.
               </p>
             </div>
             {/* Image Section */}
@@ -54,7 +47,7 @@ function DataCenterDesign() {
               <div className="absolute bottom-0 left-0 right-0 p-4 text-white text-center"></div>
             </div>
           </div>
- 
+
           <div className="w-full px-4">
             <h2 className="text-4xl font-bold text-center mt-28">Overview</h2>
             <p className="text-center mt-5 text-gray-700 text-xl">
@@ -73,12 +66,12 @@ function DataCenterDesign() {
                     projects, ensuring timely and budget-friendly delivery while
                     managing risks.
                   </li>
- 
+
                   <li>
                     <strong>Network Architects:</strong> Design scalable and
                     efficient network infrastructure tailored to business needs.
                   </li>
-                 
+
                   <li>
                     <strong>Network Deployment Engineers:</strong> Deploy and
                     maintain network equipment, ensuring smooth operation and
@@ -103,10 +96,8 @@ function DataCenterDesign() {
               learn more about their data center solutions.
             </p>
           </div>
- 
+
           <div>
-          
- 
             <div className="flex flex-wrap justify-center gap-14  mt-10 px-4">
               {/* Box 1 */}
               <div className="w-[300px] h-[225px] bg-transparent cursor-pointer group perspective ">
@@ -137,7 +128,7 @@ function DataCenterDesign() {
                   </div>
                 </div>
               </div>
- 
+
               {/* Box 2 */}
               <div className="w-[300px] h-[225px] bg-transparent cursor-pointer group perspective ">
                 <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
@@ -166,7 +157,7 @@ function DataCenterDesign() {
                   </div>
                 </div>
               </div>
- 
+
               {/* Box 3 */}
               <div className="w-[300px] h-[225px] bg-transparent cursor-pointer group perspective  ">
                 <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
@@ -196,7 +187,7 @@ function DataCenterDesign() {
               </div>
             </div>
           </div>
- 
+
           <div className=" bg-blueCustomColor p-8 mt-28">
             <div className="max-w-7xl mx-auto flex    flex-col lg:flex-row items-center justify-between">
               {/* Text Section */}
@@ -236,7 +227,7 @@ function DataCenterDesign() {
                   </li>
                 </ul>
               </div>
- 
+
               {/* Image Section */}
               <div className="relative mt-12 lg:mt-0 lg:w-1/2 ">
                 <video
@@ -251,7 +242,7 @@ function DataCenterDesign() {
               </div>
             </div>
           </div>
- 
+
           <div className="container mx-auto px-4 py-16">
             <div className="flex mb-16">
               <Link
@@ -395,7 +386,5 @@ function DataCenterDesign() {
     </div>
   );
 }
- 
+
 export default DataCenterDesign;
- 
- 

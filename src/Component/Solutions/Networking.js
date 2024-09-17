@@ -23,6 +23,7 @@ const Networking = () => {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <>
       {/* Navbar Section */}
@@ -38,13 +39,8 @@ const Networking = () => {
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
               Networking Consulting
             </h2>
-            <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-              Our networking consulting services provide structured solutions to
-              enhance connectivity across teams, departments, and locations.
-              With expert guidance, we help you build efficient communication
-              channels, streamline workflows, and connect seamlessly across
-              offices, time zones, and even external partners, ensuring a
-              cohesive and collaborative work environment.
+            <p className="mt-3 text-lg text-gray-500 sm:mt-4">
+              Our networking consulting services improve connectivity and streamline communication across teams and locations. We help build efficient channels that connect seamlessly and support collaboration in a cohesive work environment.
             </p>
           </div>
 
@@ -62,11 +58,12 @@ const Networking = () => {
           </div>
         </div>
       </div>
+
+      {/* Logos Section */}
       <div className="w-full bg-white flex flex-col items-center py-20">
-        {/* Logos Section */}
         <div className="flex items-center justify-center mb-8">
-          <img src={cmLogo} alt="Cisco Meraki Logo" className="h-24 mr-8" />
-          <img src={aristaLogo} alt="Arista Logo" className="h-24" />
+          <img src={cmLogo} alt="Cisco Meraki Logo" className="h-32 mr-8" />
+          <img src={aristaLogo} alt="Arista Logo" className="h-32" />
         </div>
 
         {/* Dropdown Section */}
@@ -79,9 +76,7 @@ const Networking = () => {
               <h2 className="text-xl font-semibold">Items</h2>
               <button>
                 <svg
-                  className={`w-6 h-6 transform transition-transform ${
-                    isOpen ? "rotate-180" : ""
-                  }`}
+                  className={`w-6 h-6 transform transition-transform ${isOpen ? "rotate-180" : ""}`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -100,31 +95,23 @@ const Networking = () => {
 
           {/* Dropdown Items */}
           {isOpen && (
-            <ul className="mt-4 bg-white   border-4 rounded-lg   p-6 w-full">
+            <ul className="mt-4 bg-white border-4 rounded-lg p-6 w-full">
               <li className="mb-2 text-lg">• Cisco Meraki Products</li>
               <li className="mb-2 text-lg">• Meraki Cameras</li>
               <li className="mb-2 text-lg">• Meraki Wireless</li>
               <li className="mb-2 text-lg">• Meraki Switches</li>
               <li className="mb-2 text-lg">• Meraki Firewalls</li>
-              <li className="mb-2 text-lg">
-                • Arista: Edge as a Service with Cognitive Unified Edge
-              </li>
+              <li className="mb-2 text-lg">• Arista: Edge as a Service</li>
               <li className="mb-2 text-lg">• Arista Edge Products</li>
-              <li className="mb-2 text-lg">
-                • Arista CloudVision CUE Management
-              </li>
-              <li className="mb-2 text-lg">
-                • Arista Cognitive Wi-Fi Access Points
-              </li>
-              <li className="mb-2 text-lg">• Arista Compact Wired Switch</li>
-              <li className="mb-2 text-lg">• Arista Integrated WAN Branch </li>
+              <li className="mb-2 text-lg">• Arista CloudVision Management</li>
+              <li className="mb-2 text-lg">• Arista Cognitive Wi-Fi</li>
+              <li className="mb-2 text-lg">• Arista Compact Switch</li>
+              <li className="mb-2 text-lg">• Arista Integrated WAN Branch</li>
               <li className="mb-2 text-lg">• Arista Secure Edge</li>
             </ul>
           )}
         </div>
-      </div>
-
-      <div className="w-full py-10 bg-gray-100">
+      </div>      <div className="w-full py-10 bg-gray-100">
   <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
     {/* Plate 1 */}
     <div className="bg-white rounded-lg shadow-md p-6 max-w-sm mx-auto">

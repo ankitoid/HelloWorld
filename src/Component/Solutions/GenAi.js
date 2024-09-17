@@ -22,20 +22,13 @@ const GenAI = () => {
           {/* Text Section */}
           <div className="text-center lg:text-left lg:w-1/2 lg:pr-8">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-              Advanced Collaboration Technologies with Generative AI
+              Generative AI
             </h2>
             <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-              Advanced Collaboration Technologies, powered by Generative AI, are
-              revolutionizing the way teams communicate and collaborate. These
-              technologies leverage AI-driven systems to create intelligent,
-              context-aware solutions that enhance productivity and
-              connectivity. By integrating generative AI, organizations can
-              automate routine tasks, generate insightful reports, and
-              facilitate seamless interactions. This leads to more efficient
-              workflows, improved decision-making, and a more connected team
-              environment. From automating meeting summaries to providing
-              real-time collaborative tools, generative AI is at the forefront
-              of transforming team collaboration.
+              Generative AI is revolutionizing collaboration, automating tasks,
+              generating insights, and enhancing team connectivity. It enables
+              efficient workflows, better decision-making, and seamless
+              real-time interactions for a more connected team.
             </p>
           </div>
 
@@ -216,10 +209,9 @@ const GenAI = () => {
             </div>
           </div>
         </div>
-        <ContactCard/>
-        <Footer/>
+        <ContactCard />
+        <Footer />
       </div>
-    
     </>
   );
 };

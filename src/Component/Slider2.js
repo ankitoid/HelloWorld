@@ -7,7 +7,7 @@ import Img3 from "../Assets/solution-explorer-technology-operations.sm.webp";
 function Slider2() {
   return (
     <div className="container mx-auto mt-5 p-4 md:p-6">
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold py-4 mx-5 text-center md:text-left">
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold py-4 text-center md:text-left">
         Transform your business with Us
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -18,22 +18,18 @@ function Slider2() {
             className="w-full h-40 md:h-52 object-cover rounded-t-lg mb-4"
             alt="Employees"
           />
-          <h2 className="text-xl md:text-2xl font-bold mb-4">
-            AI-Enhanced Professional Services
+          <h2 className="text-xl md:text-2xl font-bold mb-2">
+            AI-Enhanced Services
           </h2>
-          <p className="text-gray-600 text-sm md:text-base">
-            Transform Your Business with Intelligent IT Solutions. Leverage
-            cutting-edge AI and cloud technologies to optimize efficiency,
-            safeguard your data, and streamline expenditures. Our advanced
-            services drive innovation and operational excellence, propelling
-            your business forward.
+          <p className="text-gray-600 text-sm md:text-base mb-6">
+            Optimize your business with AI and cloud technologies to enhance efficiency and cut costs.
           </p>
-          <ul className="mt-10 ">
-            <li className="text-blue-500 hover:underline mb-2">
-              <Link to="/professional-services">Read More</Link>{" "}
-              {/* Redirect to Professional Services page */}
-            </li>
-          </ul>
+          <Link
+            to="/professional-services"
+            className="text-blue-500 hover:underline"
+          >
+            Read More
+          </Link>
         </div>
 
         {/* Managed Service Section */}
@@ -43,21 +39,18 @@ function Slider2() {
             alt="Customers"
             className="w-full h-40 md:h-52 object-cover rounded-t-lg mb-4"
           />
-          <h2 className="text-xl md:text-2xl font-bold mb-4">
-            Managed Services with Intelligent Automation
+          <h2 className="text-xl md:text-2xl font-bold mb-2">
+            Managed Services
           </h2>
-          <p className="text-gray-600 text-sm md:text-base">
-            Looking for a smart, seamless managed services solution? Unlock your
-            business’s potential with our AI-powered, cloud-integrated services.
-            Boost efficiency, cut costs, and enhance security all in one package
-            to keep you ahead.
+          <p className="text-gray-600 text-sm md:text-base mb-6">
+            Improve efficiency with AI-powered, cloud-integrated managed services to stay ahead.
           </p>
-          <ul className="mt-16">
-            <li className="text-blue-500 hover:underline mb-4">
-              <Link to="/managed-services">Read More</Link>{" "}
-              {/* Redirect to Managed Services page */}
-            </li>
-          </ul>
+          <Link
+            to="/managed-services"
+            className="text-blue-500 hover:underline"
+          >
+            Read More
+          </Link>
         </div>
 
         {/* Networking Consulting Section */}
@@ -67,21 +60,18 @@ function Slider2() {
             alt="IT Operations"
             className="w-full h-40 md:h-52 object-cover rounded-t-lg mb-4"
           />
-          <h2 className="text-xl md:text-2xl font-bold mb-4">
-            AI-Powered Networking Consulting
+          <h2 className="text-xl md:text-2xl font-bold mb-2">
+            Networking Consulting
           </h2>
-          <p className="text-gray-600 text-sm md:text-base">
-            Boost your business with our AI-driven consulting services! We
-            optimize your network's performance, cut costs, and elevate
-            security. Let us transform your network into a powerful, reliable
-            backbone for success.{" "}
+          <p className="text-gray-600 text-sm md:text-base mb-6">
+            Leverage AI to enhance network performance, reduce costs, and boost security.
           </p>
-          <ul className="mt-16 md:">
-            <li className="text-blue-500 hover:underline mb-4">
-              <Link to="/networking-consulting">Read More</Link>{" "}
-              {/* Redirect to Networking Consulting page */}
-            </li>
-          </ul>
+          <Link
+            to="/networking-consulting"
+            className="text-blue-500 hover:underline"
+          >
+            Read More
+          </Link>
         </div>
       </div>
     </div>
