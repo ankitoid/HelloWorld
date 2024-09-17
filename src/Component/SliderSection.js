@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 import v1 from "../Assets/TCDvid.mp4";
 import Slider3 from "./Slider3";
 import ServicesHockey from "./ServicesHockey";
-import NetworkCon from '../Assets/networkingCon.mp4'
-import ProfessionalService from '../Assets/professionalService.mp4'
+import NetworkCon from "../Assets/networkingCon.mp4";
+import ProfessionalService from "../Assets/professionalService.mp4";
 
 function SliderSection() {
   return (
@@ -35,15 +35,12 @@ function SliderSection() {
                 Cloud & DevOps
               </h2>
               <p className="text-gray-600 text-base md:text-lg mb-6">
-                Leveraging deep expertise in cloud technologies, GlobalXperts
-                supports clients globally through every stage of their cloud
-                journey. We offer comprehensive services including consultancy,
-                seamless migration, and 24/7 managed services, ensuring
-                continuous support and optimization. Our advanced DevOps
-                solutions enhance operational efficiency and reliability. Our
-                focus on cost optimization ensures that your cloud
-                infrastructure is both efficient and economically sound, driving
-                long-term value and sustainability.
+                GlobalXperts provides end-to-end cloud solutions, from
+                consultancy and migration to 24/7 managed services. We enhance
+                operational efficiency with advanced DevOps and ensure
+                cost-optimized, sustainable cloud infrastructures. Our services
+                deliver long-term value and support throughout the cloud
+                journey.
               </p>
               <Link
                 to="/Cloud" // Updated to path string
@@ -64,16 +61,13 @@ function SliderSection() {
               Value Proposition
             </h2>
             <p className="mt-3 text-xl text-gray-300 sm:mt-4">
-              Enhance your business’s communication and collaboration with our
-              expert design and build services for advanced collaboration
-              technologies. We specialize in Cisco Unified Communications, AWS
-              Connect, and ConnectWise to streamline your operations and improve
-              customer service. Our solutions integrate voice, video, and
-              messaging into seamless platforms, offer scalable, secure contact
-              centers, and optimize business management. Choose our services to
-              boost efficiency, enhance communication, and support your growth
-              with tailored, cutting-edge technologies. Contact us today to
-              transform your organizational capabilities.
+              Enhance your business communication and collaboration with our
+              expert services in Cisco Unified Communications, AWS Connect, and
+              ConnectWise. We provide seamless integration of voice, video, and
+              messaging, along with scalable and secure contact centers. Our
+              solutions optimize operations and support growth with cutting-edge
+              technologies. Contact us to transform your organizational
+              capabilities today.
             </p>
           </div>
           {/* Video Section */}
@@ -113,15 +107,12 @@ function SliderSection() {
                 Field Services
               </h2>
               <p className="text-gray-600 text-base md:text-lg mb-6">
-                Our expert technicians and engineers deliver critical on-site IT
-                support, ensuring seamless system operations. With hands-on
-                expertise, we resolve technical challenges efficiently,
-                providing reliable solutions that keep your business running
-                smoothly. Taking a proactive approach, we identify potential
-                issues before they become problems, minimizing downtime and
-                optimizing performance. Whether it's troubleshooting,
-                maintenance, or system upgrades, our team is dedicated to
-                keeping your IT infrastructure robust and secure.
+                Our expert technicians provide on-site IT support, ensuring
+                smooth operations and resolving technical challenges
+                efficiently. We proactively identify potential issues to
+                minimize downtime and optimize system performance. From
+                troubleshooting to upgrades, our team is committed to
+                maintaining a secure and robust IT infrastructure.
               </p>
               <a
                 href="/service/Field-Services"
@@ -158,13 +149,10 @@ function SliderSection() {
                 Networking Consulting
               </h2>
               <p className="text-gray-600 text-base md:text-lg mb-6">
-                Our networking consulting services provide structured solutions
-                to enhance connectivity across teams, departments, and
-                locations. With expert guidance, we help you build efficient
-                communication channels, streamline workflows, and connect
-                seamlessly across offices, time zones, and even external
-                partners, ensuring a cohesive and collaborative work
-                environment.
+                We offer expert networking consulting to optimize communication
+                and connectivity across teams, departments, and locations. Our
+                solutions streamline workflows and enhance collaboration both
+                internally and with external partners.
               </p>
               <a
                 href="#"
@@ -203,12 +191,11 @@ function SliderSection() {
                 Professional Services
               </h2>
               <p className="text-gray-600 text-base md:text-lg mb-6">
-                Our Professional Services provide cutting-edge IT solutions to
-                empower your business in the digital era. We offer innovative
-                services that enhance your operations, improve efficiency, and
-                drive sustainable growth. With a focus on delivering excellence,
-                we tailor our approach to meet your unique needs and ensure your
-                business thrives in a competitive landscape.
+                Our Professional Services deliver advanced IT solutions to boost
+                your business in the digital age. We provide tailored,
+                innovative services that enhance efficiency and foster
+                sustainable growth. Our focus on excellence ensures your success
+                in a competitive market.
               </p>
               <a
                 href="#"

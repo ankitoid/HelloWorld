@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { FaHome, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "../Assets/gxiLogo.svg";
 import lg from "../Assets/lg1.png";
 
 const Navbar = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const [inSliderSection, setInSliderSection] = useState(false);
-  const [showNavbar, setShowNavbar] = useState(true);
+  const [isScrollingUp, setIsScrollingUp] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [showSubmenu, setShowSubmenu] = useState(false);
 
   const handleToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -23,15 +24,24 @@ const Navbar = () => {
   };
 
   const handleScroll = () => {
-    const offset = window.scrollY;
-    setIsScrolled(offset > 0);
+    const currentScrollY = window.scrollY;
+    setIsScrolled(currentScrollY > 0);
 
     const sliderSection = document.getElementById("slider-section");
     if (sliderSection) {
       const rect = sliderSection.getBoundingClientRect();
-      // Update logic to detect if the user is in the slider section
       setInSliderSection(rect.top <= 50 && rect.bottom >= 50);
     }
+
+    // Detect if scrolling up or down
+    if (currentScrollY > lastScrollY) {
+      setIsScrollingUp(false); // Scrolling down
+    } else {
+      setIsScrollingUp(true); // Scrolling up
+    }
+
+    // Update the last scroll position
+    setLastScrollY(currentScrollY);
   };
 
   useEffect(() => {
@@ -39,7 +49,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [lastScrollY]);
 
   return (
     <div
@@ -50,7 +60,7 @@ const Navbar = () => {
             : "bg-gradient-to-r from-pink-200 via-pink-50 to-blue-200"
           : "bg-gradient-to-r from-pink-200 via-pink-50 to-blue-200"
       } transition-all duration-300 w-full h-16 fixed top-0 z-50 ${
-        showNavbar ? "block" : "hidden"
+        isScrollingUp ? "translate-y-0" : "-translate-y-full"
       }`}
     >
       <nav className="container mx-auto flex justify-between items-center h-full">
@@ -60,6 +70,7 @@ const Navbar = () => {
             <img src={lg} alt="Logo" className="h-20 w-auto" />
           </Link>
         </div>
+
         {/* Navigation Links */}
         <ul className="hidden md:flex space-x-4 items-center ml-8">
           {/* Home link */}
@@ -78,7 +89,7 @@ const Navbar = () => {
           <li className="relative" onMouseEnter={() => handleMouseEnter(1)}>
             <Link
               to="#"
-              className="flex items-center px-4 py-1 hover:bg-gray-200"
+              className="flex items-center px-4 py-1 hover:bg-gray-200 "
               onClick={() => handleToggle(1)}
             >
               Solutions
@@ -90,22 +101,63 @@ const Navbar = () => {
             </Link>
             {openIndex === 1 && (
               <div
-                className="absolute top-full mt-2 left-0 bg-white shadow-lg rounded p-4"
+                className="absolute top-full mt-4 left-0 shadow-xl p-4 "
+                // Gradient background
+                style={{
+                  backgroundImage:
+                    "linear-gradient(to top right, #fbcfe8, #fdf2f8, #bfdbfe)",
+                  borderTopRightRadius: "1px",
+                  borderBottomLeftRadius: "10px",
+                  borderTopLeftRadius:"10px",
+                  borderBottomRightRadius:"10px"
+                }}
                 onMouseLeave={handleMouseLeave}
               >
                 <ul>
-                  <li>
+                  <li
+                    className="relative group"
+                    onMouseEnter={() => setShowSubmenu(true)}
+                    
+                  >
                     <Link
                       to="/solutions/cloud"
                       className="block p-2 rounded whitespace-nowrap hover:text-white hover:bg-greenCustomColor2 hover:px-2"
                     >
                       Cloud & DevOps
                     </Link>
+                    {showSubmenu && (
+                      <ul
+                        className="absolute ml-4 left-full  -top-4 bg-white w-40 p-2"
+                        onMouseLeave={() => setShowSubmenu(false)}
+                        style={{
+                          backgroundImage:
+                            "linear-gradient(to top right, #fbcfe8, #fdf2f8, #bfdbfe)",
+                          borderTopRightRadius: "10px",
+                          borderBottomRightRadius: "10px",
+                        }}
+                      >
+                        <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded">
+                          <Link to="/solutions/cloud/devops">DevOps</Link>
+                        </li>
+                        <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded">
+                          <Link to="/solutions/cloud/aws">AWS</Link>
+                        </li>
+                        <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded">
+                          <Link to="/solutions/cloud/azure">Azure</Link>
+                        </li>
+                        <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded">
+                          <Link to="/solutions/cloud/GCP">GCP</Link>
+                        </li>
+
+                      </ul>
+                    )}
                   </li>
                   <li>
                     <Link
                       to="/solutions/collaboration-technologies"
                       className="block p-2 rounded hover:bg-greenCustomColor2 hover:text-white whitespace-nowrap hover:px-2"
+                      onMouseLeave={() => setShowSubmenu(false)}
+
                     >
                       Collaboration Technologies Design/Build
                     </Link>
@@ -150,6 +202,7 @@ const Navbar = () => {
                       GenAI
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/solutions/Networking"
@@ -161,7 +214,7 @@ const Navbar = () => {
                 </ul>
               </div>
             )}
-          </li>
+          </li> 
           {/* Service link */}
           <li className="relative" onMouseEnter={() => handleMouseEnter(2)}>
             <Link

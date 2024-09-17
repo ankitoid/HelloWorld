@@ -58,6 +58,30 @@ import MkSwitches from "./Component/Solutions/Networking/MkSwitches";
 import MkFirewall from "./Component/Solutions/Networking/MkFirewall";
 
 
+import AWSPartner from './Component/Insights/Partners/AWSPartner'
+import AristaPartner from './Component/Insights/Partners/AristaPartner'
+import CalabrioPartner from './Component/Insights/Partners/CalabrioPartner'
+import CisMKPartner from './Component/Insights/Partners/CisMKPartner'
+import CiscoPartner from './Component/Insights/Partners/CiscoPartner'
+import VMWarePartner from './Component/Insights/Partners/VMWarePartner'
+import HewlettPackPartner from './Component/Insights/Partners/HewlettPackPartner'
+import MSAzurePartner from './Component/Insights/Partners/MSAzurePartner'
+import ServicenowPartner from './Component/Insights/Partners/ServicenowPartner'
+import VeeamPartner from './Component/Insights/Partners/VeeamPartner'
+import MicrosoftPartner from './Component/Insights/Partners/MicrosoftPartner'
+import TruenasPartner from './Component/Insights/Partners/TruenasPartner'
+import AurusPartner from './Component/Insights/Partners/AurusPartner'
+import CitrixPartner from './Component/Insights/Partners/CitrixPartner'
+import SeceonPartner from './Component/Insights/Partners/SeceonPartner'
+import NokiaPartner from './Component/Insights/Partners/NokiaPartner'
+import GCloudPartner from './Component/Insights/Partners/GCloudPartner'
+import Devops from "./Component/Solutions/Cloud/Devops";
+import AWS from "./Component/Solutions/Cloud/AWS";
+import Azure from "./Component/Solutions/Cloud/Azure";
+import GCP from "./Component/Solutions/Cloud/GCP";
+
+
+
 export default function App() {
   return (
     <Router>
@@ -77,6 +101,12 @@ export default function App() {
           <Route path="/solutions/small-medium-business" element={<SmallandMediumBusiness />} />
           <Route path="/solutions/GenAI" element={<GenAI />} />
           <Route path="/solutions/Networking" element={<Networking />} />
+
+          {/*  Cloud and Devops */}
+          <Route path="/solutions/cloud/devops" element={<Devops />} />
+          <Route path="/solutions/cloud/aws" element={<AWS />} />
+          <Route path="/solutions/cloud/azure" element={<Azure />} />
+          <Route path="/solutions/cloud/GCP" element={<GCP />} />
 
           {/* Industries */}
           <Route path="/Industries/Education" element={<Education />} />
@@ -138,6 +168,24 @@ export default function App() {
           <Route path="/Networking/mkswitches"element={<MkSwitches/>} />
           <Route path="/Networking/mkwireless"element={<MkWireless/>} />
 
+          {/* Partners Pages */}
+          <Route path="/Partners/AWSPartner"element={<AWSPartner/>} />
+          <Route path="/Partners/AristaPartner"element={<AristaPartner/>} />
+          <Route path="/Partners/VMWarePartner"element={<VMWarePartner/>} />
+          <Route path="/Partners/HewlettPackPartner"element={<HewlettPackPartner/>} />
+          <Route path="/Partners/MicrosoftPartner"element={<MicrosoftPartner/>} />
+          <Route path="/Partners/MSAzurePartner"element={<MSAzurePartner/>} />
+          <Route path="/Partners/CiscoPartner"element={<CiscoPartner/>} />
+          <Route path="/Partners/TruenasPartner"element={<TruenasPartner/>} />
+          <Route path="/Partners/GCloudPartner"element={<GCloudPartner/>} />
+          <Route path="/Partners/CalabrioPartner"element={<CalabrioPartner/>} />
+          <Route path="/Partners/CisMKPartner"element={<CisMKPartner/>} />
+          <Route path="/Partners/ServicenowPartner"element={<ServicenowPartner/>} />
+          <Route path="/Partners/AurusPartner"element={<AurusPartner/>} />
+          <Route path="/Partners/NokiaPartner"element={<NokiaPartner/>} />
+          <Route path="/Partners/CitrixPartner"element={<CitrixPartner/>} />
+          <Route path="/Partners/VeeamPartner"element={<VeeamPartner/>} />
+          <Route path="/Partners/SeceonPartner"element={<SeceonPartner/>} />
 
           {/* 404 Route */}
           <Route path="*" element={<NotFound />} />

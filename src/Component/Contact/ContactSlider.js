@@ -3,7 +3,6 @@ import { MdOutlineSupportAgent } from "react-icons/md";
 
 const ContactSlider = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const handleOpen = () => setIsOpen(true);
   const handleClose = () => setIsOpen(false);
 
@@ -20,7 +19,7 @@ const ContactSlider = () => {
       {/* Contact Form Slider */}
       <div
         className={`fixed top-1/4 right-2 z-50 transition-transform duration-300 ease-in-out ${
-          isOpen ? "translate-x-0" : "translate-x-full"
+          isOpen ? "translate-x-0 block" : "translate-x-full"
         }`}
         style={{ width: "350px" }}
         onMouseLeave={handleClose} 

@@ -52,7 +52,7 @@ const HeroSection = () => {
       <div className="relative z-10 flex items-center justify-center md:justify-start h-full w-full px-2 md:px-16">
       <div className="   py-30  md:py-30 mb-56 pb-5  rounded-lg md:rounded-r-lg w-full md:w-1/2 lg:w-1/3 h-auto">
           <h1 className="text-3xl md:text-3xl font-bold mb-6 whitespace-nowrap justify-center items-center mr-12">
-          Experience AI-Synergised Cloud Products.          </h1>
+           AI-Synergised Cloud Products.          </h1>
 
           <div className="absolute p-4 border-2 border-greenCustomColor rounded-full flex flex-col items-center mr-28">
             <p className="text-xl md:text-2xl font-bold  ">{displayedText}</p>

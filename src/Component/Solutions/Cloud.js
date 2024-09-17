@@ -8,7 +8,6 @@ import img1 from "../../Assets/cloud.avif";
 import img2 from "../../Assets/aws2.jpg";
 import Footer from "../Footer";
 import cloudSerive from "../../Assets/AI2.jpg";
-import ContactUs from "../ContactUs";
 import c1 from "../../Assets/cloud2.jpg";
 import c2 from "../../Assets/migration.avif";
 import c3 from "../../Assets/image (10).png";

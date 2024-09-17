@@ -141,11 +141,10 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-
-        <div className="mt-8 text-center text-gray-500">
+        </div>
+        <div className="mt-8 text-center text-white py-4 bg-greenCustomColor2">
           <p>&copy; 2024 GlobalXperts. All rights reserved.</p>
         </div>
-      </div>
     </footer>
   );
 };

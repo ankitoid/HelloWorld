@@ -21,23 +21,23 @@ import ContactCard from '../Contact/ContactCard';
 import Footer from '../Footer';
 
 const partners = [
-  { name: 'AWS Partner Network', img: p1, link: 'https://aws.amazon.com' },
-  { name: 'Arista', img: p2, link: 'https://www.arista.com' },
-  { name: 'VMware', img: p3, link: 'https://www.vmware.com' },
-  { name: 'Hewlett Packard Enterprise', img: p4, link: 'https://www.hpe.com' },
-  { name: 'Microsoft', img: p5, link: 'https://www.microsoft.com' },
-  { name: 'Microsoft Azure', img: p6, link: 'https://azure.microsoft.com' },
-  { name: 'Cisco', img: p7, link: 'https://www.cisco.com' },
-  { name: 'TrueNAS', img: p8, link: 'https://www.truenas.com' },
-  { name: 'Google Cloud', img: p9, link: 'https://cloud.google.com' },
-  { name: 'Calabrio', img: p10, link: 'https://www.calabrio.com' },
-  { name: 'Cisco Meraki', img: p11, link: 'https://meraki.cisco.com' },
-  { name: 'ServiceNow', img: p12, link: 'https://www.servicenow.com' },
-  { name: 'Arush', img: p13, link: 'https://www.servicenow.com' },
-  { name: 'Nokia', img: p14, link: 'https://www.servicenow.com' },
-  { name: 'Citrix', img: p15, link: 'https://www.servicenow.com' },
-  { name: 'Veeam', img: p16, link: 'https://www.servicenow.com' },
-  { name: 'Seceon', img: p17, link: 'https://www.servicenow.com' },
+  { name: 'AWS Partner Network', img: p1, link: '/Partners/AWSPartner' },
+  { name: 'Arista', img: p2, link: '/Partners/AristaPartner' },
+  { name: 'VMware', img: p3, link: '/Partners/VMWarePartner' },
+  { name: 'Hewlett Packard Enterprise', img: p4, link: '/Partners/HewlettPackPartner' },
+  { name: 'Microsoft', img: p5, link: '/Partners/MicrosoftPartner' },
+  { name: 'Microsoft Azure', img: p6, link: '/Partners/MSAzurePartner' },
+  { name: 'Cisco', img: p7, link: '/Partners/CiscoPartner' },
+  { name: 'TrueNAS', img: p8, link: '/Partners/TruenasPartner' },
+  { name: 'Google Cloud', img: p9, link: '/Partners/GCloudPartner' },
+  { name: 'Calabrio', img: p10, link: '/Partners/CalabrioPartner' },
+  { name: 'Cisco Meraki', img: p11, link: '/Partners/CisMKPartner' },
+  { name: 'ServiceNow', img: p12, link: '/Partners/ServicenowPartner' },
+  { name: 'Arush', img: p13, link: '/Partners/AurusPartner' },
+  { name: 'Nokia', img: p14, link: '/Partners/NokiaPartner' },
+  { name: 'Citrix', img: p15, link: '/Partners/CitrixPartner' },
+  { name: 'Veeam', img: p16, link: '/Partners/VeeamPartner' },
+  { name: 'Seceon', img: p17, link: '/Partners/SeceonPartner' },
 ];
 
 const Partners = () => {
@@ -55,7 +55,7 @@ const Partners = () => {
               href={partner.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center border rounded-lg p-4 text-center block hover:bg-gray-100 transition-colors duration-300"
+              className=" items-center justify-center border rounded-lg p-4 text-center block hover:bg-gray-100 transition-colors duration-300"
             >
               <img
                 src={partner.img}
