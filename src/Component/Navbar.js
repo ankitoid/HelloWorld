@@ -91,6 +91,7 @@ const Navbar = () => {
               to="#"
               className="flex items-center px-4 py-1 hover:bg-gray-200 "
               onClick={() => handleToggle(1)}
+              
             >
               Solutions
               {openIndex === 1 ? (
@@ -112,16 +113,19 @@ const Navbar = () => {
                   borderBottomRightRadius:"10px"
                 }}
                 onMouseLeave={handleMouseLeave}
+
               >
                 <ul>
                   <li
                     className="relative group"
-                    onMouseEnter={() => setShowSubmenu(true)}
-                    
+                    onMouseLeave={() => setShowSubmenu(false)}
+
                   >
                     <Link
                       to="/solutions/cloud"
                       className="block p-2 rounded whitespace-nowrap hover:text-white hover:bg-greenCustomColor2 hover:px-2"
+                      onMouseEnter={() => setShowSubmenu(true)}
+
                     >
                       Cloud & DevOps
                     </Link>
@@ -135,6 +139,7 @@ const Navbar = () => {
                           borderTopRightRadius: "10px",
                           borderBottomRightRadius: "10px",
                         }}
+
                       >
                         <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded">
                           <Link to="/solutions/cloud/aws">AWS</Link>
