@@ -34,7 +34,7 @@ const AWS = () => {
           </div>
         </div>
       </div>
-      <div className='max-w-7xl'>
+      <div className='max-w-7xl mx-auto'>
       <div className=" text-center mb-10" >
         <h1 className="text-3xl font-bold text-green-900 mb-4">
           Cloud consulting and design

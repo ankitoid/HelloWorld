@@ -14,9 +14,9 @@ const Devops = () => {
           </h2>
           <p className="mt-3 text-xl text-gray-500 sm:mt-4">
             As the best DevOps consultant, we automate the manual infrastructure
-            deployment process using modern tools to standardize the conventional
-            method. Our end-to-end DevOps services help our clients achieve
-            increased reliability and frequency of software releases.
+            deployment process using modern tools to standardize the
+            conventional method. Our end-to-end DevOps services help our clients
+            achieve increased reliability and frequency of software releases.
           </p>
         </div>
         {/* Image Section */}
@@ -108,8 +108,8 @@ const Devops = () => {
               </svg>
             </div>
             <p>
-              We have collaborative teams with shared objectives, strong
-              working principles, and consistent value delivery.
+              We have collaborative teams with shared objectives, strong working
+              principles, and consistent value delivery.
             </p>
           </div>
 
@@ -133,7 +133,8 @@ const Devops = () => {
             </div>
             <p>
               Our best DevOps solutions achieve greater MTTR (Mean Time To
-              Recovery) by employing a fully detailed system service architecture.
+              Recovery) by employing a fully detailed system service
+              architecture.
             </p>
           </div>
         </div>
@@ -155,86 +156,148 @@ const Devops = () => {
 
       {/* Services Section */}
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Continuous Delivery */}
-          <div className="bg-white text-black p-6 rounded-lg shadow-lg flex flex-col items-center space-y-4">
-            <div className="bg-green-500 rounded-full p-4">
-              {/* Icon */}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M12 11c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zM9.293 9.293l-3.294 3.294a1 1 0 00-.293.707v6.586a1 1 0 001 1h1.586a1 1 0 00.707-.293l3.294-3.293 1.414 1.414L8.707 21.707a2 2 0 01-1.414.586H6a2 2 0 01-2-2v-6.586a2 2 0 01.586-1.414l3.293-3.293 1.414 1.414zm8.486-8.486a1 1 0 010 1.414L11.414 9.707a1 1 0 01-1.414 0L9 8.707l7.293-7.293a1 1 0 011.414 0z"
-                />
-              </svg>
-            </div>
-            <h3 className="text-xl font-semibold">Continuous Delivery</h3>
-            <p className="text-center">
-              Our DevOps service delivers excellent continuous delivery (CD)
-              capabilities with automation to boost your service efficiency.
-            </p>
-          </div>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {/* Continuous Delivery */}
+    <div className="bg-white text-black p-6 rounded-lg shadow-lg flex flex-col items-center space-y-4">
+      <div className="bg-green-500 rounded-full p-4">
+        {/* Icon: Lightning Bolt for speed and automation */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-8 w-8 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M13 10V3L4 14h7v7l9-11h-7z"
+          />
+        </svg>
+      </div>
+      <h3 className="text-xl font-semibold">Continuous Delivery</h3>
+      <p className="text-center">
+        Our DevOps service delivers excellent continuous delivery (CD)
+        capabilities with automation to boost your service efficiency.
+      </p>
+    </div>
 
-          {/* Configuration Management */}
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center space-y-4">
-            <div className="bg-yellow-400 rounded-full p-4">
-              {/* Icon */}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M12 8v4l3 3M12 8l-3 3m0 0l-3 3m3-3v12"
-                />
-              </svg>
-            </div>
-            <h3 className="text-xl font-semibold">Configuration Management</h3>
-            <p className="text-center">
-              We offer consistent deployment services for Configuration Management.
-              It eliminates system configuration mismatches while optimizing cost.
-            </p>
-          </div>
+    {/* Configuration Management */}
+    <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center space-y-4">
+      <div className="bg-yellow-400 rounded-full p-4">
+        {/* Icon: Cog for system settings/configuration */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-8 w-8 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M11 4.055A9.001 9.001 0 002.058 11H5.05a7 7 0 011.4-2.894l1.667 1.667a4 4 0 005.656-5.656L14.44 2.65A7 7 0 0116.94 5h2.992A9.001 9.001 0 0011 4.055z"
+          />
+        </svg>
+      </div>
+      <h3 className="text-xl font-semibold">Configuration Management</h3>
+      <p className="text-center">
+        We offer consistent deployment services for Configuration Management.
+        It eliminates system configuration mismatches while optimizing cost.
+      </p>
+    </div>
 
-          {/* Infrastructure As a Code */}
-          <div className="bg-white text-black p-6 rounded-lg shadow-lg flex flex-col items-center space-y-4">
-            <div className="bg-green-500 rounded-full p-4">
-              {/* Icon */}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M12 8v4l3 3m0 0l-3 3m3-3H9m3-3H6"
-                />
-              </svg>
-            </div>
-            <h3 className="text-xl font-semibold">Infrastructure As a Code</h3>
-            <p className="text-center">
-              Our service enables infrastructure provisioning with code, ensuring
-              consistency and flexibility in deployments.
-            </p>
+    {/* Infrastructure As a Code */}
+    <div className="bg-white text-black p-6 rounded-lg shadow-lg flex flex-col items-center space-y-4">
+      <div className="bg-green-500 rounded-full p-4">
+        {/* Icon: Code for infrastructure-as-code */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-8 w-8 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M16 18l4-4m0 0l-4-4m4 4H8m-4 0l4 4m0 0l-4-4m4 4V8"
+          />
+        </svg>
+      </div>
+      <h3 className="text-xl font-semibold">Infrastructure As a Code</h3>
+      <p className="text-center">
+        Our service enables infrastructure provisioning with code, ensuring
+        consistency and flexibility in deployments.
+      </p>
+    </div>
+
+    {/* Monitoring & Logging */}
+    <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center space-y-4">
+      <div className="bg-blue-500 rounded-full p-4">
+        {/* Icon: Eye for monitoring */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-8 w-8 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M12 9.75c-1.242 0-2.25 1.008-2.25 2.25s1.008 2.25 2.25 2.25 2.25-1.008 2.25-2.25-1.008-2.25-2.25-2.25zM21 12c0 1.657-1.005 3.403-2.678 5.071C16.631 18.693 14.373 20 12 20s-4.631-1.307-6.322-2.929C4.005 15.403 3 13.657 3 12c0-1.657 1.005-3.403 2.678-5.071C7.369 5.307 9.627 4 12 4s4.631 1.307 6.322 2.929C19.995 8.597 21 10.343 21 12z"
+          />
+        </svg>
+      </div>
+      <h3 className="text-xl font-semibold">Monitoring & Logging</h3>
+      <p className="text-center">
+        We leverage modern DevOps tools and technologies and follow the
+        most appropriate practices for smooth monitoring and logging
+        processes.
+      </p>
+    </div>
+  </div>
+</div>
+<div className="container mx-auto px-4 py-16">
+      <h1 className="text-4xl font-bold text-center mb-8">Why do large enterprises choose Algoworks as the DevOps Consulting Company?</h1>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="bg-gray-800 rounded-lg p-8 text-center">
+          <div className="flex justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 text-green-500">
+              <path d="M18.5 6a2.5 2.5 0 0 0 -2.5 -2.5 2.5 2.5 0 0 0 -2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5 -2.5z" />
+              <path d="M12 21v-13m0 0l-4 4m4 -4l4 4" />
+            </svg>
           </div>
+          <h2 className="text-2xl font-bold text-green-500 mb-2">Faster Deployment</h2>
+          <p className="text-gray-400 text-lg">DevOps enables speedy execution of development, testing, and release, along with integrating automated workflows with DevOps consulting services.</p>
+        </div>
+        <div className="bg-gray-800 rounded-lg p-8 text-center">
+          <div className="flex justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 text-green-500">
+              <path d="M12 21v-13m0 0l-4 4m4 -4l4 4" />
+              <path d="M18.5 6a2.5 2.5 0 0 0 -2.5 -2.5 2.5 2.5 0 0 0 -2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5 -2.5z" />
+            </svg>
+          </div>
+          <h2 className="text-2xl font-bold text-green-500 mb-2">Improved Efficiency</h2>
+          <p className="text-gray-400 text-lg">DevOps services can automate deployments and testing and thus enhance your business value under the guidance of our top DevOps consultant.</p>
+        </div>
+        <div className="bg-gray-800 rounded-lg p-8 text-center">
+          <div className="flex justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 text-green-500">
+              <path d="M12 21v-13m0 0l-4 4m4 -4l4 4" />
+              <path d="M18.5 6a2.5 2.5 0 0 0 -2.5 -2.5 2.5 2.5 0 0 0 -2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5 -2.5z" />
+            </svg>
+          </div>
+          <h2 className="text-2xl font-bold text-green-500 mb-2">Smooth Operations</h2>
+          <p className="text-gray-400 text-lg">DevOps streamline your operations by identifying and removing unwanted processes. Thus, it speeds up the flow of value by positively impacting costs.</p>
         </div>
       </div>
+    </div>
     </>
   );
 };

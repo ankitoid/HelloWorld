@@ -63,7 +63,8 @@ const Navbar = () => {
         isScrollingUp ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <nav className="container mx-auto flex justify-between items-center h-full">
+      <nav className="container mx-auto flex justify-between items-center h-full"                 onMouseLeave={handleMouseLeave}
+ >
         {/* Logo */}
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
@@ -86,12 +87,15 @@ const Navbar = () => {
           </li>
 
           {/* Solutions dropdown */}
-          <li className="relative" onMouseEnter={() => handleMouseEnter(1)}>
+          <li
+            className="relative"
+            onMouseEnter={() => handleMouseEnter(1)}
+
+          >
             <Link
               to="#"
-              className="flex items-center px-4 py-1 hover:bg-gray-200 "
+              className="flex items-center px-4 py-1 hover:bg-gray-200"
               onClick={() => handleToggle(1)}
-              
             >
               Solutions
               {openIndex === 1 ? (
@@ -100,72 +104,64 @@ const Navbar = () => {
                 <FaChevronDown className="ml-2" />
               )}
             </Link>
+
             {openIndex === 1 && (
               <div
-                className="absolute top-full mt-4 left-0 shadow-xl p-4 "
-                // Gradient background
+                className="absolute top-full mt-4 left-0 shadow-xl p-2 z-10"
                 style={{
                   backgroundImage:
                     "linear-gradient(to top right, #fbcfe8, #fdf2f8, #bfdbfe)",
-                  borderTopRightRadius: "1px",
-                  borderBottomLeftRadius: "10px",
-                  borderTopLeftRadius:"10px",
-                  borderBottomRightRadius:"10px"
                 }}
                 onMouseLeave={handleMouseLeave}
+
 
               >
                 <ul>
                   <li
                     className="relative group"
+                    onMouseEnter={() => setShowSubmenu(true)}
                     onMouseLeave={() => setShowSubmenu(false)}
-
                   >
                     <Link
                       to="/solutions/cloud"
                       className="block p-2 rounded whitespace-nowrap hover:text-white hover:bg-greenCustomColor2 hover:px-2"
-                      onMouseEnter={() => setShowSubmenu(true)}
-
                     >
                       Cloud & DevOps
                     </Link>
+
                     {showSubmenu && (
                       <ul
-                        className="absolute ml-4 left-full  -top-4 bg-white w-40 p-2"
-                        onMouseLeave={() => setShowSubmenu(false)}
+                        className=" top-0 left-full ml-2 w-80 rounded shadow-lg"
                         style={{
                           backgroundImage:
-                            "linear-gradient(to top right, #fbcfe8, #fdf2f8, #bfdbfe)",
-                          borderTopRightRadius: "10px",
-                          borderBottomRightRadius: "10px",
+                            "linear-gradient(to right, #f3e5ab, #f4d1ae, #9ec5f1)",
                         }}
-
                       >
-                        <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded">
+                        <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded text-center">
                           <Link to="/solutions/cloud/aws">AWS</Link>
                         </li>
-                        <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded">
+                        <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded text-center">
                           <Link to="/solutions/cloud/azure">Azure</Link>
                         </li>
-                        <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded">
+                        <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded text-center">
                           <Link to="/solutions/cloud/GCP">GCP</Link>
                         </li>
-                        <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded">
+                        <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded text-center">
                           <Link to="/solutions/cloud/devops">DevOps</Link>
                         </li>
                       </ul>
                     )}
                   </li>
+
                   <li>
                     <Link
                       to="/solutions/collaboration-technologies"
                       className="block p-2 rounded hover:bg-greenCustomColor2 hover:text-white whitespace-nowrap hover:px-2"
-                      onMouseLeave={() => setShowSubmenu(false)}
-
                     >
                       Collaboration Technologies Design/Build
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/solutions/data-center-design"
@@ -174,6 +170,7 @@ const Navbar = () => {
                       Data Center Design/Build
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/solutions/multi-cloud"
@@ -182,6 +179,7 @@ const Navbar = () => {
                       Multi-Cloud Solutions
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/solutions/cyber-security"
@@ -190,6 +188,7 @@ const Navbar = () => {
                       Cyber Security
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/solutions/small-medium-business"
@@ -198,6 +197,7 @@ const Navbar = () => {
                       Small and Medium Business
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       to="/solutions/GenAI"
@@ -218,7 +218,8 @@ const Navbar = () => {
                 </ul>
               </div>
             )}
-          </li> 
+          </li>
+
           {/* Service link */}
           <li className="relative" onMouseEnter={() => handleMouseEnter(2)}>
             <Link
