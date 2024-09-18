@@ -137,9 +137,6 @@ const Navbar = () => {
                         }}
                       >
                         <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded">
-                          <Link to="/solutions/cloud/devops">DevOps</Link>
-                        </li>
-                        <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded">
                           <Link to="/solutions/cloud/aws">AWS</Link>
                         </li>
                         <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded">
@@ -148,7 +145,9 @@ const Navbar = () => {
                         <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded">
                           <Link to="/solutions/cloud/GCP">GCP</Link>
                         </li>
-
+                        <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded">
+                          <Link to="/solutions/cloud/devops">DevOps</Link>
+                        </li>
                       </ul>
                     )}
                   </li>

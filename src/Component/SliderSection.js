@@ -31,16 +31,12 @@ function SliderSection() {
           {/* Right Section */}
           <div className="w-full md:w-3/5 bg-white flex items-center justify-center p-8 md:p-12">
             <div className="max-w-lg text-center md:text-left">
-              <h2 className="text-3xl md:text-4xl font-bold mb-2">
+              <h2 className="text-7xl md:text-5xl font-bold mb-6">
                 Cloud & DevOps
               </h2>
-              <p className="text-gray-600 text-base md:text-lg mb-6">
-                GlobalXperts provides end-to-end cloud solutions, from
-                consultancy and migration to 24/7 managed services. We enhance
-                operational efficiency with advanced DevOps and ensure
-                cost-optimized, sustainable cloud infrastructures. Our services
-                deliver long-term value and support throughout the cloud
-                journey.
+              <p className="text-gray-600 text-base md:text-lg mb-8">
+                GlobalXperts offers comprehensive cloud solutions and DevOps to
+                enhance efficiency, sustainability, and cost optimization.
               </p>
               <Link
                 to="/Cloud" // Updated to path string
@@ -57,7 +53,7 @@ function SliderSection() {
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
           {/* Text Section */}
           <div className="text-center lg:text-left lg:w-1/2 lg:pr-8">
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">
+            <h2 className="text-7xl md:text-5xl font-bold text-white sm:text-4xl">
               Value Proposition
             </h2>
             <p className="mt-3 text-xl text-gray-300 sm:mt-4">
@@ -103,16 +99,12 @@ function SliderSection() {
           {/* Left Section */}
           <div className="w-full md:w-3/5 bg-white flex items-center justify-center p-8 md:p-12">
             <div className="max-w-lg text-center md:text-left">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <h2 className="text-7xl md:text-5xl font-bold mb-4">
                 Field Services
               </h2>
               <p className="text-gray-600 text-base md:text-lg mb-6">
-                Our expert technicians provide on-site IT support, ensuring
-                smooth operations and resolving technical challenges
-                efficiently. We proactively identify potential issues to
-                minimize downtime and optimize system performance. From
-                troubleshooting to upgrades, our team is committed to
-                maintaining a secure and robust IT infrastructure.
+                Expert IT support minimizing downtime, optimizing performance,
+                and ensuring secure, reliable operations.
               </p>
               <a
                 href="/service/Field-Services"
@@ -145,14 +137,12 @@ function SliderSection() {
           {/* Right Section */}
           <div className="w-full md:w-2/5 bg-white flex items-center justify-center p-8 md:p-12">
             <div className="max-w-lg text-center md:text-left">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <h2 className="text-7xl md:text-5xl font-bold mb-4">
                 Networking Consulting
               </h2>
               <p className="text-gray-600 text-base md:text-lg mb-6">
-                We offer expert networking consulting to optimize communication
-                and connectivity across teams, departments, and locations. Our
-                solutions streamline workflows and enhance collaboration both
-                internally and with external partners.
+                Optimize communication, enhance collaboration, and streamline
+                workflows with tailored networking solutions.
               </p>
               <a
                 href="#"
@@ -187,19 +177,16 @@ function SliderSection() {
           {/* Left Section */}
           <div className="w-full md:w-2/5 bg-white flex items-center justify-center p-8 md:p-12">
             <div className="max-w-lg text-center md:text-left">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <h2 className="text-7xl md:text-5xl font-bold mb-4">
                 Professional Services
               </h2>
               <p className="text-gray-600 text-base md:text-lg mb-6">
-                Our Professional Services deliver advanced IT solutions to boost
-                your business in the digital age. We provide tailored,
-                innovative services that enhance efficiency and foster
-                sustainable growth. Our focus on excellence ensures your success
-                in a competitive market.
+                Advanced IT services boosting efficiency, innovation, and
+                sustainable growth for digital success.
               </p>
               <a
                 href="#"
-                className="text-blue-500 hover:text-blue-700 font-bold"
+                className="text-blue-500 hover:text-blue-700 font-bold mt-3"
               >
                 Learn more →
               </a>

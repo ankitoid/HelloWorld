@@ -10,7 +10,7 @@ function ServicesHockey() {
     <div className="flex flex-col gap-8 bg-blueCustomColor text-white p-8">
       {/* Section Heading */}
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold mb-4">
+        <h1 className="text-7xl md:text-5xl  font-bold mb-4">
           Our Key Services and Partnerships
         </h1>
         <p className="text-lg">

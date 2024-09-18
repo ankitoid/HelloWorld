@@ -7,7 +7,7 @@ import Img3 from "../Assets/solution-explorer-technology-operations.sm.webp";
 function Slider2() {
   return (
     <div className="container mx-auto mt-5 p-4 md:p-6">
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold py-4 text-center md:text-left">
+      <h1 className="text-7xl md:text-5xl font-bold py-4 text-center md:text-left">
         Transform your business with Us
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">

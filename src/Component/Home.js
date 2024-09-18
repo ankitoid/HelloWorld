@@ -88,7 +88,7 @@ function Home() {
         <div className="w-full bg-greenCustomColor2 p-6 md:p-10 py-10 md:py-16">
           <div className="flex flex-col md:flex-row items-center md:justify-between">
             <div className="text-center md:text-left mb-8 md:mb-0">
-              <h1 className="text-black text-3xl md:text-4xl font-bold font-sans mb-4">
+              <h1 className="text-blacktext-7xl md:text-5xl  font-bold font-sans mb-4">
                 Be a part of the future.
               </h1>
               <p className="text-black text-base md:text-lg font-semibold mb-6">

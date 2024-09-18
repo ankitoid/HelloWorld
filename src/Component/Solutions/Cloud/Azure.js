@@ -1,5 +1,5 @@
 import React from 'react';
-import cloudSerive from "../../../Assets/AI2.jpg";
+import cloudSerive from "../../../Assets/azureIMG.webp";
 import Navbar from '../../Navbar'
 const Azure = () => {
   return (
@@ -10,7 +10,7 @@ const Azure = () => {
           {/* Text Section */}
           <div className="text-center lg:text-left lg:w-1/2 lg:pr-8">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-              Cloud & DevOps
+              Azure
             </h2>
             <p className="mt-3 text-xl text-gray-500 sm:mt-4">
               GlobalXperts leverages its extensive cloud expertise to support clients worldwide at every stage of their cloud journey. From consulting and migration to 24/7 managed services, DevOps, and cost optimization, we provide comprehensive solutions tailored to your unique needs.

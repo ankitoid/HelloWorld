@@ -14,27 +14,20 @@ function ContactUs() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log('Form submitted!');
   };
 
   return (
-    <div
-      className="bg-cover bg-center text-white p-8 py-12"
-      style={{
-        backgroundImage: `url(${bg_image})`,
-      }}
-    >
-     <div className=' flex'> 
-      <h1 className=' w-1.5 h-10 text-4xl font-bold mb-4 bg-greenCustomColor2'></h1>
-     <h2 className="text-4xl font-bold mb-4 mx-3 flex">Connect with <p className=' text-greenCustomColor2 mx-1 font-bold'>Us</p></h2>
-     </div>
+    <div className="relative bg-cover bg-blueCustomColor text-white p-8 py-20">
+      <div className="flex">
+        <h1 className="w-1.5 h-10 text-4xl font-bold mb-4 bg-greenCustomColor2"></h1>
+        <h2 className="text-7xl md:text-5xl font-bold mb-4 mx-3 flex">
+          Connect with <p className="text-greenCustomColor2 mx-1 font-bold">Us</p>
+        </h2>
+      </div>
       <form onSubmit={handleSubmit}>
-        <div className="grid grid-cols-3 gap-4 mt-5 ">
+        <div className="grid grid-cols-3 gap-4 mt-5">
           <div>
-            {/* <label htmlFor="firstName" className="block mb-2">
-              First Name *
-            </label> */}
             <input
               type="text"
               id="firstName"
@@ -45,9 +38,6 @@ function ContactUs() {
             />
           </div>
           <div>
-            {/* <label htmlFor="lastName" className="block mb-2">
-              Last Name *
-            </label> */}
             <input
               type="text"
               id="lastName"
@@ -58,9 +48,6 @@ function ContactUs() {
             />
           </div>
           <div>
-            {/* <label htmlFor="email" className="block mb-2">
-              Email *
-            </label> */}
             <input
               type="email"
               id="email"
@@ -70,10 +57,7 @@ function ContactUs() {
               placeholder="Email *"
             />
           </div>
-          <div className=' mt-2'>
-            {/* <label htmlFor="phone" className="block mb-2">
-              Phone *
-            </label> */}
+          <div className="mt-2">
             <input
               type="tel"
               id="phone"
@@ -83,10 +67,7 @@ function ContactUs() {
               placeholder="Phone *"
             />
           </div>
-          <div className=' mt-2'>
-            {/* <label htmlFor="company" className="block mb-2">
-              Company Name *
-            </label> */}
+          <div className="mt-2">
             <input
               type="text"
               id="company"
@@ -96,25 +77,7 @@ function ContactUs() {
               placeholder="Company Name *"
             />
           </div>
-
-          {/* <div className=' mt-2'>
-            <label htmlFor="company" className="block mb-2">
-              Company Name *
-            </label>
-            <input
-              type="text"
-              id="company"
-              value={company}
-              onChange={(e) => setCompany(e.target.value)}
-              className="w-full px-3 py-2 border-b border-white bg-transparent text-white placeholder-white focus:outline-none focus:ring-0"
-              placeholder="Enquiry Type *"
-            />
-          </div> */}
-
-          <div className=' mt-2'>
-            {/* <label htmlFor="enquiryType" className="block mb-2">
-              Enquiry Type *
-            </label> */}
+          <div className="mt-2">
             <select
               id="enquiryType"
               value={enquiryType}
@@ -122,16 +85,11 @@ function ContactUs() {
               className="w-full px-3 py-2 border-b border-white bg-transparent text-white placeholder-white focus:outline-none focus:ring-0"
             >
               <option value="" disabled>Select an Enquiry Type</option>
-              <option value="" className=' text-gray-400' >Solution Integration</option>
-              <option value="" className=' text-gray-400' >Technology Products</option>
-             
+              <option value="Solution Integration" className="text-gray-400">Solution Integration</option>
+              <option value="Technology Products" className="text-gray-400">Technology Products</option>
             </select>
           </div>
-          
           <div className="col-span-3">
-            {/* <label htmlFor="message" className="block mb-2">
-              Message *
-            </label> */}
             <textarea
               id="message"
               value={message}
@@ -174,7 +132,7 @@ function ContactUs() {
           Submit
         </button>
       </form>
-    </div>
+      </div>
   );
 }
 

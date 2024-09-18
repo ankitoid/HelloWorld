@@ -78,7 +78,7 @@ function CompaniesLogos() {
   
       <div className="w-full lg:w-full p-4 lg:p-8   ">
         <div className="text-gray-600 mb-8">
-          <h3 className="text-2xl lg:text-4xl font-semibold text-black mb-4">
+          <h3 className="text-7xl md:text-5xl  font-semibold text-black mb-4">
             What We Do
           </h3>
           <p className="text-base lg:text-lg leading-relaxed mb-4">
