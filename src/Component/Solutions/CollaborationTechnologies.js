@@ -4,7 +4,7 @@ import comp from "../../Assets/spider.jpg";
 import Footer from "../Footer";
 import v1 from "../../Assets/gradient.mp4";
 import colobraction from "../../Assets/colob1.webp";
-
+import ContactCard from '../Contact/ContactCard'
 import c1 from "../../Assets/cloud2.jpg";
 import c2 from "../../Assets/migration.avif";
 import c3 from "../../Assets/image (10).png";
@@ -309,6 +309,7 @@ function CollaborationTechnologies() {
           </div>
         </div>
         <div>
+          <ContactCard/>
           <Footer />
         </div>
       </div>

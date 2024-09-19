@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-
+import ContactCard from '../Contact/ContactCard'
 import c1 from "../../Assets/audit.png";
 import c2 from "../../Assets/awsfunction.png";
 import c3 from "../../Assets/experties.png";
@@ -380,6 +380,7 @@ function DataCenterDesign() {
           </div>
         </div>
         <div>
+          <ContactCard/>
           <Footer />
         </div>
       </div>

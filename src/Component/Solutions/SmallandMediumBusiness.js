@@ -12,6 +12,8 @@ import s3 from "../../Assets/cloud.avif";
 import s4 from "../../Assets/aws2.jpg";
 import comu from "../../Assets/comunication.jpg";
 import { Link } from "react-router-dom";
+
+import ContactCard from '../Contact/ContactCard'
 function SmallandMediumBusiness() {
   const slides = [
     {
@@ -610,6 +612,7 @@ function SmallandMediumBusiness() {
           </div>
         </div>
         <div>
+          <ContactCard/>
           <Footer />
         </div>
       </div>

@@ -12,6 +12,8 @@ import c1 from "../../Assets/AWservice.jfif";
 import MicrosoftAzure from "../../Assets/MicrosoftAzure.png";
 import c3 from "../../Assets/google2.jpg";
 import { Link } from "react-router-dom";
+import ContactCard from '../Contact/ContactCard'
+
 
 function MultiCloud() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -453,6 +455,7 @@ function MultiCloud() {
           </div>
         </div>
         <div>
+          <ContactCard/>
           <Footer />
         </div>
       </div>

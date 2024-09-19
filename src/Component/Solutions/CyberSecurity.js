@@ -8,6 +8,8 @@ import c2 from "../../Assets/productive.png";
 import c3 from "../../Assets/adaptive.png";
 import c4 from "../../Assets/cuttingedge.png";
 import { Link } from "react-router-dom";
+import ContactCard from '../Contact/ContactCard'
+
 function CyberSecurity() {
   const [activeQuestion, setActiveQuestion] = useState(null);
  
@@ -515,6 +517,7 @@ function CyberSecurity() {
           </div>
         </div>
         <div>
+          <ContactCard/>
           <Footer />
         </div>
       </div>
