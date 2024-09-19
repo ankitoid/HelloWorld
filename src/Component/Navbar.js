@@ -63,8 +63,10 @@ const Navbar = () => {
         isScrollingUp ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <nav className="container mx-auto flex justify-between items-center h-full"                 onMouseLeave={handleMouseLeave}
- >
+      <nav
+        className="container mx-auto flex justify-between items-center h-full"
+        onMouseLeave={handleMouseLeave}
+      >
         {/* Logo */}
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
@@ -87,11 +89,7 @@ const Navbar = () => {
           </li>
 
           {/* Solutions dropdown */}
-          <li
-            className="relative"
-            onMouseEnter={() => handleMouseEnter(1)}
-
-          >
+          <li className="relative" onMouseEnter={() => handleMouseEnter(1)}>
             <Link
               to="#"
               className="flex items-center px-4 py-1 hover:bg-gray-200"
@@ -113,8 +111,6 @@ const Navbar = () => {
                     "linear-gradient(to top right, #fbcfe8, #fdf2f8, #bfdbfe)",
                 }}
                 onMouseLeave={handleMouseLeave}
-
-
               >
                 <ul>
                   <li
@@ -131,24 +127,44 @@ const Navbar = () => {
 
                     {showSubmenu && (
                       <ul
-                        className=" top-0 left-full ml-2 w-80 rounded shadow-lg"
+                        className="top-0 left-full ml-2 w-80 rounded shadow-lg"
                         style={{
                           backgroundImage:
                             "linear-gradient(to right, #f3e5ab, #f4d1ae, #9ec5f1)",
                         }}
                       >
-                        <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded text-center">
-                          <Link to="/solutions/cloud/aws">AWS</Link>
-                        </li>
-                        <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded text-center">
-                          <Link to="/solutions/cloud/azure">Azure</Link>
-                        </li>
-                        <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded text-center">
-                          <Link to="/solutions/cloud/GCP">GCP</Link>
-                        </li>
-                        <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded text-center">
-                          <Link to="/solutions/cloud/devops">DevOps</Link>
-                        </li>
+                        <Link
+                          to="/solutions/cloud/aws"
+                          onClick={() => setShowSubmenu(false)}
+                        >
+                          <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded text-center">
+                            AWS
+                          </li>
+                        </Link>
+                        <Link
+                          to="/solutions/cloud/azure"
+                          onClick={() => setShowSubmenu(false)}
+                        >
+                          <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded text-center">
+                            Azure
+                          </li>
+                        </Link>
+                        <Link
+                          to="/solutions/cloud/gcp"
+                          onClick={() => setShowSubmenu(false)}
+                        >
+                          <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded text-center">
+                            GCP
+                          </li>
+                        </Link>
+                        <Link
+                          to="/solutions/cloud/devops"
+                          onClick={() => setShowSubmenu(false)}
+                        >
+                          <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded text-center">
+                            DevOps
+                          </li>
+                        </Link>
                       </ul>
                     )}
                   </li>

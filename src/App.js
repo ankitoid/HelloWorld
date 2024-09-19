@@ -124,7 +124,7 @@ export default function App() {
           <Route path="/service/Professional-Services" element={<ProfessionalServices />} />
 
           {/* Company */}
-          <Route path="/about" element={<About />} />
+          <Route path="/Company/about" element={<About />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact-us" element={<ContactUs />} />
 

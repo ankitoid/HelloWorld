@@ -20,23 +20,17 @@ const HeroSection = () => {
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      setDisplayedText(
-        (prevText) => prevText + texts[currentTextIndex][charIndex]
-      );
+      setDisplayedText((prevText) => prevText + texts[currentTextIndex][charIndex]);
       setCharIndex((prevIndex) => prevIndex + 1);
     }, 100);
 
     if (charIndex === texts[currentTextIndex].length) {
       clearTimeout(timeoutId);
       setTimeout(() => {
-        setFade(false); // Start fading out
-        setTimeout(() => {
-          setDisplayedText("");
-          setCharIndex(0);
-          setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-          setFade(true); // Fade back in with new text
-        }, 500); // Fade out duration
-      }, 4000); // Wait 2 seconds before starting the next text
+        setDisplayedText('');
+        setCharIndex(0);
+        setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+      }, 2000); // Wait 2 seconds before starting the next text
     }
 
     return () => clearTimeout(timeoutId);
@@ -44,34 +38,39 @@ const HeroSection = () => {
 
   return (
     <div className="relative h-screen">
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0 mt-8 overflow-hidden">
-        <img src={bgImg} alt="Background" />
+        {/* <video
+          src={Tvideo}
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          muted
+          autoPlay
+          loop
+          playsInline
+        ></video> */}
+        <img src={bgImg}/>
       </div>
-
       <div className="relative z-10 flex items-center justify-center md:justify-start h-full w-full px-2 md:px-16">
-        <div className="py-30 mb-56 pb-5 rounded-lg w-full md:w-1/2 lg:w-1/3 h-auto">
-          <h1 className="text-7xl md:text-5xl font-bold mb-6 whitespace-nowrap gap-2 leading-relaxed">
-            AI-Synergised Cloud Products <br />
-            <span className="block mb-3"></span>{" "}
-            {/* Adds a small gap between the lines */}
-            Built for{" "}
-            <span
-              className={`text-4xl md:text-5xl font-bold inline-block border-2 rounded-full px-4 py-1 transition-all duration-500 ease-in-out font-lumanosimo ${
-                fade ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-5"
-              }`}
-              style={{
-                backgroundImage:
-                  "linear-gradient(to right, #fbcfe8, #f3f4f6, #7dd3fc)",
-                borderColor: "#f3e5ab",
-                transition: "all 0.5s ease-in-out",
-              }}
-            >
-              {displayedText}
-            </span>
-          </h1>
+      <div className="   py-30  md:py-30 mb-72 pb-5  rounded-lg md:rounded-r-lg w-full md:w-1/2 lg:w-1/3 h-auto">
+          <h1 className="text-7xl md:text-5xl font-bold mb-6 whitespace-nowrap justify-center items-center mr-12">
+           AI-Synergised Cloud Products Build For          </h1>
+
+          <div className="absolute p-4 border-2 border-greenCustomColor rounded-full flex flex-col items-center mr-28">
+            <p className="text-7xl md:text-5xl font-bold  ">{displayedText}</p>
+          </div>
+
+          
         </div>
       </div>
+
+      {/* Contact Us Icon */}
+      {/* <div className="absolute right-0 bottom-10 md:bottom-16 transform -translate-y-1/2 mr-4 md:mr-8 py-2 bg-greenCustomColor2 rounded-full">
+        <button className="px-4 md:px-5 rounded-full">
+          <a href="mailto:contact@example.com" className="text-white text-lg md:text-xl">
+            Contact Us
+          </a>
+        </button>
+      </div> */}
     </div>
   );
 };

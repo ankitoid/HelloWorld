@@ -8,9 +8,9 @@ import ServiceImgage from "../../Assets/casestudy.png"
 
 const CaseStudies = () => {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-white">
       <Navbar />
-      <div className="bg-gray-200 py-12 px-4 sm:px-6 lg:px-8 mt-14">
+      <div className="bg-white py-12 px-4 sm:px-6 lg:px-8 mt-14">
               <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
                 {/* Text Section */}
                 <div className="text-center lg:text-left lg:w-1/2 lg:pr-8">
@@ -19,8 +19,6 @@ const CaseStudies = () => {
                   </h2>
                   <p className="mt-3 text-xl text-gray-500 sm:mt-4">
                   “Unleashing the power of technology: Real-world success stories from our IT solutions.”
-
-
                   </p>
                 </div>
                 {/* Image Section */}
@@ -33,7 +31,7 @@ const CaseStudies = () => {
                 </div>
               </div>
               </div>
-      <div className="bg-gray-100 ">
+      <div className=" ">
         
         <div className="bg-gradient-to-r from-pink-200 via-pink-100 to-blue-200 p-1 flex items-center justify-center">
           <img
@@ -45,11 +43,11 @@ const CaseStudies = () => {
 
         <div className="flex justify-center mt-8 gap-6">
           {/* Card 1 */}
-          <div className="bg-blue-100 p-6 rounded-lg shadow-lg w-80">
-            <h2 className="text-lg font-semibold mb-2">
+          <div className="bg-white p-6 rounded-lg shadow-lg w-80">
+            <h2 className="text-lg font-semibold mb-3">
               Case Study: Media Streaming Tier 1 Sporting Franchise
             </h2>
-            <p className="text-sm text-gray-700">
+            <p className="text-sm text-gray-700 mb-4">
               Service Type: Managed Services Vertical: Media and Entertainment
               Contract: Active Challenge: The "Sports Franchise" faced
               increasing fan frustration due to unreliable live streaming during
@@ -57,7 +55,7 @@ const CaseStudies = () => {
             </p>
             <a
               href="/CaseStudies3"
-              className="text-green-600 font-bold mt-2 block hover:underline"
+              className="bg-greenCustomColor2 rounded py-1 px-1 font-bold mt-8  hover:underline"
             >
               READ MORE »
             </a>
@@ -65,11 +63,11 @@ const CaseStudies = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-blue-100 p-6 rounded-lg shadow-lg w-80">
-            <h2 className="text-lg font-semibold mb-8">
+          <div className="bg-white p-6 rounded-lg shadow-lg w-80">
+            <h2 className="text-lg font-semibold mb-2">
               Case Study: Close Up Foundation AWS EC2 Project
             </h2>
-            <p className="text-sm text-gray-700">
+            <p className="text-sm text-gray-700 mb-4">
               Service Type: Professional Services Vertical: Non-Profit Contract:
               Complete Customer Information: Founded in 1971, Close Up
               Foundation is a nonprofit, nonpartisan, civic education
@@ -77,7 +75,7 @@ const CaseStudies = () => {
             </p>
             <a
               href="/CaseStudies4"
-              className="text-green-600 font-bold mt-2 block hover:underline"
+              className=" bg-greenCustomColor2 rounded py-1 px-1 font-bold mt-2   hover:underline"
             >
               READ MORE »
             </a>
@@ -86,7 +84,7 @@ const CaseStudies = () => {
         </div>
       </div>
 
-      <div className="bg-gray-100 mt-10">
+      <div className=" mt-10">
         <div className="bg-gradient-to-r from-pink-200 via-pink-50 to-blue-200 p-2 flex items-center justify-center ">
           <img
             src={AristaLogo}
@@ -97,14 +95,14 @@ const CaseStudies = () => {
 
         <div className="flex justify-center mt-8 gap-6">
           {/* Card 1 */}
-          <div className="bg-blue-100 p-6 rounded-lg shadow-lg w-80">
-            <h2 className="text-lg font-semibold mb-2">
+          <div className="bg-white p-6 rounded-lg shadow-lg w-80">
+            <h2 className="text-lg font-semibold mb-32">
               Arista Data Center Implementation
             </h2>
             <p className="text-sm text-gray-700"></p>
             <a
               href="/CaseStudies1"
-              className="text-green-600 font-bold mt-32 block hover:underline"
+              className="bg-greenCustomColor2 py-1 px-1 font-bold mt-36 rounded hover:underline"
             >
               READ MORE »
             </a>
@@ -112,12 +110,12 @@ const CaseStudies = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-blue-100 p-6 rounded-lg shadow-lg w-80">
+          <div className="bg-white p-6 rounded-lg shadow-lg w-80">
                    <a
- className="text-lg font-semibold mb-2">
+                      className="text-lg font-semibold mb-6">
               Arista Install Services for Entel-Chile – Case Study
             </a>
-            <p className="text-sm text-gray-700">
+            <p className="text-sm text-gray-700 mb-2">
               Case Study Detail Company name: Arista/EntelCase Study Title:
               Arista Implementation Services for EntelCase Study Short
               Description: Arista was seeking onsite professional services,
@@ -125,7 +123,7 @@ const CaseStudies = () => {
             </p>
             <a
               href="/CaseStudies2"
-              className="text-green-600 font-bold mt-2 block hover:underline"
+              className="bg-greenCustomColor2 rounded py-1 px-1 font-bold mt-6 hover:underline"
             >
               READ MORE »
             </a>
