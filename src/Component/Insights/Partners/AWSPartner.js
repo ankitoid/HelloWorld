@@ -84,7 +84,7 @@ const AWSPartner = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white py-12 mt-8">
+      <div className="bg-white py-12 mt-8 ">
         <div className="max-w-7xl mx-auto px-4">
           {/* Title Section */}
           <div className="text-center mb-12">
@@ -101,7 +101,7 @@ const AWSPartner = () => {
           </div>
 
           {/* Badge Section */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className=" grid grid-cols-1 sm:grid-cols-2 gap-8">
             {/* Block Storage Badge */}
             <div className="text-center p-6 bg-white rounded-lg shadow-lg">
               <div className="bg-white rounded-lg flex items-center justify-center mb-4">
@@ -150,7 +150,7 @@ const AWSPartner = () => {
         in designing, deploying, and managing cloud solutions on AWS.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
         {certifications.map((cert, index) => (
           <div key={index} className="bg-white rounded-lg shadow-lg p-6">
             <img
@@ -165,6 +165,9 @@ const AWSPartner = () => {
           </div>
         ))}
       </div>
+      <h2 className="text-4xl font-bold text-center mb-8 mt-8 ">
+        Staff Members - AWS Certifications
+      </h2>
     </>
   );
 };
