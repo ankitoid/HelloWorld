@@ -57,8 +57,8 @@ const Navbar = () => {
         isScrolled
           ? inSliderSection
             ? "rounded-lg bg-white/80 shadow-lg"
-            : "bg-gradient-to-r from-pink-200 via-pink-50 to-blue-200"
-          : "bg-gradient-to-r from-pink-200 via-pink-50 to-blue-200"
+            : "bg-gradient-to-r from-white via-blue-50 to-blue-300"
+          : "bg-gradient-to-r from-white via-blue-50 to-blue-300"
       } transition-all duration-300 w-full h-16 fixed top-0 z-50 ${
         isScrollingUp ? "translate-y-0" : "-translate-y-full"
       }`}
