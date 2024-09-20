@@ -80,7 +80,7 @@ const Navbar = () => {
           <li className="relative" onMouseEnter={() => handleMouseEnter(0)}>
             <Link
               to="/"
-              className="flex items-center px-4 py-1"
+              className="flex items-center px-4 py-1 hover:text-greenCustomColor hover:font-bold"
               onClick={() => handleToggle(0)}
             >
               <FaHome className="mr-2" />
@@ -92,7 +92,7 @@ const Navbar = () => {
           <li className="relative" onMouseEnter={() => handleMouseEnter(1)}>
             <Link
               to="#"
-              className="flex items-center px-4 py-1 hover:bg-gray-200"
+              className="flex items-center px-4 py-1 hover:text-greenCustomColor hover:font-bold  "
               onClick={() => handleToggle(1)}
             >
               Solutions
@@ -108,36 +108,36 @@ const Navbar = () => {
                 className="absolute top-full mt-4 left-0 shadow-xl p-2 z-10"
                 style={{
                   backgroundImage:
-                    "linear-gradient(to top right, #fbcfe8, #fdf2f8, #bfdbfe)",
+                    "linear-gradient(to top right, #ffffff, #fdf2f8, #bfdbfe)",
                 }}
                 onMouseLeave={handleMouseLeave}
               >
                 <ul>
                   <li
-                    className="relative group"
+                    className=" "
                     onMouseEnter={() => setShowSubmenu(true)}
                     onMouseLeave={() => setShowSubmenu(false)}
                   >
                     <Link
                       to="/solutions/cloud"
-                      className="block p-2 rounded whitespace-nowrap hover:text-white hover:bg-greenCustomColor2 hover:px-2"
+                      className="block p-2 rounded whitespace-nowrap hover:font-bold hover:text-white hover:bg-greenCustomColor2 hover:px-2"
                     >
                       Cloud & DevOps
                     </Link>
 
                     {showSubmenu && (
                       <ul
-                        className="top-0 left-full ml-2 w-80 rounded shadow-lg"
+                        className="top-0 left-full ml-2 w-80 rounded shadow-sm "
                         style={{
                           backgroundImage:
-                            "linear-gradient(to right, #f3e5ab, #f4d1ae, #9ec5f1)",
+                            "linear-gradient(to right, #fdf2f8, #fdf2f8, #dbeafe)",
                         }}
                       >
                         <Link
                           to="/solutions/cloud/aws"
                           onClick={() => setShowSubmenu(false)}
                         >
-                          <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded text-center">
+                          <li className="hover:bg-greenCustomColor2 hover:font-bold hover:text-white p-2 rounded text-center">
                             AWS
                           </li>
                         </Link>
@@ -145,7 +145,7 @@ const Navbar = () => {
                           to="/solutions/cloud/azure"
                           onClick={() => setShowSubmenu(false)}
                         >
-                          <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded text-center">
+                          <li className="hover:bg-greenCustomColor2 hover:font-bold hover:text-white p-2 rounded text-center">
                             Azure
                           </li>
                         </Link>
@@ -153,7 +153,7 @@ const Navbar = () => {
                           to="/solutions/cloud/gcp"
                           onClick={() => setShowSubmenu(false)}
                         >
-                          <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded text-center">
+                          <li className="hover:bg-greenCustomColor2 hover:font-bold hover:text-white p-2 rounded text-center">
                             GCP
                           </li>
                         </Link>
@@ -161,7 +161,7 @@ const Navbar = () => {
                           to="/solutions/cloud/devops"
                           onClick={() => setShowSubmenu(false)}
                         >
-                          <li className="hover:bg-greenCustomColor2 hover:text-white p-2 rounded text-center">
+                          <li className="hover:bg-greenCustomColor2 hover:font-bold hover:text-white p-2 rounded text-center">
                             DevOps
                           </li>
                         </Link>
@@ -172,7 +172,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/solutions/collaboration-technologies"
-                      className="block p-2 rounded hover:bg-greenCustomColor2 hover:text-white whitespace-nowrap hover:px-2"
+                      className="block p-2 rounded hover:bg-greenCustomColor2 hover:font-bold hover:text-white whitespace-nowrap hover:px-2"
                     >
                       Collaboration Technologies Design/Build
                     </Link>
@@ -181,7 +181,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/solutions/data-center-design"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap hover:px-2"
+                      className="block hover:bg-greenCustomColor2 hover:font-bold hover:text-white p-2 rounded whitespace-nowrap hover:px-2"
                     >
                       Data Center Design/Build
                     </Link>
@@ -190,7 +190,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/solutions/multi-cloud"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap hover:px-2"
+                      className="block hover:bg-greenCustomColor2 hover:font-bold hover:text-white p-2 rounded whitespace-nowrap hover:px-2"
                     >
                       Multi-Cloud Solutions
                     </Link>
@@ -199,7 +199,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/solutions/cyber-security"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap hover:px-2"
+                      className="block hover:bg-greenCustomColor2 hover:font-bold hover:text-white p-2 rounded whitespace-nowrap hover:px-2"
                     >
                       Cyber Security
                     </Link>
@@ -208,7 +208,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/solutions/small-medium-business"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap hover:px-2"
+                      className="block hover:bg-greenCustomColor2 hover:font-bold hover:text-white p-2 rounded whitespace-nowrap hover:px-2"
                     >
                       Small and Medium Business
                     </Link>
@@ -217,7 +217,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/solutions/GenAI"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap hover:px-2"
+                      className="block hover:bg-greenCustomColor2 hover:font-bold hover:text-white p-2 rounded whitespace-nowrap hover:px-2"
                     >
                       GenAI
                     </Link>
@@ -226,7 +226,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/solutions/Networking"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap hover:px-2"
+                      className="block hover:bg-greenCustomColor2 hover:font-bold hover:text-white p-2 rounded whitespace-nowrap hover:px-2"
                     >
                       Networking
                     </Link>
@@ -239,7 +239,7 @@ const Navbar = () => {
           {/* Service link */}
           <li className="relative" onMouseEnter={() => handleMouseEnter(2)}>
             <Link
-              className="flex items-center px-4 py-1 hover:bg-gray-200"
+              className="flex items-center px-4 py-1 hover:text-greenCustomColor hover:font-bold"
               onClick={() => handleToggle(2)}
             >
               Service
@@ -253,13 +253,17 @@ const Navbar = () => {
             {openIndex === 2 && (
               <div
                 className="absolute top-full mt-2 left-0 bg-white shadow-lg rounded p-4"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(to top right, #fdf2f8, #fdf2f8, #bfdbfe)",
+                }}
                 onMouseLeave={handleMouseLeave}
               >
                 <ul>
                   <li>
                     <Link
                       to="/service/Field-Services"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
+                      className="block hover:bg-greenCustomColor2  hover:font-bold hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Field Services
                     </Link>
@@ -267,7 +271,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/service/Managed-Services"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
+                      className="block hover:bg-greenCustomColor2  hover:font-bold hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Managed Services
                     </Link>
@@ -275,7 +279,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/service/Professional-Services"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
+                      className="block hover:bg-greenCustomColor2  hover:font-bold hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Professional Services
                     </Link>
@@ -288,7 +292,7 @@ const Navbar = () => {
           {/* Industries link */}
           <li className="relative" onMouseEnter={() => handleMouseEnter(3)}>
             <Link
-              className="flex items-center px-4 py-1 hover:bg-gray-200"
+              className="flex items-center px-4 py-1 hover:text-greenCustomColor hover:font-bold"
               onClick={() => handleToggle(3)}
             >
               Industries
@@ -302,13 +306,17 @@ const Navbar = () => {
             {openIndex === 3 && (
               <div
                 className="absolute top-full mt-2 left-0 bg-white shadow-lg rounded p-4"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(to top right, #fce7f3, #fdf2f8, #bfdbfe)",
+                }}
                 onMouseLeave={handleMouseLeave}
               >
                 <ul>
                   <li>
                     <Link
                       to="/Industries/Education"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
+                      className="block hover:bg-greenCustomColor2  hover:font-bold hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Education
                     </Link>
@@ -316,7 +324,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/Industries/Energy"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
+                      className="block hover:bg-greenCustomColor2  hover:font-bold hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Energy
                     </Link>
@@ -325,15 +333,15 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/Industries/Healthcare"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
+                      className="block hover:bg-greenCustomColor2  hover:font-bold hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Healthcare
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="/Industries/Financial"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
+                      to="/Industries/Financial" 
+                      className="block hover:bg-greenCustomColor2  hover:font-bold hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Financial
                     </Link>
@@ -341,7 +349,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/Industries/Retail"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
+                      className="block hover:bg-greenCustomColor2  hover:font-bold hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Retail
                     </Link>
@@ -350,7 +358,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/Industries/MediaEnter"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
+                      className="block hover:bg-greenCustomColor2  hover:font-bold hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Media & Entertainment
                     </Link>
@@ -359,7 +367,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/Industries/ServiceProvider"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
+                      className="block hover:bg-greenCustomColor2  hover:font-bold hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Service Provider
                     </Link>
@@ -367,7 +375,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/Industries/Goverment"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
+                      className="block hover:bg-greenCustomColor2  hover:font-bold hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Government
                     </Link>
@@ -380,7 +388,7 @@ const Navbar = () => {
           {/* Insights link */}
           <li className="relative" onMouseEnter={() => handleMouseEnter(4)}>
             <Link
-              className="flex items-center px-4 py-1 hover:bg-gray-200"
+              className="flex items-center px-4 py-1 hover:text-greenCustomColor hover:font-bold"
               onClick={() => handleToggle(4)}
             >
               Insights
@@ -393,13 +401,17 @@ const Navbar = () => {
             {openIndex === 4 && (
               <div
                 className="absolute top-full mt-2 left-0 bg-white shadow-lg rounded p-4"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(to top right, #fbcfe8, #fdf2f8, #bfdbfe)",
+                }}
                 onMouseLeave={handleMouseLeave}
               >
                 <ul>
                   <li>
                     <Link
                       to="/Insights/Blog"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
+                      className="block hover:bg-greenCustomColor2  hover:font-bold hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Blog
                     </Link>
@@ -408,8 +420,8 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/Insights/CaseStudies"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
-                    >
+                      className="block hover:bg-greenCustomColor2  hover:font-bold hover:text-white p-2 rounded whitespace-nowrap"
+                    > 
                       Case Studies
                     </Link>
                   </li>
@@ -417,7 +429,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/Insights/Media-Library"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
+                      className="block hover:bg-greenCustomColor2  hover:font-bold hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Media Library
                     </Link>
@@ -425,7 +437,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/Insights/Partners"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
+                      className="block hover:bg-greenCustomColor2  hover:font-bold hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Partners
                     </Link>
@@ -439,7 +451,7 @@ const Navbar = () => {
           <li className="relative" onMouseEnter={() => handleMouseEnter(6)}>
             <Link
               to="#"
-              className="flex items-center px-4 py-1 hover:bg-gray-200 whitespace-nowrap"
+              className="flex items-center px-4 py-1 hover:text-greenCustomColor hover:font-bold whitespace-nowrap"
               onClick={() => handleToggle(6)}
             >
               Company
@@ -452,13 +464,17 @@ const Navbar = () => {
             {openIndex === 6 && (
               <div
                 className="absolute top-full mt-2 left-0 bg-white shadow-lg rounded p-4"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(to top right, #f9a8d4, #fdf2f8, #bfdbfe)",
+                }}
                 onMouseLeave={handleMouseLeave}
               >
                 <ul>
                   <li>
                     <Link
                       to="/Company/About"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
+                      className="block hover:bg-greenCustomColor2  hover:font-bold hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       About
                     </Link>
@@ -467,7 +483,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/Careers"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
+                      className="block hover:bg-greenCustomColor2  hover:font-bold hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Careers
                     </Link>
@@ -476,7 +492,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/Company/ContactUs"
-                      className="block hover:bg-greenCustomColor2 hover:text-white p-2 rounded whitespace-nowrap"
+                      className="block hover:bg-greenCustomColor2  hover:font-bold  hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Contact Us
                     </Link>

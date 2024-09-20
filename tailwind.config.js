@@ -39,9 +39,10 @@ module.exports = {
       colors: {
         blueCustomColor: '#0c2b3b',
         greenCustomColor: '#068f36',
-        greenCustomColor2: '#04c45b',
+        greenCustomColor2: '#27e600',
         CustomHeading: '#000000',
         CustomContent: '#727573',
+        greenButton : '#27e600'
       },
       animation: {
         slide: 'slide 20s linear infinite',
