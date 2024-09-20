@@ -168,6 +168,9 @@ const AWSPartner = () => {
       <h2 className="text-4xl font-bold text-center mb-8 mt-8 ">
         Staff Members - AWS Certifications
       </h2>
+      <div>
+        
+      </div>
     </>
   );
 };
