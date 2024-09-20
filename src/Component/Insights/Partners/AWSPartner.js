@@ -8,8 +8,12 @@ import c3 from "../../../Assets/certi3.png";
 import c4 from "../../../Assets/certi4.png";
 import c5 from "../../../Assets/certi5.png";
 import c6 from "../../../Assets/certi6.png";
-
+import trunas from "../../../Assets/trnas.png";
+import veeam from "../../../Assets/veeam.webp";
 import Navbar from "../../Navbar";
+
+import spTier from "../../../Assets/spTier.png";
+import ContactCard from "../../Contact/ContactCard";
 const AWSPartner = () => {
   const certifications = [
     {
@@ -168,9 +172,119 @@ const AWSPartner = () => {
       <h2 className="text-4xl font-bold text-center mb-8 mt-8 ">
         Staff Members - AWS Certifications
       </h2>
-      <div>
-        
+      <div></div>
+      <div className=" max-w-7xl mx-auto flex items-center space-x-2 mb-8">
+        <h2 className=" text-start  ml-10 text-3xl font-bold">
+          AWS Storage Partners
+        </h2>
       </div>
+
+      {/* Partners Section */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Veeam Partner */}
+        <div className="max-w-7xl mx-auto flex-col items-center">
+          <img src={veeam} alt="Veeam Logo" className="w-48 mb-4" />
+          <p className="text-center">
+            <strong>Veeam is the #1 Market Leader</strong> used by:
+          </p>
+          <ul className="list-disc list-inside">
+            <li>81 percent of Fortune 500 companies</li>
+            <li>72 percent of the Global 2000</li>
+          </ul>
+        </div>
+
+        {/* TrueNAS Partner */}
+        <div className="flex flex-col items-center">
+          <img src={trunas} alt="TrueNAS Logo" className="w-48 mb-4" />
+          <p className="text-center">
+            <strong>IX Systems – TrueNAS Enterprise</strong> software/hardware
+            and services are a good fit for small and medium businesses. They
+            help fill the gap between commodity hardware and enterprise
+            solutions. Their support offerings and high availability deployments
+            and attractive price point make it a viable option for small and
+            medium businesses when on-site storage is an operational
+            requirement.
+          </p>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 items-center">
+        {/* Partner Status Heading */}
+        <div className="font-bold text-3xl ml-0 md:ml-4 flex flex-col justify-center">
+          <h1 className="text-left">Partner Status</h1>
+        </div>
+
+        {/* Partner Image */}
+        <div className="flex flex-col items-start w-full h-full">
+          <img
+            src={spTier}
+            alt="Partner Logo"
+            className="w-full h-auto max-w-2xl" // Full width, maintain aspect ratio
+          />
+        </div>
+      </div>
+
+      {/* capabilities */}
+      <h2 className="text-4xl font-bold mb-8 text-black">GX Capabilities</h2>
+
+      {/* Capability Sections */}
+      <div className="space-y-12">
+        {/* Section 1 */}
+        <div className="flex space-x-4 items-start">
+          <div className="border-t-4 border-l-4 border-blue-600 w-10 h-10"></div>
+          <div>
+            <h3 className="text-2xl font-bold mb-2">
+              Comprehensive AWS Cloud Solutions
+            </h3>
+            <p className="text-gray-700">
+              At GlobalXperts, we offer a wide range of AWS cloud solutions
+              designed to meet the diverse needs of your business. From initial
+              migration to ongoing management, our services ensure optimal
+              performance and cost efficiency. Read more at our{" "}
+              <a href="/cloud-space" className="text-blue-600 hover:underline">
+                Cloud Space
+              </a>{" "}
+              page.
+            </p>
+          </div>
+        </div>
+
+        {/* Section 2 */}
+        <div className="flex space-x-4 items-start">
+          <div className="border-t-4 border-l-4 border-blue-600 w-10 h-10"></div>
+          <div>
+            <h3 className="text-2xl font-bold mb-2">
+              Efficient AWS Migration Services
+            </h3>
+            <p className="text-gray-700">
+              Migrating to AWS can transform your business operations. Our AWS
+              migration services are tailored to reduce the migration cost and
+              ensure a smooth transition. We provide end-to-end support,
+              minimizing downtime and disruption, while our cost-effective
+              strategies help manage the AWS migration cost effectively.
+            </p>
+          </div>
+        </div>
+
+        {/* Section 3 */}
+        <div className="flex space-x-4 items-start">
+          <div className="border-t-4 border-l-4 border-blue-600 w-10 h-10"></div>
+          <div>
+            <h3 className="text-2xl font-bold mb-2">
+              Advanced AWS Optimization Techniques
+            </h3>
+            <p className="text-gray-700 mb-10">
+              To get the most out of your AWS investment, our AWS optimization
+              services focus on enhancing performance and efficiency. We ensure
+              that your AWS environment is finely tuned to meet your business
+              goals, with a strong emphasis on AWS cost optimization to keep
+              your expenses in check.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <ContactCard />
     </>
   );
 };
