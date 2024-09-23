@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { FaHome, FaChevronDown, FaChevronUp } from "react-icons/fa";
+import {
+  FaHome,
+  FaChevronDown,
+  FaChevronUp,
+  FaBars,
+  FaTimes,
+} from "react-icons/fa";
 import { Link } from "react-router-dom";
 import lg from "../Assets/lg1.png";
 
@@ -10,6 +16,7 @@ const Navbar = () => {
   const [isScrollingUp, setIsScrollingUp] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showSubmenu, setShowSubmenu] = useState(false);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   const handleToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -51,6 +58,9 @@ const Navbar = () => {
     };
   }, [lastScrollY]);
 
+  const toggleMobileMenu = () => {
+    setShowMobileMenu(!showMobileMenu);
+  };
   return (
     <div
       className={`${
@@ -340,7 +350,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link
-                      to="/Industries/Financial" 
+                      to="/Industries/Financial"
                       className="block hover:bg-greenCustomColor2  hover:font-bold hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Financial
@@ -421,7 +431,7 @@ const Navbar = () => {
                     <Link
                       to="/Insights/CaseStudies"
                       className="block hover:bg-greenCustomColor2  hover:font-bold hover:text-white p-2 rounded whitespace-nowrap"
-                    > 
+                    >
                       Case Studies
                     </Link>
                   </li>
@@ -505,7 +515,7 @@ const Navbar = () => {
 
         {/* Get Started Link */}
         <div className="flex items-center ">
-          <div className="py-5 px-4 md:px-6 hover:rounded-l-full hover:bg-greenCustomColor bg-greenCustomColor2 transition-all duration-300">
+          <div className="py-5  scroll-px-3 lg:py-5 lg:px-4 md:px-6 lg:hover:rounded-l-full hover:bg-greenCustomColor bg-greenCustomColor2 transition-all duration-300">
             <Link
               to="/get-started"
               className="text-white font-bold text-sm md:text-base"
@@ -514,6 +524,184 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
+        {/* Mobile Navigation */}
+        <button className="md:hidden p-4" onClick={toggleMobileMenu}>
+          {showMobileMenu ? <FaTimes /> : <FaBars />}
+        </button>
+
+        {/* Mobile Menu */}
+        {showMobileMenu && (
+          <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-lg p-4">
+            <ul className="flex flex-col space-y-4">
+              <li>
+                <Link to="/" className="px-4 py-2">
+                  Home
+                </Link>
+              </li>
+
+              {/* Industries Mobile Dropdown */}
+              <li>
+                <button
+                  className="w-full text-left"
+                  onClick={() => handleToggle(1)}
+                >
+                  Service
+                </button>
+                {openIndex === 1 && (
+                  <ul className="pl-4 space-y-2">
+                    <li>
+                      <Link to="/service/Field-Services">Cloud & DevOps</Link>
+                    </li>
+                    <li>
+                      <Link to="/solutions/collaboration-technologies">
+                        Collaboration Technologies Design/Build
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/solutions/data-center-design">
+                        Data Center Design/Build{" "}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/solutions/multi-cloud">
+                        Multi Cloud Solutions{" "}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/solutions/cyber-security">
+                        {" "}
+                        Cyber Security{" "}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/solutions/small-medium-business">
+                        {" "}
+                        Small and Medium Business{" "}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/solutions/GenAI">GenAI </Link>
+                    </li>
+                    <li>
+                      <Link to="/solutions/Networking">Networking </Link>
+                    </li>
+                  </ul>
+                )}
+              </li>
+              <li>
+                <button
+                  className="w-full text-left"
+                  onClick={() => handleToggle(2)}
+                >
+                  Service
+                </button>
+                {openIndex === 2 && (
+                  <ul className="pl-4 space-y-2">
+                    <li>
+                      <Link to="/service/Field-Services"> Field Services</Link>
+                    </li>
+                    <li>
+                      <Link to="/service/Managed-Services">
+                        {" "}
+                        Managed Services
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/service/Professional-Services">
+                        Professional Services
+                      </Link>
+                    </li>
+                  </ul>
+                )}
+              </li>
+              <li>
+                <button
+                  className="w-full text-left"
+                  onClick={() => handleToggle(3)}
+                >
+                  Industries
+                </button>
+                {openIndex === 3 && (
+                  <ul className="pl-4 space-y-2">
+                    <li>
+                      <Link to="/Industries/Education">Education</Link>
+                    </li>
+                    <li>
+                      <Link to="/Industries/Energy">Energy</Link>
+                    </li>
+                    <li>
+                      <Link to="/Industries/Healthcare">Healthcare</Link>
+                    </li>
+                    <li>
+                      <Link to="/Industries/Financial">Financial</Link>
+                    </li>
+                    <li>
+                      <Link to="/Industries/Retail">Retail</Link>
+                    </li>
+                    <li>
+                      <Link to="/Industries/MediaEnter">
+                        Media & Entertainment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/Industries/ServiceProvider">
+                        Service Provider
+                      </Link>
+                    </li>
+                  </ul>
+                )}
+              </li>
+              <li>
+                <button
+                  className="w-full text-left"
+                  onClick={() => handleToggle(4)}
+                >
+                  Insights
+                </button>
+                {openIndex === 4 && (
+                  <ul className="pl-4 space-y-2">
+                    <li>
+                      <Link to="/Insights/Blog">Blog</Link>
+                    </li>
+                    <li>
+                      <Link to="/Insights/CaseStudies">Case Studies</Link>
+                    </li>
+                    <li>
+                      <Link to="/Insights/Media-Library"> Media Library</Link>
+                    </li>
+                  </ul>
+                )}
+              </li>
+
+              <li>
+                <button
+                  className="w-full text-left"
+                  onClick={() => handleToggle(6)}
+                >
+                  Company
+                </button>
+                {openIndex === 6 && (
+                  <ul className="pl-4 space-y-2">
+                    <li>
+                      <Link to="/Company/About">About</Link>
+                    </li>
+                    <li>
+                      <Link to="/Careers">Careers</Link>
+                    </li>
+                    <li>
+                      <Link to="/Company/ContactUs">ContactUS</Link>
+                    </li>
+                  </ul>
+                )}
+              </li>
+
+              {/* Get Started for Mobile */}
+              <div className="bg-greenCustomColor2 text-white px-6 py-3 text-center rounded">
+                <Link to="/get-started">Get Started</Link>
+              </div>
+            </ul>
+          </div>
+        )}
       </nav>
     </div>
   );

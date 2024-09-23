@@ -219,66 +219,47 @@ const AWSPartner = () => {
           <img
             src={spTier}
             alt="Partner Logo"
-            className="w-full h-auto max-w-2xl" // Full width, maintain aspect ratio
+            className="w-full h-auto max-w-4xl" // Full width, maintain aspect ratio
           />
         </div>
       </div>
 
       {/* capabilities */}
-      <h2 className="text-4xl font-bold mb-8 text-black">GX Capabilities</h2>
+      <h2 className=" max-w-7xl mx-auto text-4xl text-center mt-10   font-bold mb-8 text-black">
+        GX Capabilities
+      </h2>
 
       {/* Capability Sections */}
-      <div className="space-y-12">
+      <div className="max-w-7xl mx-auto flex flex-col items-center px-4 space-y-12 py-10">
         {/* Section 1 */}
-        <div className="flex space-x-4 items-start">
-          <div className="border-t-4 border-l-4 border-blue-600 w-10 h-10"></div>
-          <div>
-            <h3 className="text-2xl font-bold mb-2">
-              Comprehensive AWS Cloud Solutions
-            </h3>
+        <div className="flex flex-col lg:flex-row lg:space-x-4 items-center lg:items-start">
+          <div className="w-full lg:max-w-3xl text-center lg:text-left">
+            <h3 className="text-2xl font-bold mb-2">AWS Cloud Solutions</h3>
             <p className="text-gray-700">
-              At GlobalXperts, we offer a wide range of AWS cloud solutions
-              designed to meet the diverse needs of your business. From initial
-              migration to ongoing management, our services ensure optimal
-              performance and cost efficiency. Read more at our{" "}
-              <a href="/cloud-space" className="text-blue-600 hover:underline">
-                Cloud Space
-              </a>{" "}
-              page.
+              We offer a variety of AWS solutions for seamless migration and
+              efficient management. Explore more on our Cloud Space page.
             </p>
           </div>
         </div>
 
         {/* Section 2 */}
-        <div className="flex space-x-4 items-start">
-          <div className="border-t-4 border-l-4 border-blue-600 w-10 h-10"></div>
-          <div>
-            <h3 className="text-2xl font-bold mb-2">
-              Efficient AWS Migration Services
-            </h3>
+        <div className="flex flex-col lg:flex-row lg:space-x-4 items-center lg:items-start">
+          <div className="w-full lg:max-w-3xl text-center lg:text-left">
+            <h3 className="text-2xl font-bold mb-2">AWS Migration Services</h3>
             <p className="text-gray-700">
-              Migrating to AWS can transform your business operations. Our AWS
-              migration services are tailored to reduce the migration cost and
-              ensure a smooth transition. We provide end-to-end support,
-              minimizing downtime and disruption, while our cost-effective
-              strategies help manage the AWS migration cost effectively.
+              Our migration services ensure smooth transitions with minimal
+              disruption, optimizing cost and performance.
             </p>
           </div>
         </div>
 
         {/* Section 3 */}
-        <div className="flex space-x-4 items-start">
-          <div className="border-t-4 border-l-4 border-blue-600 w-10 h-10"></div>
-          <div>
-            <h3 className="text-2xl font-bold mb-2">
-              Advanced AWS Optimization Techniques
-            </h3>
+        <div className="flex flex-col lg:flex-row lg:space-x-4 items-center lg:items-start">
+          <div className="w-full lg:max-w-3xl text-center lg:text-left">
+            <h3 className="text-2xl font-bold mb-2">AWS Optimization</h3>
             <p className="text-gray-700 mb-10">
-              To get the most out of your AWS investment, our AWS optimization
-              services focus on enhancing performance and efficiency. We ensure
-              that your AWS environment is finely tuned to meet your business
-              goals, with a strong emphasis on AWS cost optimization to keep
-              your expenses in check.
+              Maximize AWS performance and cost efficiency with our tailored
+              optimization services.
             </p>
           </div>
         </div>

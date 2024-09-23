@@ -10,7 +10,7 @@ const ContactSlider = () => {
     <div>
       {/* Contact Us Button */}
       <div
-        onClick={handleOpen} 
+        onClick={handleOpen}
         className="fixed bottom-1 right-8  py-2 px-2 transform -translate-y-1/2 bg-greenCustomColor2 text-white p-3 rounded-lg cursor-pointer z-50 flex items-center justify-center transition-all duration-300 ease-in-out"
       >
         <MdOutlineSupportAgent size={35} />
@@ -22,12 +22,14 @@ const ContactSlider = () => {
           isOpen ? "translate-x-0 block" : "translate-x-full"
         }`}
         style={{ width: "350px" }}
-        onMouseLeave={handleClose} 
+        onMouseLeave={handleClose}
       >
         <div className="bg-white p-6 shadow-lg rounded-lg flex flex-col mr-20">
           {/* Form Header */}
-          <div className="flex justify-between items-center mb-4">
-            <h2 className="text-lg font-semibold text-purple-600">
+          <div className="flex justify-between items-center mb-[-4]">
+            <h2
+              className="text-lg font-semibold text-purple-600"
+            >
               Contact Form
             </h2>
             <button
