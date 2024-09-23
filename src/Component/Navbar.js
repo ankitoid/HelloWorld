@@ -668,6 +668,10 @@ const Navbar = () => {
                     </li>
                     <li>
                       <Link to="/Insights/Media-Library"> Media Library</Link>
+                      
+                    </li>
+                    <li>
+                      <Link to="/Insights/Partners">Partners</Link>
                     </li>
                   </ul>
                 )}

@@ -28,7 +28,7 @@ const AWSPartner = () => {
       level: "Associate",
       description:
         "Earners of this certification have a comprehensive understanding of AWS services and technologies. They demonstrated the ability to build secure and robust solutions...",
-      imageUrl: c2, // Add the correct image path
+      imageUrl: c2,
     },
     {
       title: "Security",
@@ -49,7 +49,7 @@ const AWSPartner = () => {
       level: "Associate",
       description:
         "Earners of this certification have a comprehensive understanding of AWS services and technologies. They demonstrated the ability to build secure and robust solutions...",
-      imageUrl: c5, // Add the correct image path
+      imageUrl: c5,
     },
     {
       title: "Security",
@@ -211,7 +211,7 @@ const AWSPartner = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 items-center">
         {/* Partner Status Heading */}
         <div className="font-bold text-3xl ml-0 md:ml-4 flex flex-col justify-center">
-          <h1 className="text-left">Partner Status</h1>
+          <h1 className="text-center">Partner Status</h1>
         </div>
 
         {/* Partner Image */}
@@ -241,25 +241,22 @@ const AWSPartner = () => {
             </p>
           </div>
         </div>
-
-        {/* Section 2 */}
         <div className="flex flex-col lg:flex-row lg:space-x-4 items-center lg:items-start">
           <div className="w-full lg:max-w-3xl text-center lg:text-left">
+            <h3 className="text-2xl font-bold mb-2">AWS Optimization </h3>
+            <p className="text-gray-700">
+              Maximize AWS performance, scalability, and cost efficiency with
+              our tailored monitoring, automation, and optimization services.
+            </p>
+          </div>
+        </div>
+        {/* Section 2 */}
+        <div className="flex flex-col lg:flex-row lg:space-x-4 items-center lg:items-start">
+          <div className="w-full lg:max-w-3xl text-left lg:text-left">
             <h3 className="text-2xl font-bold mb-2">AWS Migration Services</h3>
             <p className="text-gray-700">
               Our migration services ensure smooth transitions with minimal
               disruption, optimizing cost and performance.
-            </p>
-          </div>
-        </div>
-
-        {/* Section 3 */}
-        <div className="flex flex-col lg:flex-row lg:space-x-4 items-center lg:items-start">
-          <div className="w-full lg:max-w-3xl text-center lg:text-left">
-            <h3 className="text-2xl font-bold mb-2">AWS Optimization</h3>
-            <p className="text-gray-700 mb-10">
-              Maximize AWS performance and cost efficiency with our tailored
-              optimization services.
             </p>
           </div>
         </div>
