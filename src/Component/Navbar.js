@@ -61,6 +61,7 @@ const Navbar = () => {
   const toggleMobileMenu = () => {
     setShowMobileMenu(!showMobileMenu);
   };
+
   return (
     <div
       className={`${
@@ -525,16 +526,22 @@ const Navbar = () => {
           </div>
         </div>
         {/* Mobile Navigation */}
-        <button className="md:hidden p-4" onClick={toggleMobileMenu}>
+        <button className="md:hidden p-4 " onClick={toggleMobileMenu}>
           {showMobileMenu ? <FaTimes /> : <FaBars />}
         </button>
 
         {/* Mobile Menu */}
         {showMobileMenu && (
-          <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-lg p-4">
-            <ul className="flex flex-col space-y-4">
+          <div
+            className={`md:hidden absolute top-16 left-0 w-full 	 bg-white shadow-lg p-4 transition-transform duration-700  ease-in-out  ${
+              showMobileMenu
+                ? "translate-y-0 opacity-100"
+                : "-translate-y-10 opacity-0 pointer-events-none"
+            }`}
+          >
+            <ul className="flex flex-col space-y-4 transition-all duration-900 ease-in-out">
               <li>
-                <Link to="/" className="px-4 py-2">
+                <Link to="/" className="px-4 py-2 text-left">
                   Home
                 </Link>
               </li>
@@ -548,7 +555,7 @@ const Navbar = () => {
                   Service
                 </button>
                 {openIndex === 1 && (
-                  <ul className="pl-4 space-y-2">
+                  <ul className="pl-4 space-y-2 transition-all duration-300 ease-in-out">
                     <li>
                       <Link to="/service/Field-Services">Cloud & DevOps</Link>
                     </li>
@@ -569,21 +576,19 @@ const Navbar = () => {
                     </li>
                     <li>
                       <Link to="/solutions/cyber-security">
-                        {" "}
                         Cyber Security{" "}
                       </Link>
                     </li>
                     <li>
                       <Link to="/solutions/small-medium-business">
-                        {" "}
-                        Small and Medium Business{" "}
+                        Small and Medium Business
                       </Link>
                     </li>
                     <li>
-                      <Link to="/solutions/GenAI">GenAI </Link>
+                      <Link to="/solutions/GenAI">GenAI</Link>
                     </li>
                     <li>
-                      <Link to="/solutions/Networking">Networking </Link>
+                      <Link to="/solutions/Networking">Networking</Link>
                     </li>
                   </ul>
                 )}
@@ -596,13 +601,12 @@ const Navbar = () => {
                   Service
                 </button>
                 {openIndex === 2 && (
-                  <ul className="pl-4 space-y-2">
+                  <ul className="pl-4 space-y-2 transition-all duration-300 ease-in-out">
                     <li>
-                      <Link to="/service/Field-Services"> Field Services</Link>
+                      <Link to="/service/Field-Services">Field Services</Link>
                     </li>
                     <li>
                       <Link to="/service/Managed-Services">
-                        {" "}
                         Managed Services
                       </Link>
                     </li>
@@ -622,7 +626,7 @@ const Navbar = () => {
                   Industries
                 </button>
                 {openIndex === 3 && (
-                  <ul className="pl-4 space-y-2">
+                  <ul className="pl-4 space-y-2 transition-all duration-300 ease-in-out">
                     <li>
                       <Link to="/Industries/Education">Education</Link>
                     </li>
@@ -659,7 +663,7 @@ const Navbar = () => {
                   Insights
                 </button>
                 {openIndex === 4 && (
-                  <ul className="pl-4 space-y-2">
+                  <ul className="pl-4 space-y-2 transition-all duration-300 ease-in-out">
                     <li>
                       <Link to="/Insights/Blog">Blog</Link>
                     </li>
@@ -667,8 +671,7 @@ const Navbar = () => {
                       <Link to="/Insights/CaseStudies">Case Studies</Link>
                     </li>
                     <li>
-                      <Link to="/Insights/Media-Library"> Media Library</Link>
-                      
+                      <Link to="/Insights/Media-Library">Media Library</Link>
                     </li>
                     <li>
                       <Link to="/Insights/Partners">Partners</Link>
@@ -685,7 +688,7 @@ const Navbar = () => {
                   Company
                 </button>
                 {openIndex === 6 && (
-                  <ul className="pl-4 space-y-2">
+                  <ul className="pl-4 space-y-2 transition-all duration-300 ease-in-out">
                     <li>
                       <Link to="/Company/About">About</Link>
                     </li>
@@ -693,7 +696,7 @@ const Navbar = () => {
                       <Link to="/Careers">Careers</Link>
                     </li>
                     <li>
-                      <Link to="/Company/ContactUs">ContactUS</Link>
+                      <Link to="/Company/ContactUs">Contact Us</Link>
                     </li>
                   </ul>
                 )}

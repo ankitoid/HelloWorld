@@ -29,13 +29,13 @@ const partners = [
   { name: 'Microsoft Azure', img: p6, link: '/Partners/MSAzurePartner' },
   { name: 'Cisco', img: p7, link: '/Partners/CiscoPartner' },
   { name: 'TrueNAS', img: p8, link: '/Partners/TruenasPartner' },
-  { name: 'Google Cloud', img: p9, link: '/Partners/GCloudPartner' },
-  { name: 'Calabrio', img: p10, link: '/Partners/CalabrioPartner' },
+  { name: 'Google Cloud', img: p9,  },
+  { name: 'Calabrio', img: p10 },
   { name: 'Cisco Meraki', img: p11, link: '/Partners/CisMKPartner' },
-  { name: 'ServiceNow', img: p12, link: '/Partners/ServicenowPartner' },
-  { name: 'Arush', img: p13, link: '/Partners/AurusPartner' },
-  { name: 'Nokia', img: p14, link: '/Partners/NokiaPartner' },
-  { name: 'Citrix', img: p15, link: '/Partners/CitrixPartner' },
+  { name: 'ServiceNow', img: p12 },
+  { name: 'Arush', img: p13 },
+  { name: 'Nokia', img: p14 },
+  { name: 'Citrix', img: p15 },
   { name: 'Veeam', img: p16, link: '/Partners/VeeamPartner' },
   { name: 'Seceon', img: p17, link: '/Partners/SeceonPartner' },
 ];
@@ -45,7 +45,7 @@ const Partners = () => {
     <>
       <Navbar />
       <div className="p-6">
-        <h1 className="text-3xl font-bold text-center mb-8">Our Partners</h1>
+        <h1 className="text-3xl font-bold text-center mt-16 mb-8">Our Partners</h1>
 
         {/* Partner Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
