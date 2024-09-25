@@ -42,12 +42,12 @@ const HeroSection = () => {
       <div className="absolute inset-0 mt-16 overflow-hidden">
       <img src={bgImg} alt="Background" className="w-full h-full object-cover" />
       </div>
-      <div className="relative z-10 flex items-center justify-center md:justify-start h-full w-full px-2 md:px-16 bottom-36 lg:bottom-5 ">
-        <div className=" py-20 mb-20 md:py-30  md:py-30  lg:mb-80 pb-5  rounded-lg md:rounded-r-lg w-full md:w-1/2 lg:w-1/3 h-auto sm:mt-2 lg:mt-14">
+      <div className="relative z-10 flex items-center justify-center md:justify-start h-full w-full px-2 md:px-16 bottom-36 lg:bottom-5  2xl:bottom-36">
+        <div className=" py-20 mb-20 md:py-30  md:py-30  lg:mb-80 pb-5  rounded-lg md:rounded-r-lg w-full md:w-1/2 lg:w-1/3 h-auto sm:mt-2 lg:mt-14 ">
           <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-5xl font-bold mb-36 whitespace-nowrap justify-center items-center mr-12 ">
             AI-Synergised Cloud Products Build For
           </h1>
-          <div className="absolute p-3 border-2 bottom-80 border-greenCustomColor rounded-full flex flex-col items-center mr-28 lg:mb-7">
+          <div className="absolute p-3 border-2 bottom-80 border-greenCustomColor rounded-full flex flex-col items-center mr-28 lg:mb-7 2xl:bottom-96 2xl:mb-32">
             <p className=" md:text-4xl lg:text-5xl  font-bold sm:text-3xl text-center  ">{displayedText}</p>
           </div>
         </div>

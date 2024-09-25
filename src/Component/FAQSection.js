@@ -46,7 +46,7 @@ const FAQSection = () => {
 
 const ImpactFilmCard = () => {
   return (
-    <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex-1">
+    <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex-1  ">
       <img
         src="https://picsum.photos/600/400"
         alt="Impact Film"
@@ -64,8 +64,8 @@ const ImpactFilmCard = () => {
 
 const FAQWithImpactFilm = () => {
   return (
-    <div className="container mx-auto p-6 flex flex-col md:flex-row gap-6 mt-4 h-full  mb-48 lg:mb-0">
-      <div className="flex-1 md:w-2/3">
+    <div className="container mx-auto p-6 flex flex-col md:flex-row gap-6 mt-4 h-full  mb-8 lg:mb-0">
+      <div className="flex-1 md:w-2/3 ">
         <FAQSection />
       </div>
       <div className="flex-1 md:w-1/3">

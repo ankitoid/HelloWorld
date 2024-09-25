@@ -21,7 +21,7 @@ function ContactUs() {
     <div className="relative bg-cover bg-blueCustomColor text-white p-8 py-20">
       <div className="flex">
         <h1 className="w-1.5 h-10 text-4xl font-bold mb-4 bg-greenCustomColor2"></h1>
-        <h2 className="text-7xl md:text-5xl font-bold mb-4 mx-3 flex">
+        <h2 className="text-3xl md:text-5xl font-bold mb-4 mx-3 flex">
           Connect with <p className="text-greenCustomColor2 mx-1 font-bold">Us</p>
         </h2>
       </div>

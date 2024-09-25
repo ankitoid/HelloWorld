@@ -31,7 +31,7 @@ function SliderSection() {
           {/* Right Section */}
           <div className="w-full md:w-3/5 bg-white flex items-center justify-center p-8 md:p-12">
             <div className="max-w-lg text-center md:text-left">
-              <h2 className="text-7xl md:text-5xl font-bold mb-6">
+              <h2 className="text-3xl md:text-5xl font-bold mb-6">
                 Cloud & DevOps
               </h2>
               <p className="text-gray-600 text-base md:text-lg mb-8">
@@ -39,7 +39,7 @@ function SliderSection() {
                 enhance efficiency, sustainability, and cost optimization.
               </p>
               <Link
-                to="/Cloud" // Updated to path string
+                to="Solutions/Cloud" 
                 className="text-blue-500 hover:text-blue-700 font-bold"
               >
                 Learn more →
@@ -53,10 +53,10 @@ function SliderSection() {
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
           {/* Text Section */}
           <div className="text-center lg:text-left lg:w-1/2 lg:pr-8">
-            <h2 className="text-7xl md:text-5xl font-bold text-white sm:text-4xl">
+            <h2 className="text-3xl md:text-5xl font-bold text-white sm:text-4xl">
               Value Proposition
             </h2>
-            <p className="mt-3 text-xl text-gray-300 sm:mt-4">
+            <p className="mt-3 md:text-xl text-gray-300 sm:mt-4 ">
               Enhance your business communication and collaboration with our
               expert services in Cisco Unified Communications, AWS Connect, and
               ConnectWise. We provide seamless integration of voice, video, and
@@ -88,7 +88,7 @@ function SliderSection() {
           <div className="w-full md:w-3/5 md:ml-14 mr-12 bg-yellow-400 flex items-center justify-center p-10 md:p-44  relative overflow-hidden">
             <video
               src={b1}
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover rounded-sm"
               muted
               autoPlay
               loop
@@ -99,7 +99,7 @@ function SliderSection() {
           {/* Left Section */}
           <div className="w-full md:w-3/5 bg-white flex items-center justify-center p-8 md:p-12">
             <div className="max-w-lg text-center md:text-left">
-              <h2 className="text-7xl md:text-5xl font-bold mb-4">
+              <h2 className="text-3xl md:text-5xl font-bold mb-4">
                 Field Services
               </h2>
               <p className="text-gray-600 text-base md:text-lg mb-6">
@@ -121,7 +121,7 @@ function SliderSection() {
       <div className="bg-white flex items-center justify-center">
         <div className="flex flex-col md:flex-row items-center justify-between w-full h-full">
           {/* Left Section */}
-          <div className="w-full md:w-3/5 bg-blue-500 flex items-center justify-center p-10 md:p-48 md:rounded-r-full relative overflow-hidden">
+          <div className=" w-full md:w-3/5 bg-blue-500 flex items-center justify-center p-10 md:p-48 md:rounded-r-full relative overflow-hidden">
             <div className="absolute inset-0">
               <video
                 src={NetworkCon}
@@ -137,7 +137,7 @@ function SliderSection() {
           {/* Right Section */}
           <div className="w-full md:w-2/5 bg-white flex items-center justify-center p-8 md:p-12">
             <div className="max-w-lg text-center md:text-left">
-              <h2 className="text-7xl md:text-5xl font-bold mb-4">
+              <h2 className="text-3xl md:text-5xl font-bold mb-4">
                 Networking Consulting
               </h2>
               <p className="text-gray-600 text-base md:text-lg mb-6">
@@ -145,7 +145,7 @@ function SliderSection() {
                 workflows with tailored networking solutions.
               </p>
               <a
-                href="#"
+                href="/solutions/Networking"
                 className="text-blue-500 hover:text-blue-700 font-bold"
               >
                 Learn more →
@@ -177,7 +177,7 @@ function SliderSection() {
           {/* Left Section */}
           <div className="w-full md:w-2/5 bg-white flex items-center justify-center p-8 md:p-12">
             <div className="max-w-lg text-center md:text-left">
-              <h2 className="text-7xl md:text-5xl font-bold mb-4">
+              <h2 className="text-3xl md:text-5xl font-bold mb-4">
                 Professional Services
               </h2>
               <p className="text-gray-600 text-base md:text-lg mb-6">
@@ -185,7 +185,7 @@ function SliderSection() {
                 sustainable growth for digital success.
               </p>
               <a
-                href="#"
+                href="/service/Professional-Services"
                 className="text-blue-500 hover:text-blue-700 font-bold mt-3"
               >
                 Learn more →

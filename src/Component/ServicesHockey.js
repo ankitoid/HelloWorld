@@ -10,10 +10,10 @@ function ServicesHockey() {
     <div className="flex flex-col gap-8 bg-blueCustomColor text-white p-8">
       {/* Section Heading */}
       <div className="text-center mb-8">
-        <h1 className="text-7xl md:text-5xl  font-bold mb-4">
+        <h1 className="text-3xl md:text-5xl  font-bold mb-4">
           Our Key Services and Partnerships
         </h1>
-        <p className="text-lg">
+        <p className="lg:text-lg">
           At GlobalXperts, we offer cutting-edge technology solutions that drive
           innovation and operational efficiency across various industries.
           Explore our key services and strategic partnerships that empower
@@ -21,7 +21,7 @@ function ServicesHockey() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:text-lg">
         <ThoughtCard
           heading="Our Expertise"
           title="GlobalXperts is committed to driving innovation in enterprise solutions by integrating advanced technologies and best practices to deliver scalable and sustainable outcomes."
@@ -39,7 +39,7 @@ function ServicesHockey() {
           alt="NHL Image"
           description="GlobalXperts provides cutting-edge technology solutions to enhance the live streaming and broadcasting operational efficiency and fan engagement through advanced analytics and digital transformation."
           hoverEffect={true}
-          textColor="black" 
+          textColor="white" 
         />
 
         <ThoughtCard
@@ -66,7 +66,7 @@ function ServicesHockey() {
           alt="Professional Management Image"
           description="GlobalXperts offers comprehensive management and development services to streamline your operations. Our expert solutions integrate management strategies with advanced development practices to help you achieve your goals efficiently."
           hoverEffect={true}
-          textColor="black" 
+          textColor="white" 
         />
       </div>
     </div>

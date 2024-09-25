@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import glo from "../Assets/glo2.avif";
 
-// Helper function to animate number count
 const useCountUp = (end, duration, startCounting) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    if (!startCounting) return; // Do nothing if not counting
+    if (!startCounting) return; 
 
     let start = 0;
     const incrementTime = Math.abs(Math.floor(duration / end));
@@ -28,16 +27,15 @@ function CompaniesLogos() {
   const [startCounting, setStartCounting] = useState(false);
   const sectionRef = useRef(null);
 
-  // Use Intersection Observer to trigger count-up when element is in view
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setStartCounting(true);
-          observer.unobserve(entry.target); // Stop observing after first view
+          observer.unobserve(entry.target); 
         }
       },
-      { threshold: 0.1 } // Adjust threshold as needed
+      { threshold: 0.1 }
     );
 
     if (sectionRef.current) {
@@ -51,9 +49,9 @@ function CompaniesLogos() {
     };
   }, []);
 
-  const customerCount = useCountUp(300, 2000, startCounting); // 2-second animation
-  const countriesCount = useCountUp(22, 2000, startCounting); // 2-second animation
-  const associatesCount = useCountUp(1600, 2000, startCounting); // 2-second animation
+  const customerCount = useCountUp(300, 2000, startCounting); 
+  const countriesCount = useCountUp(22, 2000, startCounting); 
+  const associatesCount = useCountUp(1600, 2000, startCounting); 
 
   return (
     <div className="bg-gray-100 min-h-screen flex items-center justify-center p-4">
@@ -62,7 +60,7 @@ function CompaniesLogos() {
       ref={sectionRef}
     >
       <div className="relative flex flex-col items-center w-full lg:w-1/2 lg:pr-12">
-        <div className="relative w-60 h-60 lg:w-96 lg:h-96 rounded-full overflow-hidden lg:mr-16 lg:mt-20">
+        <div className="relative w-60 h-60 lg:w-96 lg:h-96 rounded-full overflow-hidden lg:mr-16 lg:mt-10">
           <img
             src={glo}
             alt="Intelligent Engineering and Technology Solutions"
@@ -78,10 +76,10 @@ function CompaniesLogos() {
   
       <div className="w-full lg:w-full p-4 lg:p-8   ">
         <div className="text-gray-600 mb-8">
-          <h3 className="text-7xl md:text-5xl  font-semibold text-black mb-4">
+          <h3 className="text-3xl md:text-5xl  font-semibold text-black mb-4">
             What We Do
           </h3>
-          <p className="text-base lg:text-lg leading-relaxed mb-4">
+          <p className=" lg:text-lg leading-relaxed mb-4">
             At GlobalXperts, we excel in providing advanced engineering and technology solutions that harness the power of Artificial Intelligence (AI) and Machine Learning (ML). Our mission is to drive digital transformation and innovation, building a digital, autonomous, and sustainable future. We proudly partner with over 300 global customers, including 40% of the top 100 innovators.
           </p>
           <p className="text-base lg:text-lg leading-relaxed">

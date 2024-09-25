@@ -7,7 +7,7 @@ import Img3 from "../Assets/solution-explorer-technology-operations.sm.webp";
 function Slider2() {
   return (
     <div className="container mx-auto mt-5 p-4 md:p-6">
-      <h1 className="text-7xl md:text-5xl font-bold py-4 text-center md:text-left">
+      <h1 className="text-3xl md:text-5xl font-bold py-4 text-center md:text-left">
         Transform your business with Us
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -25,7 +25,7 @@ function Slider2() {
             Optimize your business with AI and cloud technologies to enhance efficiency and cut costs.
           </p>
           <Link
-            to="/professional-services"
+            to="service/professional-services"
             className="text-blue-500 hover:underline"
           >
             Read More
@@ -46,7 +46,7 @@ function Slider2() {
             Improve efficiency with AI-powered, cloud-integrated managed services to stay ahead.
           </p>
           <Link
-            to="/managed-services"
+            to="service/Managed-Services"
             className="text-blue-500 hover:underline"
           >
             Read More
@@ -67,7 +67,7 @@ function Slider2() {
             Leverage AI to enhance network performance, reduce costs, and boost security.
           </p>
           <Link
-            to="/networking-consulting"
+            to="/solutions/Networking"
             className="text-blue-500 hover:underline"
           >
             Read More

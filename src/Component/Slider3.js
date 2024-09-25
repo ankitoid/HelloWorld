@@ -44,7 +44,7 @@ const Slider3 = () => {
 
   return (
     <div className="container mx-auto mt-24">
-      <h1 className="text-7xl md:text-5xl  font-bold text-center mb-8">
+      <h1 className="text-3xl md:text-5xl  font-bold text-center mb-8">
         Explore how <span className="italic">transformation</span> comes to{" "}
         <span className="italic">life</span>
       </h1>
@@ -113,7 +113,7 @@ const Slider3 = () => {
                 A Catalyst for Transformation. Harness its power to drive
                 innovation, unlock new opportunities, and accelerate growth.
               </p>
-              <a href="#" className="text-blue-500 hover:underline mt-2 block">
+              <a href="/solutions/GenAI" className="text-blue-500 hover:underline mt-2 block">
                 Get ahead →
               </a>
             </div>

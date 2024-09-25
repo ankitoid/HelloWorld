@@ -29,7 +29,7 @@ import ContactTab from "../Component/Contact/ContactSlider";
 function Home() {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [isContactFormOpen, setIsContactFormOpen] = useState(false); // State for contact form visibility
+  const [isContactFormOpen, setIsContactFormOpen] = useState(false); 
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
@@ -80,13 +80,15 @@ function Home() {
               <img src={Icn10} alt="Logo" className="h-12 w-32" />
               <img src={Icn11} alt="Logo" className="h-12" />
               <img src={Icn12} alt="Logo" className="h-12" />
-              {/* Add more images as needed */}
             </div>
           </div>
         </div>
+        <div>
         <FAQWithImpactFilm />
-        <div className="w-full bg-greenCustomColor2 p-6 md:p-10 py-10 md:py-16">
-          <div className="flex flex-col md:flex-row items-center md:justify-between">
+        </div>
+        
+        <div className="w-full bg-greenCustomColor2 p-6 md:p-10 py-10 md:py-16 ">
+          <div className="flex flex-col md:flex-row items-center md:justify-between ">
             <div className="text-center md:text-left mb-8 md:mb-0">
               <h1 className="text-blacktext-7xl md:text-5xl  font-bold font-sans mb-4">
                 Be a part of the future.
@@ -99,7 +101,7 @@ function Home() {
                 <br /> Experience cutting-edge AI/ML services that automate and
                 enhance solutions for a smarter tomorrow.
               </p>
-              <button className="bg-white text-black mt-10 font-bold hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 rounded-full px-4 py-2 transition duration-200 ease-in-out">
+              <button className="bg-white text-black mt-10 font-bold hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 rounded-full px-4 py-2 transition duration-200 ease-in-out">
                 Explore open roles
               </button>
             </div>

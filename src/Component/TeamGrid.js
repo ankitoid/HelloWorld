@@ -14,10 +14,10 @@ const TeamGrid = () => {
   return (
     <div className="mt-24 bg-blueCustomColor text-white flex flex-col items-center justify-center">
       <header className="text-center px-4 mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 mt-4">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 mt-4">
           Be a part of an ambitious team of change makers
         </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto">
+        <p className="lg:text-lg md:text-xl max-w-2xl mx-auto">
           Who have a restless curiosity and a drive for ingenuity – whatever inspires you, join us for a thriving career.
         </p>
       </header>
@@ -43,7 +43,7 @@ const TeamGrid = () => {
       </div>
 
       <div className="mt-8 p-4 rounded-lg text-center max-w-lg mx-auto">
-        <p className="text-lg md:text-xl">
+        <p className="lg:text-lg md:text-xl">
           Join our AI/ML team and be at the forefront of innovation, harnessing the power of artificial intelligence and machine learning to drive tomorrow's solutions.
         </p>
       </div>
