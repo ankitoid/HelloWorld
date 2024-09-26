@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-import ContactCard from '../Contact/ContactCard'
+import ContactCard from "../Contact/ContactCard";
 import c1 from "../../Assets/audit.png";
 import c2 from "../../Assets/awsfunction.png";
 import c3 from "../../Assets/experties.png";
@@ -29,14 +29,14 @@ function DataCenterDesign() {
               <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl mt-5">
                 Data Center Design/Build
               </h2>
-              <p className=" mt-8 text-xl text-gray-500 ">
-                At GlobalXperts, we design and build state-of-the-art data
-                centers tailored to your business, delivering on-time,
-                within-budget projects with precision. Our customized network
-                architectures, advanced security, and ongoing support ensure
-                seamless operations for your business.
+              <p className="mt-8 text-xl text-gray-500">
+                At GlobalXperts, we design and build advanced data centers
+                tailored to your needs, ensuring timely and budget-friendly
+                projects. Our custom network architectures and robust security
+                support seamless operations for your business.
               </p>
             </div>
+
             {/* Image Section */}
             <div className="relative mt-12 lg:mt-0 lg:w-1/2 ">
               <img
@@ -48,52 +48,50 @@ function DataCenterDesign() {
             </div>
           </div>
 
-          <div className="w-full px-4">
+          <div className="max-w-7xl mx-auto w-full px-4">
             <h2 className="text-4xl font-bold text-center mt-28">Overview</h2>
-            <p className="text-center mt-5 text-gray-700 text-xl">
+            <p className="text-center mt-5 text-gray-700 text-lg md:text-xl">
               GlobalXperts Enterprise Solutions offers comprehensive data center
-              design and build services through a team of skilled professionals,
-              including Program Managers, Project Managers, Network Architects,
-              Security Architects, Network Deployment Engineers, and Training
-              Resources.
+              design and build services through a skilled team, including
+              Program Managers, Project Managers, Network Architects, Security
+              Architects, Network Deployment Engineers, and Training Resources.
             </p>
-            <div className="mt-3 max-w-4xl mx-auto">
-              <div className="bg-gray-100 p-5 ">
-                <h3 className="text-2xl font-semibold mb-4">Our Team</h3>
-                <ul className="list-disc list-inside space-y-7 ">
-                  <li>
-                    <strong>Program Managers:</strong> Handle large-scale
-                    projects, ensuring timely and budget-friendly delivery while
-                    managing risks.
-                  </li>
 
+            <div className="mt-8 max-w-4xl mx-auto">
+              <div className="bg-gray-100 p-5 rounded-lg shadow-md">
+                <h3 className="text-2xl font-semibold mb-4">Our Team</h3>
+                <ul className="list-disc list-inside space-y-5">
+                  <li>
+                    <strong>Program Managers:</strong> Manage large-scale
+                    projects to ensure timely delivery while mitigating risks.
+                  </li>
                   <li>
                     <strong>Network Architects:</strong> Design scalable and
                     efficient network infrastructure tailored to business needs.
                   </li>
-
                   <li>
                     <strong>Network Deployment Engineers:</strong> Deploy and
-                    maintain network equipment, ensuring smooth operation and
+                    maintain network equipment, ensuring optimal operation and
                     security.
                   </li>
                   <li>
                     <strong>Training Resources:</strong> Provide training to IT
-                    staff, keeping them updated with current technologies and
-                    best practices.
+                    staff, keeping them updated on current technologies and best
+                    practices.
                   </li>
                   <li>
                     <strong>Security Architects:</strong> Implement security
-                    measures and ensure compliance with the latest standards to
-                    protect {nbsp(40)} against cyber threats.
+                    measures and ensure compliance with standards to protect
+                    against cyber threats.
                   </li>
                 </ul>
               </div>
             </div>
-            <p className="text-center mt-10 text-gray-700 text-xl">
-              GlobalXperts is dedicated to high-quality service, timely project
-              completion, and meeting client specifications. Contact them to
-              learn more about their data center solutions.
+
+            <p className="text-center mt-10 text-gray-700 text-lg md:text-xl">
+              GlobalXperts is dedicated to delivering high-quality service,
+              timely project completion, and meeting client specifications.
+              Contact us to learn more about our data center solutions.
             </p>
           </div>
 
@@ -119,10 +117,9 @@ function DataCenterDesign() {
                   <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-blueCustomColor overflow-hidden">
                     <div className="text-center flex flex-col items-center justify-center h-full px-2  text-gray-300">
                       <p className="text-lg py-2 text-gray-200 mt-5">
-                        Comprehensive Audit and Compliance Services" entails
-                        thorough evaluation of adherence to regulations and
-                        standards, including financial audits, internal control
-                        assessments, and legal compliance.
+                        "Comprehensive Audit and Compliance Services" ensures
+                        adherence to regulations through financial audits and
+                        internal control assessments.
                       </p>
                     </div>
                   </div>
@@ -149,9 +146,8 @@ function DataCenterDesign() {
                   <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-blueCustomColor overflow-hidden">
                     <div className="text-center flex flex-col items-center justify-center h-full px-2 pb-24 text-gray-300">
                       <p className="text-lg py-2 text-gray-200 mt-10">
-                        "Proactive Security Measures" focus on preventing
-                        security threats through anticipatory actions and
-                        continuous monitoring.
+                        "Proactive Security Measures" aim to prevent threats
+                        through anticipatory actions and ongoing monitoring.
                       </p>
                     </div>
                   </div>
@@ -196,34 +192,30 @@ function DataCenterDesign() {
                   Data Center Design and Build
                 </h2>
                 <p className="mt-3 text-lg text-gray-300 sm:mt-4">
-                  Data Center Design and Build involves creating specialized
-                  facilities for managing IT infrastructure, including servers,
-                  storage, and networking equipment. The process includes:
+                  We create specialized facilities for managing IT
+                  infrastructure, covering:
                 </p>
                 <ul className="mt-3 text-lg text-gray-300 sm:mt-4 list-disc list-inside pl-6">
                   <li>
-                    <strong>Planning:</strong> Assessing needs, capacity, and
-                    requirements.
+                    <strong>Planning:</strong> Assessing needs and capacity.
                   </li>
                   <li>
-                    <strong>Design:</strong> Creating a blueprint for layout,
-                    cooling, power, and network systems.
+                    <strong>Design:</strong> Blueprint for layout and systems.
                   </li>
                   <li>
-                    <strong>Site Preparation:</strong> Selecting and preparing
-                    the location.
+                    <strong>Site Prep:</strong> Selecting and preparing
+                    locations.
                   </li>
                   <li>
-                    <strong>Construction:</strong> Building the facility and
-                    installing systems.
+                    <strong>Construction:</strong> Building and installing
+                    systems.
                   </li>
                   <li>
                     <strong>Integration:</strong> Configuring and testing
                     equipment.
                   </li>
                   <li>
-                    <strong>Commissioning:</strong> Finalizing and handing over
-                    the facility.
+                    <strong>Commissioning:</strong> Finalizing and handing over.
                   </li>
                 </ul>
               </div>
@@ -380,7 +372,7 @@ function DataCenterDesign() {
           </div>
         </div>
         <div>
-          <ContactCard/>
+          <ContactCard />
           <Footer />
         </div>
       </div>

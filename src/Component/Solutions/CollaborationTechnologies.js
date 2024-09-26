@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Navbar from "../Navbar";
 import comp from "../../Assets/spider.jpg";
 import Footer from "../Footer";
-import v1 from "../../Assets/gradient.mp4";
+import v1 from "../../Assets/TCDvid.mp4";
 import colobraction from "../../Assets/colob1.webp";
-import ContactCard from '../Contact/ContactCard'
+import ContactCard from "../Contact/ContactCard";
 import c1 from "../../Assets/cloud2.jpg";
 import c2 from "../../Assets/migration.avif";
 import c3 from "../../Assets/image (10).png";
@@ -29,12 +29,12 @@ function CollaborationTechnologies() {
                 Collaboration Technologies Design/Build
               </h2>
               <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-                "Collaboration Technologies Design/Build" involves creating and
-                implementing systems and infrastructure for effective team
-                communication and collaboration, including hardware and software
-                solutions tailored to enhance productivity and connectivity.
+                Our "Collaboration Technologies Design/Build" service creates
+                tailored systems that enhance team communication and
+                productivity through optimized hardware and software solutions.
               </p>
             </div>
+
             {/* Image Section */}
             <div className="relative mt-12 lg:mt-0 lg:w-1/2 ">
               <img
@@ -46,16 +46,14 @@ function CollaborationTechnologies() {
             </div>
           </div>
 
-          <div className="w-full px-4">
+          <div className="max-w-7xl mx-auto w-full px-4">
             <h2 className="text-4xl font-bold text-center mt-28">Overview</h2>
             <p className="text-center mt-5 text-gray-700 text-xl">
               Our Collaboration Technologies Design and Build services enhance
-              communication and collaboration through custom solutions like
-              Cisco Unified Communications, AWS Connect, and ConnectWise. We
-              tailor these technologies to improve team communication, create
-              scalable contact centers, and streamline business operations.
-              Contact us to boost your organization's efficiency and customer
-              service.
+              communication through tailored solutions such as Cisco Unified
+              Communications, AWS Connect, and ConnectWise. We develop scalable
+              contact centers and streamline operations to boost efficiency and
+              customer service.
             </p>
           </div>
 
@@ -152,12 +150,12 @@ function CollaborationTechnologies() {
                 </h2>
                 <p className="mt-3 text-xl text-gray-300 sm:mt-4">
                   Our Collaboration Technologies Design and Build services
-                  enhance communication and collaboration through expert
-                  solutions in Cisco Unified Communications, AWS Connect, and
-                  ConnectWise. We deliver custom, scalable, and flexible
-                  solutions to boost productivity, improve customer experience,
-                  and reduce costs. Partner with us to leverage the latest
-                  technologies and drive your business growth.
+                  enhance communication through expert solutions like Cisco
+                  Unified Communications, AWS Connect, and ConnectWise. We
+                  deliver scalable, flexible solutions that boost productivity,
+                  improve customer experiences, and reduce costs. Partner with
+                  us to leverage cutting-edge technologies for your business
+                  growth.
                 </p>
               </div>
               {/* Video Section */}
@@ -309,7 +307,7 @@ function CollaborationTechnologies() {
           </div>
         </div>
         <div>
-          <ContactCard/>
+          <ContactCard />
           <Footer />
         </div>
       </div>

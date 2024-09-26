@@ -13,54 +13,52 @@ import s4 from "../../Assets/aws2.jpg";
 import comu from "../../Assets/comunication.jpg";
 import { Link } from "react-router-dom";
 
-import ContactCard from '../Contact/ContactCard'
+import ContactCard from "../Contact/ContactCard";
 function SmallandMediumBusiness() {
+  
   const slides = [
     {
       id: 1,
       title: "GX Customer Connect",
       description:
-        "Transform your customer interactions with GX Customer Connect, the cloud-based contact center solution that boosts efficiency, reduces costs, and scales seamlessly with AI-powered features and advanced analytics.",
+        "Transform customer interactions with GX Customer Connect, a cloud-based contact center solution that boosts efficiency and scales with AI-powered features.",
       image: s1,
-      link: "/GX-Connect", 
+      link: "/GX-Connect",
     },
     {
       id: 2,
       title: "AWS Medium Business Applications",
       description:
-        "GlobalXperts, in partnership with AWS, offers scalable cloud computing services tailored for SMBs, providing cost-effective solutions like virtual servers, analytics, and security features to enhance efficiency and streamline operations.",
+        "GlobalXperts, in partnership with AWS, offers scalable cloud services for SMBs, including virtual servers and analytics, enhancing operational efficiency.",
       image: s2,
-      link: "/AWSmall-medium", 
-
+      link: "/AWSmall-medium",
     },
     {
       id: 3,
       title: "AWS Migration Services",
       description:
-        "Plan, migrate, and track data center resources to the cloud with AWS Migration Hub – a central platform that assists in assessment, planning, and modernization, streamlining your cloud journey.",
+        "Streamline your cloud journey with AWS Migration Hub, a central platform for planning and tracking data center migrations.",
       image: s3,
-      link: "/AWS-Migration", 
-
+      link: "/AWS-Migration",
     },
     {
       id: 4,
       title: "VirtualWorkx",
       description:
-        "Empower remote work with Amazon WorkSpaces – a fully managed cloud desktop service that provides secure, high-performance virtual desktops accessible from anywhere, offering flexible pricing, seamless integration, and advanced security.",
+        "Empower remote work with Amazon WorkSpaces, a managed cloud desktop service offering secure, high-performance virtual desktops accessible from anywhere.",
       image: s4,
-      link: "/Virtual-Work", 
-
+      link: "/Virtual-Work",
     },
     {
       id: 5,
       title: "Titan GX On-site Storage",
       description:
-        "Optimize your data storage with scalable, secure cloud solutions tailored to your needs. From high throughput to high IOPS, our expertise ensures the right fit, using Hyperconverged Storage, Open ZFS, and TrueNAS for hybrid cloud environments.",
+        "Optimize data storage with secure, scalable cloud solutions tailored to your needs, using Hyperconverged Storage and TrueNAS for hybrid environments.",
       image: s4,
-      link: "/TitanGX", 
-
+      link: "/TitanGX",
     },
   ];
+  
   const handleSlideClick = (link) => {
     window.location.href = link;
   };
@@ -116,19 +114,16 @@ function SmallandMediumBusiness() {
               <h2 className="text-3xl font-bold text-CustomHeading sm:text-4xl mb-8">
                 Small and Medium Business
               </h2>
-              <p className="mt-3 text-xl text-gray-500 sm:mt-4 ">
-                Small and medium businesses (SMBs) are rapidly adopting cloud
-                computing to transform their IT operations, drive efficiency,
-                and stay competitive in a digital-first world. Cloud solutions
-                empower SMBs by providing access to scalable, flexible, and
-                cost-effective IT resources that eliminate the need for
-                substantial upfront investments in physical hardware and
-                infrastructure. By leveraging cloud technology, SMBs can
-                optimize their operations, reduce overhead costs, and easily
-                scale their resources up or down to meet evolving business
-                demands. This approach not only enhances agility but also
-                ensures businesses can focus on innovation and growth rather
-                than managing complex IT environments.
+              <p className="mt-3 text-xl text-gray-500 sm:mt-4">
+                Small and medium businesses (SMBs) are increasingly adopting
+                cloud computing to enhance efficiency and stay competitive.
+                Cloud solutions offer scalable and cost-effective IT resources,
+                reducing the need for significant upfront investments in
+                hardware. By leveraging these technologies, SMBs can optimize
+                operations, lower costs, and easily adjust resources to meet
+                changing demands. This agility allows businesses to focus on
+                innovation and growth rather than managing complex IT
+                environments.
               </p>
             </div>
 
@@ -148,23 +143,21 @@ function SmallandMediumBusiness() {
             </h2>
           </div>
 
-          <div className=" mt-32">
+          <div className="mt-0">
             <section className="h-screen flex flex-col justify-center items-center gap-y-16 text-white">
-              <div className="grid grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Existing Card 1 */}
-                <div className="w-[500px] h-[325px] bg-transparent cursor-pointer group perspective border border-greenCustomColor2">
-                  <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
+                <div className="w-full h-[150px] lg:w-[400px] lg:h-[300px] bg-transparent cursor-pointer group perspective lg:border lg:border-greenCustomColor2">
+                  <div className="relative lg:preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
                     {/* Front side with image */}
-                    <div className="absolute backface-hidden w-full h-full">
+                    <div className="lg:absolute backface-hidden w-full h-full">
                       <img
                         src={c1}
-                        alt="Movie Poster"
+                        alt="IaaS"
                         className="w-full h-full object-cover"
                       />
                       <div className="absolute inset-0 flex items-center justify-center text-white text-4xl font-semibold bg-black bg-opacity-40">
-                        <p className="w-full justify-center text-center mt-10">
-                          IaaS
-                        </p>
+                        <p className="text-center mt-10">IaaS</p>
                       </div>
                     </div>
                     {/* Back side with content */}
@@ -174,126 +167,99 @@ function SmallandMediumBusiness() {
                           Infrastructure as a Service
                         </h1>
                         <p className="text-lg py-2 text-gray-200 mt-5">
-                          SMBs can use IaaS to outsource infrastructure
-                          management to cloud providers. Instead of maintaining
-                          servers and data centers, they rent virtual resources
-                          like machines, storage, and networking, which lets
-                          them scale up or down as needed, reducing costs and
-                          increasing flexibility.
+                          Outsource infrastructure management by renting virtual
+                          resources like machines and storage, enabling
+                          scalability and cost reduction.
                         </p>
-                        {/* <button className="bg-greenCustomColor2 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-15 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125">
-          Read More
-        </button> */}
                       </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Existing Card 2 */}
-                <div className="w-[500px] h-[325px] bg-transparent cursor-pointer group perspective border border-greenCustomColor2">
+                <div className="w-full h-[150px] lg:w-[400px] lg:h-[300px] bg-transparent cursor-pointer group perspective lg:border lg:border-greenCustomColor2">
                   <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
                     {/* Front side with image */}
                     <div className="absolute backface-hidden w-full h-full">
                       <img
                         src={c2}
-                        alt="Movie Poster"
-                        className="w-full h-full object-cover "
+                        alt="Data Backup"
+                        className="w-full h-full object-cover"
                       />
                       <div className="absolute inset-0 flex items-center justify-center text-white text-4xl font-semibold bg-black bg-opacity-40">
-                        <p className="w-full justify-center text-center mt-10 ">
-                          {" "}
-                          Data Backup
-                        </p>
+                        <p className="text-center mt-0 lg:mt-10">Data Backup</p>
                       </div>
                     </div>
                     {/* Back side with content */}
                     <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-blueCustomColor overflow-hidden">
                       <div className="text-center flex flex-col items-center justify-center h-full px-2 pb-24 text-gray-300">
-                        <h1 className="text-4xl font-semibold underline decoration-gray-500 mt-5">
+                        <h1 className="text-4xl font-semibold underline decoration-gray-500 mt-16">
                           Data Backup and Recovery
                         </h1>
                         <p className="text-lg py-2 text-gray-200 mt-5">
-                          Cloud storage offers SMBs reliable data backup and
-                          recovery. It securely protects critical data and
-                          simplifies recovery in case of loss or failures,
-                          eliminating the need for physical backup devices.
+                          Securely protect critical data with cloud storage,
+                          simplifying recovery and eliminating physical backup
+                          needs.
                         </p>
-                        {/* <button className="bg-greenCustomColor2 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-15 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125">
-      Read More
-    </button> */}
                       </div>
                     </div>
                   </div>
                 </div>
 
                 {/* New Card 1 */}
-                <div className="w-[500px] h-[325px] bg-transparent cursor-pointer group perspective border border-greenCustomColor2">
+                <div className="w-full h-[150px] lg:w-[400px] lg:h-[300px] bg-transparent cursor-pointer group perspective lg:border lg:border-greenCustomColor2">
                   <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
                     {/* Front side with image */}
                     <div className="absolute backface-hidden w-full h-full">
                       <img
                         src={c3}
-                        alt="Movie Poster"
-                        className="w-full h-full object-cover "
+                        alt="SaaS"
+                        className="w-full h-full object-cover"
                       />
                       <div className="absolute inset-0 flex items-center justify-center text-white text-4xl font-semibold bg-black bg-opacity-40">
-                        <p className="w-full justify-center text-center mt-10 ">
-                          {" "}
-                          SaaS
-                        </p>
+                        <p className="text-center mt-10">SaaS</p>
                       </div>
                     </div>
                     {/* Back side with content */}
                     <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-blueCustomColor overflow-hidden">
                       <div className="text-center flex flex-col items-center justify-center h-full px-2 pb-24 text-gray-300">
-                        <h1 className="text-4xl font-semibold underline decoration-gray-500 mt-5">
+                        <h1 className="text-4xl font-semibold underline decoration-gray-500 mt-16">
                           Software as a Service
                         </h1>
                         <p className="text-lg py-2 text-gray-200 mt-5">
-                          SMBs use SaaS applications to access software via the
-                          cloud, avoiding local installation and maintenance.
-                          SaaS covers various needs like CRM, HR, and
-                          accounting, with subscription-based pricing making it
-                          cost-effective and accessible.
+                          Access software via the cloud, covering CRM, HR, and
+                          more, with subscription-based pricing for
+                          cost-effectiveness.
                         </p>
-                        {/* <button className="bg-greenCustomColor2 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-15 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125">
-      Read More
-    </button> */}
                       </div>
                     </div>
                   </div>
                 </div>
 
                 {/* New Card 2 */}
-                <div className="w-[500px] h-[325px] bg-transparent cursor-pointer group perspective border border-greenCustomColor2">
+                <div className="w-full h-[150px] lg:w-[400px] lg:h-[300px] bg-transparent cursor-pointer group perspective lg:border lg:border-greenCustomColor2">
                   <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
                     {/* Front side with image */}
                     <div className="absolute backface-hidden w-full h-full">
                       <img
                         src={comu}
-                        alt="New Image 2"
+                        alt="Collaboration and Communication"
                         className="w-full h-full object-cover"
                       />
                       <div className="absolute inset-0 flex items-center justify-center text-white text-3xl font-semibold bg-black bg-opacity-40">
-                        <p className="w-full justify-center text-center mt-10">
-                          Collaboration and Communication
-                        </p>
+                        <p className="text-center mt-10">Collaboration</p>
                       </div>
                     </div>
                     {/* Back side with content */}
                     <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-blueCustomColor overflow-hidden">
                       <div className="text-center flex flex-col items-center justify-center h-full px-2 pb-24 text-gray-300">
-                        <h1 className="text-4xl font-semibold underline decoration-gray-500 mt-5">
+                        <h1 className="text-4xl font-semibold underline decoration-gray-500 mt-16">
                           Collaboration and Communication
                         </h1>
                         <p className="text-lg py-2 text-gray-200 mt-5">
-                          SMBs use SaaS to access cloud-based software, avoiding
-                          local installation. SaaS covers various business needs
-                          and offers cost-effective, subscription-based access.
+                          Leverage cloud-based software for business needs,
+                          ensuring accessible and cost-effective solutions.
                         </p>
-                        {/* <button className="bg-greenCustomColor2 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-15 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125">
-      Read More
-    </button> */}
                       </div>
                     </div>
                   </div>
@@ -302,7 +268,7 @@ function SmallandMediumBusiness() {
             </section>
           </div>
 
-          <div className="bg-blueCustomColor p-10 mt-40">
+          <div className="bg-blueCustomColor p-10 lg:mt-0 mt-10">
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
               {/* Text Section */}
               <div className="text-center lg:text-left lg:w-1/2 lg:pr-8">
@@ -468,7 +434,7 @@ function SmallandMediumBusiness() {
             </div>
           </div>
 
-          <div className=" w-full justify-center flex mt-16">
+          <div className="max-w-7xl mx-auto  justify-center flex mt-16">
             <div className="text-center  mx-10">
               <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
                 AWS – Small Medium Business Applications
@@ -483,7 +449,7 @@ function SmallandMediumBusiness() {
             </div>
           </div>
 
-          <div className="relative overflow-hidden mt-5">
+          <div className="max-w-7xl mx-auto relative overflow-hidden mt-5">
             <div
               className="flex transition-transform duration-500"
               style={{ transform: `translateX(-${(currentSlide * 100) / 3}%)` }}
@@ -491,14 +457,14 @@ function SmallandMediumBusiness() {
               {allSlides.map((slide, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 w-1/3 p-4"
+                  className="flex-shrink-0 lg:w-1/3 p-4"
                   onClick={() => handleSlideClick(slide.link)}
                 >
-                  <div className="flex flex-col border justify-between items-center bg-white h-full border-greenCustomColor2">
+                  <div className="flex flex-col border cursor-pointer justify-between items-center bg-white h-full border-greenCustomColor2">
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="w-full h-48 object-cover"
+                      className="w-full h-48   object-cover"
                     />
                     <div className="text-center p-5">
                       <h3 className="text-xl font-bold text-green-800">
@@ -511,7 +477,7 @@ function SmallandMediumBusiness() {
               ))}
             </div>
             {/* Navigation Buttons */}
-            <div className="absolute inset-y-1/2 left-0 transform -translate-y-1/2 px-4">
+            <div className=" max-w-7xl mx-auto absolute inset-y-1/2 left-0 transform -translate-y-1/2 px-4">
               <button
                 onClick={prevSlide}
                 className="bg-transparent text-gray-400 p-3 rounded-full hover:bg-gray-600 focus:outline-none"
@@ -555,7 +521,7 @@ function SmallandMediumBusiness() {
             </div>
           </div>
 
-          <div className="container mx-auto px-4 py-16">
+          <div className="max-w-7xl mx-auto container  px-4 py-16">
             <h1 className="text-3xl font-bold  mb-8">FAQs</h1>
             <p className="text-lg  mb-12">
               Dive into FAQs related to Cyber Security.
@@ -612,7 +578,7 @@ function SmallandMediumBusiness() {
           </div>
         </div>
         <div>
-          <ContactCard/>
+          <ContactCard />
           <Footer />
         </div>
       </div>

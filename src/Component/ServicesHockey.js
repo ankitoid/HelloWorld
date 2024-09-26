@@ -1,5 +1,4 @@
 import React from "react";
-
 import medtechImage from "../Assets/nhl.jpg";
 import complianceImage from "../Assets/servers.jfif";
 import kubernetesImage from "../Assets/AI2.jpg";

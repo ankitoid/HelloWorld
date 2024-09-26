@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-import v1 from "../../Assets/gradient.mp4";
+import v1 from "../../Assets/TCDvid.mp4";
 import colobraction from "../../Assets/cloudSpace.png";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Img1 from "../../Assets/AWS.jfif";
@@ -12,8 +12,7 @@ import c1 from "../../Assets/AWservice.jfif";
 import MicrosoftAzure from "../../Assets/MicrosoftAzure.png";
 import c3 from "../../Assets/google2.jpg";
 import { Link } from "react-router-dom";
-import ContactCard from '../Contact/ContactCard'
-
+import ContactCard from "../Contact/ContactCard";
 
 function MultiCloud() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -62,61 +61,53 @@ function MultiCloud() {
           <div className="max-w-7xl mx-auto flex    flex-col lg:flex-row items-center justify-between">
             {/* Text Section */}
             <div className="text-center lg:text-left lg:w-1/2 lg:pr-8">
-              <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl mt-5">
+              <h2 className="text-3xl md:text-5xl font-bold text-gray-900 sm:text-4xl mt-5">
                 Multi-Cloud Solutions
               </h2>
-              <p className="mt-8 text-xl text-gray-500 ">
-                Multi-Cloud Solutions leverage AWS, Azure, and Google Cloud to
-                enhance flexibility, resilience, and performance. This approach
-                optimizes workloads, improves disaster recovery, and allows
-                businesses to select best-in-class services without vendor
-                lock-in.
+              <p className="mt-8 text-xl text-gray-500">
+                Leverage AWS, Azure, and Google Cloud to enhance flexibility and
+                performance while avoiding vendor lock-in.
               </p>
             </div>
             {/* Image Section */}
-            <div className="relative mt-12 lg:mt-0 lg:w-1/2 ">
+            <div className="relative mt-12 lg:mt-0 lg:w-1/2">
               <img
-                className="w-full rounded-lg l object-cover"
+                className="w-full rounded-lg object-cover"
                 src={colobraction}
                 alt="A man working on a laptop in a server room."
               />
-              <div className="absolute bottom-0 left-0 right-0 p-4 text-white text-center"></div>
             </div>
           </div>
 
-          <div className="w-full px-4 py-12">
-            <h2 className="text-5xl font-bold text-center text-gray-800 mt-12 mb-6">
+          <div className="max-w-7xl mx-auto px-4 py-12">
+            <h2 className="text-3xl md:text-5xl font-bold text-center text-gray-800 mt-12 mb-6">
               Overview of Multi-Cloud Solutions
             </h2>
-            <p className="text-center text-gray-600 text-2xl mb-8">
-              Multi-Cloud Solutions offer flexibility, reduce vendor lock-in,
-              and let you choose the best tools for your needs. Understanding
-              each provider’s strengths is key to successful integration.
+            <p className="text-center text-gray-600 md:text-2xl mb-8">
+              Multi-Cloud Solutions reduce vendor lock-in and enable the
+              selection of optimal tools.
             </p>
-            <ul className="list-disc list-inside mx-auto max-w-4xl text-gray-600 text-xl">
+            <ul className="list-disc list-inside mx-auto max-w-4xl text-gray-600 md:text-xl">
               <li className="mb-6">
-                <strong className="text-gray-800">AWS:</strong> Scalable,
-                reliable, with flexible pricing for diverse needs.
+                <strong className="text-gray-800">AWS:</strong> Scalable and
+                reliable with flexible pricing.
               </li>
               <li className="mb-6">
                 <strong className="text-gray-800">Microsoft Azure:</strong>{" "}
-                Exceptional security, compliance, and seamless integration with
-                Microsoft products.
+                Excellent security and integration with Microsoft products.
               </li>
               <li className="mb-6">
                 <strong className="text-gray-800">Google Cloud:</strong>{" "}
-                High-performance, innovative tools, and smooth integration with
-                Google services.
+                High-performance and innovative tools.
               </li>
             </ul>
-            <p className="text-center text-gray-600 text-xl mt-8">
-              Each provider offers unique benefits, allowing you to build a
-              flexible, future-ready cloud strategy.
+            <p className="text-center text-gray-600 md:text-xl mt-8">
+              Build a flexible, future-ready cloud strategy with the unique
+              benefits each provider offers.
             </p>
           </div>
-
           <div>
-            <div className="flex flex-wrap justify-center gap-14  mt-10 px-4">
+            <div className="flex flex-wrap justify-center gap-14 mt-10 px-4">
               {/* Box 1 */}
               <div className="w-[300px] h-[225px] bg-transparent cursor-pointer group perspective border border-gray-300">
                 <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
@@ -124,20 +115,18 @@ function MultiCloud() {
                   <div className="absolute backface-hidden w-full h-full">
                     <img
                       src={c1}
-                      alt="Service Image"
+                      alt="AWS Service Image"
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-semibold bg-black bg-opacity-40"></div>
                   </div>
 
+                  {/* Back side with content */}
                   <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-blueCustomColor overflow-hidden">
-                    <div className="text-center flex flex-col items-center justify-center h-full px-2  text-gray-300">
+                    <div className="text-center flex flex-col items-center justify-center h-full px-2 text-gray-300">
                       <p className="text-lg py-2 text-gray-200 mt-5">
-                        AWS is a versatile cloud platform by Amazon, providing
-                        services such as computing, storage, databases,
-                        analytics, and machine learning. It is renowned for its
-                        scalability, reliability, and flexibility. Key benefits
-                        include.
+                        AWS: Versatile cloud platform with scalable computing,
+                        storage, and machine learning services.
                       </p>
                     </div>
                   </div>
@@ -151,18 +140,18 @@ function MultiCloud() {
                   <div className="absolute backface-hidden w-full h-full">
                     <img
                       src={MicrosoftAzure}
-                      alt="Service Image"
+                      alt="Azure Service Image"
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-semibold bg-black bg-opacity-40"></div>
                   </div>
+
                   {/* Back side with content */}
                   <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-blueCustomColor overflow-hidden">
-                    <div className="text-center flex flex-col items-center justify-center h-full px-2 pb-24 text-gray-300">
+                    <div className="text-center flex flex-col items-center justify-center h-full px-2 text-gray-300">
                       <p className="text-lg py-2 text-gray-200 mt-10">
-                        Microsoft Azure: A cloud platform known for security,
-                        seamless integration with Microsoft products, hybrid
-                        cloud capabilities, and scalability.
+                        Azure: Secure cloud platform with seamless Microsoft
+                        integration and scalability.
                       </p>
                     </div>
                   </div>
@@ -176,19 +165,18 @@ function MultiCloud() {
                   <div className="absolute backface-hidden w-full h-full">
                     <img
                       src={c3}
-                      alt="Service Image"
+                      alt="Google Cloud Service Image"
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-semibold bg-black bg-opacity-40"></div>
                   </div>
+
                   {/* Back side with content */}
                   <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-blueCustomColor overflow-hidden">
-                    <div className="text-center flex flex-col items-center justify-center h-full px-2 pb-24 text-gray-300">
+                    <div className="text-center flex flex-col items-center justify-center h-full px-2 text-gray-300">
                       <p className="text-lg py-2 text-gray-200 mt-20">
-                        Google Cloud: A cloud platform known for high
-                        performance, innovation, and seamless integration with
-                        other Google products, offering a wide range of services
-                        including computing, storage, and machine learning.
+                        Google Cloud: High-performance platform with innovative
+                        services and integration.
                       </p>
                     </div>
                   </div>
@@ -204,14 +192,12 @@ function MultiCloud() {
                 <h2 className="text-3xl font-bold text-white sm:text-4xl">
                   Value Proposition
                 </h2>
-                <p className="mt-3 text-xl text-gray-300 sm:mt-4">
-                  Our multi-cloud solution combines the strengths of AWS, Azure,
-                  and Google Cloud to provide a flexible, secure, and
-                  high-performance cloud environment. Choose the best services
-                  from each provider to suit your business needs, reduce vendor
-                  lock-in, and optimize costs. Seamlessly integrate these
-                  platforms into your IT infrastructure for maximum value and
-                  performance.
+                <p className="mt-3 text-lg text-gray-300 sm:mt-4">
+                  Our multi-cloud solution harnesses the power of AWS, Azure,
+                  and Google Cloud to deliver a flexible, secure, and
+                  high-performance environment. Optimize costs, reduce vendor
+                  lock-in, and seamlessly integrate services tailored to your
+                  business needs.
                 </p>
               </div>
               {/* Video Section */}
@@ -282,12 +268,12 @@ function MultiCloud() {
               <div className="w-full md:w-1/3 p-4">
                 <div className="mb-4">
                   <div className="bg-gray-100 rounded-lg p-6">
-                    <h3 className="text-2xl font-bold mb-4">Cloud Solution</h3>
+                    <h3 className="text-2xl font-bold mb-4">Cloud Solutions</h3>
                     <p>
-                      Leverage advanced multi-cloud strategies to maximize your
-                      cloud infrastructure's efficiency. Our solutions ensure
-                      smooth integration, robust performance, and secure
-                      management across diverse cloud environments.
+                      Maximize your cloud efficiency with our advanced
+                      multi-cloud strategies. Enjoy seamless integration, robust
+                      performance, and secure management across diverse
+                      environments.
                     </p>
                     <a
                       href="#"
@@ -300,13 +286,12 @@ function MultiCloud() {
                 <div className="mt-4">
                   <div className="bg-gray-100 rounded-lg p-6">
                     <h3 className="text-2xl font-bold mb-4">
-                      Emerging Cloud Technologies
+                      Emerging Technologies
                     </h3>
                     <p>
-                      Discover the latest in cloud technologies, including
-                      AI-driven services, serverless computing, and advanced
-                      security. Stay informed on how these innovations are
-                      shaping the cloud landscape.
+                      Stay updated on AI-driven services, serverless computing,
+                      and advanced security technologies shaping the cloud
+                      landscape.
                     </p>
                     <a
                       href="#"
@@ -455,7 +440,7 @@ function MultiCloud() {
           </div>
         </div>
         <div>
-          <ContactCard/>
+          <ContactCard />
           <Footer />
         </div>
       </div>

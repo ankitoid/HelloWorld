@@ -8,11 +8,11 @@ import c2 from "../../Assets/productive.png";
 import c3 from "../../Assets/adaptive.png";
 import c4 from "../../Assets/cuttingedge.png";
 import { Link } from "react-router-dom";
-import ContactCard from '../Contact/ContactCard'
+import ContactCard from "../Contact/ContactCard";
 
 function CyberSecurity() {
   const [activeQuestion, setActiveQuestion] = useState(null);
- 
+
   const handleToggle = (index) => {
     setActiveQuestion(activeQuestion === index ? null : index);
   };
@@ -29,29 +29,15 @@ function CyberSecurity() {
               <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl mt-5">
                 Cyber Security
               </h2>
-              <p className=" mt-8 text-xl text-gray-500 ">
-                GlobalXperts offers a comprehensive cybersecurity practice
-                focused on safeguarding your data center and cloud environments.
-                Our expert-led approach integrates advanced threat detection,
-                customized security architectures, and proactive risk management
-                to protect your critical assets. By aligning our solutions with
-                your unique business needs, we ensure robust, scalable defenses
-                that keep your data secure and compliant, allowing your business
-                to thrive in a secure environment.
-              </p>
-              <ul className="mt-4 text-xl text-gray-500 list-disc list-inside">
-                <li>
-                  <strong>Audit and Compliance:</strong> Ensuring your
-                  infrastructure meets industry standards like PCI DSS, HIPAA,
-                  and GDPR, and providing recommendations for improvements.
-                </li>
-              </ul>
-              <p className="mt-4 text-xl text-gray-500">
-                Our services help secure your infrastructure and maintain
-                compliance, safeguarding your business against threats.
+              <p className="mt-8 text-xl text-gray-500">
+                GlobalXperts offers tailored cybersecurity solutions to
+                safeguard your data center and cloud environments. Our expert
+                team utilizes advanced threat detection and proactive risk
+                management to deliver robust defenses that fit your business
+                needs.
               </p>
             </div>
- 
+
             {/* Image Section */}
             <div className="relative mt-10 mb-16 lg:mt-0 lg:w-1/2 ">
               <img
@@ -62,135 +48,124 @@ function CyberSecurity() {
               <div className="absolute bottom-0 left-0 right-0 p-4 text-white text-center"></div>
             </div>
           </div>
- 
-          <div className="w-full px-4">
+
+          <div className="max-w-7xl mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mt-28">Overview</h2>
             <p className="text-center mt-5 text-gray-700 text-xl">
               Our cyber security practice offers a unique value proposition that
               focuses on data center and cloud security. Here are the key
               benefits that we bring to the table
             </p>
+            <ul className="mt-4 text-xl text-gray-500 list-disc list-inside">
+              <li>
+                <strong>Audit and Compliance:</strong> We ensure your
+                infrastructure meets industry standards like PCI DSS, HIPAA, and
+                GDPR, offering actionable recommendations for improvement.
+              </li>
+            </ul>
+            <p className="mt-4 text-xl text-gray-500">
+              Our services empower you to secure your infrastructure and
+              maintain compliance, safeguarding your business against evolving
+              threats.
+            </p>
           </div>
- 
-          <div className=" mt-20">
+
+          <div className="mt-0">
             <section className="h-screen flex flex-col justify-center items-center gap-y-16 text-white">
-              <div className="grid grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {" "}
+                {/* Adjust grid to show one column on small screens */}
                 {/* Existing Card 1 */}
-                <div className="w-[500px] h-[325px] bg-transparent cursor-pointer group perspective border border-greenCustomColor2">
-                  <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
+                {/* need some changes */}
+                <div className="w-full h-[150px] lg:w-[400px] lg:h-[300px] bg-transparent cursor-pointer group perspective lg:border lg:border-greenCustomColor2">
+                  <div className="relative lg:preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
                     {/* Front side with image */}
-                    <div className="absolute backface-hidden w-full h-full">
+                    <div className="lg:absolute  backface-hidden w-full h-full">
                       <img
                         src={c1}
                         alt="Movie Poster"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover "
                       />
-                      <div className="absolute inset-0 flex items-center justify-center text-white text-4xl font-semibold bg-black bg-opacity-40">
-                        <p className="w-full justify-center text-center mt-24">
-                          Risk Management
-                        </p>
+                      <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-semibold bg-black bg-opacity-40">
+                        <p className="text-center mt-10">Risk Management</p>
                       </div>
                     </div>
                     {/* Back side with content */}
                     <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-blueCustomColor overflow-hidden">
-                      <div className="text-center flex flex-col items-center justify-center h-full px-2 pb-24 text-gray-300">
-                        <h1 className="text-4xl font-semibold underline decoration-gray-500 mt-5">
+                      <div className="text-center flex flex-col items-center justify-center h-full px-2 pb-16 text-gray-300">
+                        <h1 className="text-3xl font-semibold underline decoration-gray-500 mt-5">
                           Risk Management
                         </h1>
-                        <p className="text-lg py-2 text-gray-200 mt-5">
-                          Our expert team conducts thorough audits of your data
-                          center and cloud environments to ensure compliance
-                          with evolving standards like PCI DSS, HIPAA, and GDPR.
-                          We help manage risks, avoid fines, and maintain robust
-                          security.
+                        <p className="text-lg py-2 text-gray-200 mt-4">
+                          Comprehensive audits to ensure compliance with
+                          standards like PCI DSS, HIPAA, and GDPR.
                         </p>
-                        {/* <button className="bg-greenCustomColor2 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-15 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125">
-          Read More
-        </button> */}
                       </div>
                     </div>
                   </div>
                 </div>
- 
                 {/* Existing Card 2 */}
-                <div className="w-[500px] h-[325px] bg-transparent cursor-pointer group perspective border border-greenCustomColor2">
+                <div className="w-full h-[150px] lg:w-[400px] lg:h-[300px] bg-transparent cursor-pointer group perspective lg:border lg:border-greenCustomColor2">
                   <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
                     {/* Front side with image */}
                     <div className="absolute backface-hidden w-full h-full">
                       <img
                         src={c2}
                         alt="Movie Poster"
-                        className="w-full h-full object-cover "
+                        className="w-full h-full object-cover"
                       />
-                      <div className="absolute inset-0 flex items-center justify-center text-white text-4xl font-semibold bg-black bg-opacity-40">
-                        <p className="w-full justify-center text-center mt-24 ">
-                          {" "}
+                      <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-semibold bg-black bg-opacity-40">
+                        <p className="text-center mt-10">
                           Proactive Threat Hunting
                         </p>
                       </div>
                     </div>
                     {/* Back side with content */}
                     <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-blueCustomColor overflow-hidden">
-                      <div className="text-center flex flex-col items-center justify-center h-full px-2 pb-24 text-gray-300">
-                        <h1 className="text-4xl font-semibold underline decoration-gray-500 mt-5">
+                      <div className="text-center flex flex-col items-center justify-center h-full px-2 pb-16 text-gray-300">
+                        <h1 className="text-3xl font-semibold underline decoration-gray-500 mt-5">
                           Proactive Threat Hunting
                         </h1>
-                        <p className="text-lg py-2 text-gray-200 mt-5">
-                          Stay ahead of cyber threats with our proactive threat
-                          hunting and advanced penetration testing services. We
-                          simulate real-world attacks to identify and address
-                          vulnerabilities in your infrastructure before they can
-                          be exploited, reducing the risk of breaches and
-                          minimizing potential financial impacts.
+                        <p className="text-lg py-2 text-gray-200 mt-4">
+                          Stay ahead of threats with our advanced penetration
+                          testing services.
                         </p>
-                        {/* <button className="bg-greenCustomColor2 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-15 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125">
-      Read More
-    </button> */}
                       </div>
                     </div>
                   </div>
                 </div>
- 
                 {/* New Card 1 */}
-                <div className="w-[500px] h-[325px] bg-transparent cursor-pointer group perspective border border-greenCustomColor2">
+                <div className="w-full h-[150px] lg:w-[400px] lg:h-[300px] bg-transparent cursor-pointer group lg:perspective lg:border lg:border-greenCustomColor2">
                   <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
                     {/* Front side with image */}
                     <div className="absolute backface-hidden w-full h-full">
                       <img
                         src={c3}
                         alt="Movie Poster"
-                        className="w-full h-full object-cover "
+                        className="w-full h-full object-cover"
                       />
-                      <div className="absolute inset-0 flex items-center justify-center text-white text-4xl font-semibold bg-black bg-opacity-40">
-                        <p className="w-full justify-center text-center mt-10 ">
-                          {" "}
+                      <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-semibold bg-black bg-opacity-40">
+                        <p className="text-center mt-10">
                           Adaptive Security Architectures
                         </p>
                       </div>
                     </div>
                     {/* Back side with content */}
                     <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-blueCustomColor overflow-hidden">
-                      <div className="text-center flex flex-col items-center justify-center h-full px-2 pb-24 text-gray-300">
-                        <h1 className="text-4xl font-semibold underline decoration-gray-500 mt-5">
+                      <div className="text-center flex flex-col items-center justify-center h-full px-2 pb-16 text-gray-300">
+                        <h1 className="text-3xl font-semibold underline decoration-gray-500 mt-5">
                           Adaptive Security Architectures
                         </h1>
-                        <p className="text-lg py-2 text-gray-200 mt-5">
-                          We create adaptive security solutions tailored to your
-                          unique needs, using the latest technologies and
-                          strategies. Our services include comprehensive audits
-                          and ongoing monitoring to ensure your defenses stay
-                          ahead of emerging threats.
+                        <p className="text-lg py-2 text-gray-200 mt-4">
+                          Tailored security solutions using the latest
+                          technologies.
                         </p>
-                        {/* <button className="bg-greenCustomColor2 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-15 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125">
-      Read More
-    </button> */}
                       </div>
                     </div>
                   </div>
                 </div>
- 
                 {/* New Card 2 */}
-                <div className="w-[500px] h-[325px] bg-transparent cursor-pointer group perspective border border-greenCustomColor2">
+                <div className="w-full h-[150px] lg:w-[400px] lg:h-[300px] bg-transparent cursor-pointer group perspective  lg:border-greenCustomColor2">
                   <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
                     {/* Front side with image */}
                     <div className="absolute backface-hidden w-full h-full">
@@ -199,27 +174,22 @@ function CyberSecurity() {
                         alt="New Image 2"
                         className="w-full h-full object-cover"
                       />
-                      <div className="absolute inset-0 flex items-center justify-center text-white text-3xl font-semibold bg-black bg-opacity-40">
-                        <p className="w-full justify-center text-center mt-10">
+                      <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-semibold bg-black bg-opacity-40">
+                        <p className="text-center mt-10">
                           Cutting-Edge Cybersecurity
                         </p>
                       </div>
                     </div>
                     {/* Back side with content */}
                     <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-blueCustomColor overflow-hidden">
-                      <div className="text-center flex flex-col items-center justify-center h-full px-2 pb-24 text-gray-300">
-                        <h1 className="text-4xl font-semibold underline decoration-gray-500 mt-5">
+                      <div className="text-center flex flex-col items-center justify-center h-full px-2 pb-16 text-gray-300">
+                        <h1 className="text-3xl font-semibold underline decoration-gray-500 mt-5">
                           Cutting-Edge Cybersecurity
                         </h1>
-                        <p className="text-lg py-2 text-gray-200 mt-5">
-                          Benefit from our team’s expertise and the latest
-                          cybersecurity trends. We deliver cutting-edge security
-                          solutions and insights to protect your business from
-                          advanced cyber threats.
+                        <p className="text-lg py-2 text-gray-200 mt-4">
+                          Stay protected from advanced cyber threats with our
+                          insights.
                         </p>
-                        {/* <button className="bg-greenCustomColor2 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-15 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125">
-      Read More
-    </button> */}
                       </div>
                     </div>
                   </div>
@@ -227,8 +197,8 @@ function CyberSecurity() {
               </div>
             </section>
           </div>
- 
-          <div className="bg-blueCustomColor p-10 mt-40">
+
+          <div className="bg-blueCustomColor p-10 mt-12 lg:mt-0">
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
               {/* Text Section */}
               <div className="text-center lg:text-left lg:w-1/2 lg:pr-8">
@@ -237,10 +207,9 @@ function CyberSecurity() {
                 </h2>
                 <div className="security-services mt-2">
                   <p className="text-gray-300">
-                    GlobalXperts engineers monitor and act on security
-                    violations based on your policies. We offer 24×7 monitoring,
-                    incident response, and expert troubleshooting for security
-                    and SIP issues. Our services include:
+                    Our 24/7 monitoring and incident response services ensure
+                    your security policies are enforced effectively. We
+                    specialize in:
                   </p>
                   <ul className="service-list text-gray-300 space-y-2 mt-4">
                     <li className="flex items-center">
@@ -252,9 +221,9 @@ function CyberSecurity() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           d="M9 16l3 3L22 7"
                         ></path>
                       </svg>
@@ -269,9 +238,9 @@ function CyberSecurity() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           d="M9 16l3 3L22 7"
                         ></path>
                       </svg>
@@ -286,9 +255,9 @@ function CyberSecurity() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           d="M9 16l3 3L22 7"
                         ></path>
                       </svg>
@@ -303,9 +272,9 @@ function CyberSecurity() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           d="M9 16l3 3L22 7"
                         ></path>
                       </svg>
@@ -320,9 +289,9 @@ function CyberSecurity() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           d="M9 16l3 3L22 7"
                         ></path>
                       </svg>
@@ -337,26 +306,9 @@ function CyberSecurity() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M9 16l3 3L22 7"
-                        ></path>
-                      </svg>
-                      Security Information Management
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2 text-green-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           d="M9 16l3 3L22 7"
                         ></path>
                       </svg>
@@ -371,9 +323,9 @@ function CyberSecurity() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           d="M9 16l3 3L22 7"
                         ></path>
                       </svg>
@@ -382,6 +334,7 @@ function CyberSecurity() {
                   </ul>
                 </div>
               </div>
+
               {/* Video Section */}
               <div className="relative mt-12 lg:mt-0 lg:w-1/2">
                 <video
@@ -397,7 +350,7 @@ function CyberSecurity() {
               </div>
             </div>
           </div>
- 
+
           <div className="container mx-auto px-4 py-16">
             <div className="flex mb-16">
               <Link
@@ -517,14 +470,12 @@ function CyberSecurity() {
           </div>
         </div>
         <div>
-          <ContactCard/>
+          <ContactCard />
           <Footer />
         </div>
       </div>
     </div>
   );
 }
- 
+
 export default CyberSecurity;
- 
- 

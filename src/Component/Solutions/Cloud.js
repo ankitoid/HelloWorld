@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import img1 from "../../Assets/cloud.avif";
 import img2 from "../../Assets/aws2.jpg";
 import Footer from "../Footer";
-import cloudSerive from "../../Assets/AI2.jpg";
+import cloudSerive from "../../Assets/dvops.png";
 import c1 from "../../Assets/cloud2.jpg";
 import c2 from "../../Assets/migration.avif";
 import c3 from "../../Assets/image (10).png";
@@ -23,7 +23,7 @@ const Cloud = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentImageSubIndex, setCurrentImageSubIndex] = useState(0);
   const [activeQuestion, setActiveQuestion] = useState(null);
-    
+
   const handleToggle = (index) => {
     setActiveQuestion(activeQuestion === index ? null : index);
   };
@@ -72,13 +72,13 @@ const Cloud = () => {
                     Cloud & DevOps
                   </h2>
                   <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-                    GlobalXperts leverages its extensive cloud expertise to
-                    support clients worldwide at every stage of their cloud
-                    journey. From consulting and migration to 24/7 managed
-                    services, DevOps, and cost optimization, we provide
-                    comprehensive solutions tailored to your unique needs.
+                    GlobalXperts delivers expert cloud solutions, from
+                    consulting and migration to DevOps and 24/7 support,
+                    ensuring optimal performance and cost efficiency throughout
+                    your cloud journey.
                   </p>
                 </div>
+
                 {/* Image Section */}
                 <div className="relative mt-12 lg:mt-0 lg:w-1/2 ">
                   <img
@@ -89,29 +89,21 @@ const Cloud = () => {
                   <div className="absolute bottom-0 left-0 right-0 p-4 text-white text-center"></div>
                 </div>
               </div>
-              <h2 className="text-4xl font-bold text-center mt-28">Overview</h2>{" "}
+              <h2 className="text-4xl font-bold text-center mt-28">Overview</h2>
               <p className="text-center mt-5 text-gray-700 text-xl">
-                {" "}
-                GlobalXperts distinguishes itself from traditional consultants,
-                boutique firms, and cloud providers by being a one-stop shop for
-                all your cloud computing needs. We offer independent expertise
-                and comprehensive services throughout the entire cloud journey,
-                from developing a winning strategy to migrating workloads and
-                continuously optimizing your cloud environment.{" "}
-              </p>{" "}
+                GlobalXperts is your one-stop shop for cloud computing, offering
+                independent expertise and services from strategy development to
+                workload migration and continuous optimization.
+              </p>
               <p className="text-center mt-5 text-gray-700 text-xl">
-                {" "}
-                Our approach to cloud management aligns your people, processes,
-                and technology, making it easier to achieve the visibility and
-                resilience required to seamlessly scale your cloud
-                infrastructure alongside your business growth.{" "}
-              </p>{" "}
+                We align your people, processes, and technology, ensuring
+                visibility and resilience as your cloud infrastructure scales
+                with business growth.
+              </p>
               <p className="text-center mt-5 text-gray-700 text-xl">
-                {" "}
-                Unlock the full potential of the cloud with GlobalXperts’
-                cutting-edge services and tailored solutions that align with
-                your unique business objectives, empowering you to reach new
-                heights of success.{" "}
+                Unlock the cloud's full potential with GlobalXperts’ tailored
+                solutions, designed to help you achieve your business goals and
+                drive success.
               </p>
             </div>
 
@@ -329,10 +321,9 @@ const Cloud = () => {
                       </Link>
                       <button
                         onClick={handleContactUsClick}
-
                         className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-lg transition duration-200 ease-in-out transform hover:scale-105 shadow-lg"
-                      > 
-                       <FcCustomerSupport size={24} />
+                      >
+                        <FcCustomerSupport size={24} />
                         <span>Contact Us</span>
                       </button>
                     </div>

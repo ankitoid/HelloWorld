@@ -79,7 +79,7 @@ const Navbar = () => {
         onMouseLeave={handleMouseLeave}
       >
         {/* Logo */}
-        <div className="flex items-center">
+        <div className="flex items-center 2xl:items-start ">
           <Link to="/" className="flex items-center">
             <img src={lg} alt="Logo" className="h-20 w-auto" />
           </Link>
@@ -516,7 +516,7 @@ const Navbar = () => {
 
         {/* Get Started Link */}
         <div className="flex items-center ">
-          <div className="py-5  scroll-px-3 lg:py-5 lg:px-4 md:px-6 lg:hover:rounded-l-full hover:bg-greenCustomColor bg-greenCustomColor2 transition-all duration-300">
+          <div className="2xl:ml-44 py-5 scroll-px-3 lg:py-5 lg:px-4 md:px-6 lg:hover:rounded-l-full hover:bg-greenCustomColor bg-greenCustomColor2 transition-all duration-300">
             <Link
               to="/get-started"
               className="text-white font-bold text-sm md:text-base"
@@ -526,20 +526,23 @@ const Navbar = () => {
           </div>
         </div>
         {/* Mobile Navigation */}
-        <button className="md:hidden p-4 " onClick={toggleMobileMenu}>
+        <button
+          className="md:hidden p-4 transform transition-transform z-50 duration-300 ease-in-out"
+          onClick={toggleMobileMenu}
+        >
           {showMobileMenu ? <FaTimes /> : <FaBars />}
         </button>
 
         {/* Mobile Menu */}
         {showMobileMenu && (
           <div
-            className={`md:hidden absolute top-16 left-0 w-full 	 bg-white shadow-lg p-4 transition-transform duration-700  ease-in-out  ${
+            className={`md:hidden absolute top-16 left-0 w-full bg-white shadow-lg p-4 transition-transform duration-300 ease-in-out ${
               showMobileMenu
                 ? "translate-y-0 opacity-100"
                 : "-translate-y-10 opacity-0 pointer-events-none"
             }`}
           >
-            <ul className="flex flex-col space-y-4 transition-all duration-900 ease-in-out">
+            <ul className="flex flex-col space-y-4 transition-all duration-300 ease-in-out">
               <li>
                 <Link to="/" className="px-4 py-2 text-left">
                   Home
