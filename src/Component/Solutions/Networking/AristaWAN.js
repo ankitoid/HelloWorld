@@ -16,10 +16,10 @@ const AristaWAN = () => {
               Transforming Enterprise Connectivity with Arista WAN
             </h2>
             <p className="text-lg mb-6 leading-relaxed">
-              As enterprises embrace the hybrid work environment, workforces continue to demonstrate consistent or even improved productivity. To support this shift, campus administrators are evolving to address new challenges around security, collaboration, and remote support.
+              In the hybrid work environment, productivity remains strong. To support this shift, campus administrators must tackle new challenges related to security, collaboration, and remote support.
             </p>
             <p className="text-lg leading-relaxed">
-              Simultaneously, the deployment of campus IoT devices is increasing at an exponential rate. These devices are crucial in supporting the distributed workforce, driving productivity, and ensuring seamless operations across locations. Arista WAN solutions help businesses adapt to this modern, connected infrastructure by providing scalable, secure, and reliable network connectivity.
+              The rapid deployment of IoT devices is essential for a distributed workforce, driving productivity and ensuring seamless operations. Arista WAN solutions provide the scalable, secure, and reliable network connectivity needed for this modern infrastructure.
             </p>
           </div>
 
@@ -40,4 +40,3 @@ const AristaWAN = () => {
 };
 
 export default AristaWAN;
-  

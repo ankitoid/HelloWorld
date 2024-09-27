@@ -16,10 +16,10 @@ const AristaEdge = () => {
             Edge Threat Management with Arista Networks
           </h2>
           <p className="text-base md:text-lg mb-4 md:mb-6 leading-relaxed">
-            Edge Threat Management is a key component of The Cognitive Unified Edge (CUE) from Arista Networks. CUE enables commercial customers to accelerate new services and technology innovations by consolidating multiple security and networking functions into an “edge as a service” cloud-managed solution.
+            Edge Threat Management is a crucial part of Arista Networks' Cognitive Unified Edge (CUE), enabling businesses to innovate by integrating security and networking functions into a comprehensive “edge as a service” solution.
           </p>
           <p className="text-base md:text-lg leading-relaxed">
-            CUE provides plug and play simplicity and workflows for small enterprise LAN, Wi-Fi, security, and micro WAN connectivity services. This solution offers businesses the flexibility, security, and performance needed to operate in an ever-evolving digital landscape.
+            CUE offers a plug-and-play experience for small enterprise LAN, Wi-Fi, security, and micro WAN connectivity, providing the flexibility and performance needed to thrive in a rapidly changing digital environment.
           </p>
         </div>
 

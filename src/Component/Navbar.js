@@ -555,7 +555,7 @@ const Navbar = () => {
                   className="w-full text-left"
                   onClick={() => handleToggle(1)}
                 >
-                  Service
+                  Solutions
                 </button>
                 {openIndex === 1 && (
                   <ul className="pl-4 space-y-2 transition-all duration-300 ease-in-out">

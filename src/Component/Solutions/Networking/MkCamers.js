@@ -4,7 +4,7 @@ import Navbar from "../../Navbar";
 import Footer from "../../Footer";
 import ContactCard from "../../Contact/ContactCard";
 
-const MkCamers = () => {
+const MkCameras = () => {
   return (
     <>
       <Navbar />
@@ -14,28 +14,19 @@ const MkCamers = () => {
           <div className="w-full md:w-1/2">
             <img
               src={arista3}
-              alt="Meraki Wireless Access Points"
+              alt="Cloud-Managed Smart Cameras"
               className="w-full h-auto object-cover rounded-lg"
             />
           </div>
 
           {/* Description Section */}
           <div className="w-full md:w-1/2 md:pl-6">
-            <h2 className="text-2xl font-bold mb-4">
-              Cloud-Managed Smart Cameras
-            </h2>
+            <h2 className="text-2xl font-bold mb-4">Cloud-Managed Smart Cameras</h2>
             <p className="text-gray-700 mb-4 leading-relaxed">
-              The MV Smart Camera family brings simplicity and data-powered
-              intelligence to the security camera world. Every MV model comes
-              with a powerful processor — the same kind found in many of today’s
-              smartphones — and an innovative architecture that minimizes physical
-              infrastructure as well as software requirements.
+              The MV Smart Camera family combines simplicity with powerful data-driven intelligence. Each model is equipped with a high-performance processor similar to those in modern smartphones, reducing the need for extensive physical infrastructure and complex software.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              These smart cameras not only help ensure physical safety and
-              security, but also provide advanced business intelligence. MV smart
-              cameras pack fast processing power, robust security features, and
-              sophisticated analytics into a refreshingly simple package.
+              These cameras not only enhance physical security but also deliver valuable business insights. MV smart cameras feature fast processing capabilities, robust security, and sophisticated analytics—all within a user-friendly design.
             </p>
           </div>
         </div>
@@ -46,4 +37,4 @@ const MkCamers = () => {
   );
 };
 
-export default MkCamers;
+export default MkCameras;

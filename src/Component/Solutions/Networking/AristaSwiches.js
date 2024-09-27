@@ -24,13 +24,10 @@ const MkSwitches = () => {
               Cisco Meraki Switches
             </h3>
             <p className="text-gray-700 mb-4">
-              Cisco Meraki switches offer a broad range of networking solutions built from the ground up to be easy to manage without sacrificing power or flexibility. These enterprise-class switches are ideal for businesses of all sizes, providing seamless connectivity with centralized management.
+              Cisco Meraki switches provide easy-to-manage networking solutions for businesses of all sizes. Their cloud-based management simplifies device configuration, allowing administrators to focus on business needs rather than repetitive tasks.
             </p>
             <p className="text-gray-700 mb-4">
-              Managed through an intuitive cloud-based interface, Meraki switches allow administrators to spend less time configuring devices and more time focusing on business needs. With Meraki's plug-and-play setup, there’s no need for repetitive, command-based configurations. Switches can be operational within minutes of being connected to the network.
-            </p>
-            <p className="text-gray-700 mb-4">
-              A powerful centralized management interface provides deep visibility into network usage and performance. Administrators can monitor switches, configure ports with security policies, manage QoS settings, and analyze event logs—all from the Meraki dashboard, making switch management efficient and scalable across multiple locations.
+              With plug-and-play setup, switches can be operational within minutes. The centralized management interface offers deep visibility into network performance, allowing for effective monitoring, port configuration, and security management from the Meraki dashboard.
             </p>
           </div>
         </div>

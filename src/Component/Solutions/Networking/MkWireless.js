@@ -24,22 +24,10 @@ const MkWireless = () => {
             Meraki Wireless Cloud-Managed Access Points
           </h2>
           <p className="text-gray-700 mb-4">
-            The Meraki cloud-managed architecture allows users to seamlessly
-            manage campus-wide Wi-Fi deployments and distributed multi-site
-            networks with zero-touch access point provisioning, network-wide
-            visibility and control, self-learning RF optimization, seamless
-            firmware updates, and more. With an intuitive browser-based user
-            interface, Meraki WLAN configures in minutes without training or
-            dedicated staff, offering scalability with templates.
+            The Meraki cloud-managed architecture enables seamless management of campus-wide Wi-Fi and distributed networks. It features zero-touch provisioning, network-wide visibility, self-learning RF optimization, and easy firmware updates.
           </p>
           <p className="text-gray-700">
-            Adding new sites to a network takes minutes, not hours or days, and
-            there’s no need to train additional staff to monitor or manage the
-            remote networks. Meraki devices are self-provisioning, enabling large
-            campus and multi-site deployments without on-site IT. Learning from
-            billions of touchpoints, AI and data-powered Meraki Health empowers
-            customers with the data they need to stay informed and the context
-            they need to make decisions.
+            Adding new sites to a network is quick and doesn't require extensive training for staff. Meraki's self-provisioning devices support large deployments efficiently, leveraging AI and data to provide essential insights for decision-making.
           </p>
         </div>
       </div>

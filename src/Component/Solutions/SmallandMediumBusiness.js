@@ -15,7 +15,8 @@ import { Link } from "react-router-dom";
 
 import ContactCard from "../Contact/ContactCard";
 function SmallandMediumBusiness() {
-  
+  const [isMobile, setIsMobile] = useState(false);
+
   const slides = [
     {
       id: 1,
@@ -58,33 +59,41 @@ function SmallandMediumBusiness() {
       link: "/TitanGX",
     },
   ];
-  
-  const handleSlideClick = (link) => {
-    window.location.href = link;
-  };
-  const allSlides = [...slides, ...slides, ...slides];
-  const [currentSlide, setCurrentSlide] = useState(slides.length);
+
+  const allSlides = [...slides, ...slides, ...slides]; // Tripled slides for infinite loop
+  const [currentSlide, setCurrentSlide] = useState(slides.length); // Start in the middle
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust threshold for mobile detection
+    };
+
+    checkMobile(); // Initial check on mount
+
+    window.addEventListener("resize", checkMobile); // Listen for screen size changes
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => {
         const nextSlide = prevSlide + 1;
         if (nextSlide >= slides.length * 2) {
-          setTimeout(() => setCurrentSlide(slides.length), 0); // Reset to the first slide smoothly
+          setTimeout(() => setCurrentSlide(slides.length), 0); // Reset to middle
           return slides.length;
         }
         return nextSlide;
       });
-    }, 3000); // Change slide every 3 seconds
+    }, 3000); // Slide changes every 3 seconds
 
-    return () => clearInterval(interval); // Clean up interval on component unmount
+    return () => clearInterval(interval); // Cleanup on unmount
   }, [slides.length]);
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => {
       const nextSlide = prevSlide + 1;
       if (nextSlide >= slides.length * 2) {
-        setTimeout(() => setCurrentSlide(slides.length), 0);
+        setTimeout(() => setCurrentSlide(slides.length), 0); // Jump back to first duplicate
         return slides.length;
       }
       return nextSlide;
@@ -95,12 +104,60 @@ function SmallandMediumBusiness() {
     setCurrentSlide((prevSlide) => {
       const prevSlideIndex = prevSlide - 1;
       if (prevSlideIndex < slides.length) {
-        setTimeout(() => setCurrentSlide(slides.length * 2 - 1), 0);
+        setTimeout(() => setCurrentSlide(slides.length * 2 - 1), 0); // Jump to last duplicate
         return slides.length * 2 - 1;
       }
       return prevSlideIndex;
     });
   };
+
+  const handleSlideClick = (link) => {
+    window.location.href = link; // Redirect to clicked slide's link
+  };
+
+  const [activeQuestion, setActiveQuestion] = useState(null);
+
+  const handleToggle = (index) => {
+    setActiveQuestion(activeQuestion === index ? null : index);
+  };
+
+  const questionsAndAnswers = [
+    {
+      question: "Do you want to secure your data from cyber threats?",
+      answer:
+        "We implement comprehensive security solutions including multi-layered physical security with biometric access control, surveillance, and secured access zones. On the cyber front, we deploy advanced firewalls, encryption, and DDoS protection to safeguard against external threats. Our monitoring and response systems ensure swift identification and mitigation of any breaches.",
+    },
+    {
+      question:
+        "Can you detect and respond to a ransomware attack confidently?",
+      answer:
+        "Yes, we have established protocols to detect and respond to ransomware attacks swiftly. This includes regular data backups, employee training on identifying threats, and incident response plans that ensure minimal downtime and data loss.",
+    },
+    {
+      question:
+        "Are you protected against phishing and social engineering attacks?",
+      answer:
+        "We provide comprehensive training for employees on recognizing phishing attempts and social engineering tactics. In addition, we utilize advanced email filtering solutions to reduce the likelihood of such attacks.",
+    },
+    {
+      question:
+        "Is your organization ready to prevent and handle a data breach?",
+      answer:
+        "Yes, our organization has a robust incident response plan that includes regular security assessments, employee training, and protocols for timely communication with stakeholders in the event of a data breach.",
+    },
+    {
+      question: "Is your cloud infrastructure secure and properly monitored?",
+      answer:
+        "We employ a multi-layered security strategy for our cloud infrastructure, including encryption, regular audits, and continuous monitoring to ensure that all security measures are up to date and effective.",
+    },
+    {
+      question:
+        "Are your employees trained on the latest cybersecurity threats?",
+      answer:
+        "Yes, we conduct regular training sessions and workshops to keep our employees informed about the latest cybersecurity threats and the best practices for preventing them.",
+    },
+  ];
+
   return (
     <div>
       <div className="w-full">
@@ -115,15 +172,9 @@ function SmallandMediumBusiness() {
                 Small and Medium Business
               </h2>
               <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-                Small and medium businesses (SMBs) are increasingly adopting
-                cloud computing to enhance efficiency and stay competitive.
-                Cloud solutions offer scalable and cost-effective IT resources,
-                reducing the need for significant upfront investments in
-                hardware. By leveraging these technologies, SMBs can optimize
-                operations, lower costs, and easily adjust resources to meet
-                changing demands. This agility allows businesses to focus on
-                innovation and growth rather than managing complex IT
-                environments.
+                SMBs are embracing cloud computing to streamline operations, cut
+                costs, and scale IT resources, allowing them to focus on
+                innovation and growth.
               </p>
             </div>
 
@@ -268,169 +319,36 @@ function SmallandMediumBusiness() {
             </section>
           </div>
 
-          <div className="bg-blueCustomColor p-10 lg:mt-0 mt-10">
-            <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
-              {/* Text Section */}
-              <div className="text-center lg:text-left lg:w-1/2 lg:pr-8">
-                <h2 className="text-3xl font-bold text-white sm:text-4xl">
-                  Product Offering Details
-                </h2>
-                <div className="security-services mt-2">
-                  <p className="text-gray-300">
-                    We understand SMBs' challenges in competing with larger
-                    organizations, so we provide scalable, usage-based solutions
-                    that keep up with current technology. Below are some of our
-                    offerings:
-                  </p>
-                  <ul className="service-list text-gray-300 space-y-2 mt-4">
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2 text-green-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M9 16l3 3L22 7"
-                        ></path>
-                      </svg>
-                      Amazon Web Services
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2 text-green-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M9 16l3 3L22 7"
-                        ></path>
-                      </svg>
-                      Call Center Solutions
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2 text-green-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M9 16l3 3L22 7"
-                        ></path>
-                      </svg>
-                      Microsoft Products for the Office
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2 text-green-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M9 16l3 3L22 7"
-                        ></path>
-                      </svg>
-                      Microsoft Advanced Services
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2 text-green-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M9 16l3 3L22 7"
-                        ></path>
-                      </svg>
-                      Network Attached Infrastructure
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2 text-green-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M9 16l3 3L22 7"
-                        ></path>
-                      </svg>
-                      Titan GX On-Site Storage
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2 text-green-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M9 16l3 3L22 7"
-                        ></path>
-                      </svg>
-                      Customer Service | Helpdesk
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2 text-green-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M9 16l3 3L22 7"
-                        ></path>
-                      </svg>
-                      Desktop Software and Hardware
-                    </li>
-                  </ul>
+          <div className="max-w-7xl mx-auto container px-4 py-16">
+            <h1 className="text-3xl font-bold mb-8">FAQs</h1>
+            <p className="text-lg mb-12">
+              Dive into FAQs related to Cyber Security.
+            </p>
+            <div className="flex mb-16">
+              <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full mr-4">
+                Contact Us
+              </button>
+              <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full">
+                FAQs
+                <span className="ml-2">→</span>
+              </button>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {questionsAndAnswers.map((qa, index) => (
+                <div key={index}>
+                  <h2
+                    className="text-xl font-bold mb-2 cursor-pointer"
+                    onClick={() => handleToggle(index)}
+                  >
+                    <a href="#" className="text-blue-500">
+                      {qa.question}
+                    </a>
+                  </h2>
+                  {activeQuestion === index && (
+                    <p className="text-lg mb-4">{qa.answer}</p>
+                  )}
                 </div>
-              </div>
-              {/* Video Section */}
-              <div className="relative mt-12 lg:mt-0 lg:w-1/2">
-                <img
-                  className="w-full rounded-lg"
-                  src={v1}
-                  alt="A man working on a laptop in a server room."
-                />
-                <div className="absolute bottom-0 left-0 right-0 p-4 text-white text-center"></div>
-              </div>
+              ))}
             </div>
           </div>
 
@@ -440,11 +358,9 @@ function SmallandMediumBusiness() {
                 AWS – Small Medium Business Applications
               </h2>
               <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-                Multi-Cloud Solutions involve using multiple cloud service
-                providers to manage different aspects of an organization's IT
-                infrastructure. This approach offers greater flexibility,
-                redundancy, and risk management by leveraging the strengths of
-                various cloud platforms for storage, computing, and services.
+                Multi-Cloud Solutions use multiple providers to enhance
+                flexibility, redundancy, and risk management across storage,
+                computing, and services.
               </p>
             </div>
           </div>
@@ -452,19 +368,25 @@ function SmallandMediumBusiness() {
           <div className="max-w-7xl mx-auto relative overflow-hidden mt-5">
             <div
               className="flex transition-transform duration-500"
-              style={{ transform: `translateX(-${(currentSlide * 100) / 3}%)` }}
+              style={{
+                transform: `translateX(-${
+                  (currentSlide * 100) / (isMobile ? 1 : 3)
+                }%)`,
+              }}
             >
               {allSlides.map((slide, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 lg:w-1/3 p-4"
+                  className={`flex-shrink-0 ${
+                    isMobile ? "w-full" : "w-1/3"
+                  } p-4`}
                   onClick={() => handleSlideClick(slide.link)}
                 >
                   <div className="flex flex-col border cursor-pointer justify-between items-center bg-white h-full border-greenCustomColor2">
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="w-full h-48   object-cover"
+                      className="w-full h-48 object-cover"
                     />
                     <div className="text-center p-5">
                       <h3 className="text-xl font-bold text-green-800">
@@ -477,7 +399,7 @@ function SmallandMediumBusiness() {
               ))}
             </div>
             {/* Navigation Buttons */}
-            <div className=" max-w-7xl mx-auto absolute inset-y-1/2 left-0 transform -translate-y-1/2 px-4">
+            <div className="max-w-7xl mx-auto absolute inset-y-1/2 left-0 transform -translate-y-1/2 px-4">
               <button
                 onClick={prevSlide}
                 className="bg-transparent text-gray-400 p-3 rounded-full hover:bg-gray-600 focus:outline-none"
@@ -528,10 +450,10 @@ function SmallandMediumBusiness() {
             </p>
             <div className="flex  mb-16">
               <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full mr-4">
-                Solve this type Problem
+                ContactUS
               </button>
               <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full">
-                See All FAQs
+                FAQs
                 <span className="ml-2">→</span>
               </button>
             </div>

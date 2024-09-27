@@ -65,17 +65,9 @@ const AWSmallMedium = () => {
               Small and Medium Business
             </h2>
             <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-              Small and medium businesses (SMBs) are rapidly adopting cloud
-              computing to transform their IT operations, drive efficiency, and
-              stay competitive in a digital-first world. Cloud solutions empower
-              SMBs by providing access to scalable, flexible, and cost-effective
-              IT resources that eliminate the need for substantial upfront
-              investments in physical hardware and infrastructure. By leveraging
-              cloud technology, SMBs can optimize their operations, reduce
-              overhead costs, and easily scale their resources up or down to
-              meet evolving business demands. This approach not only enhances
-              agility but also ensures businesses can focus on innovation and
-              growth rather than managing complex IT environments.
+              SMBs are adopting cloud computing to enhance efficiency and
+              scalability, reducing costs while focusing on innovation and
+              growth.
             </p>
           </div>
 
@@ -87,15 +79,17 @@ const AWSmallMedium = () => {
             />
           </div>
         </div>
-        <button
-          onClick={handleContactUsClick}
-          className="px-6 py-2 border-2 mt-16 2xl:ml-72  border-transparent bg-greenCustomColor2 text-white font-semibold rounded hover:bg-blueCustomColor hover:text-white transition-colors duration-300 hover:border hover:border-customblueColor shadow-md"
-        >
-          Contact Us
-        </button>
+        <div className="flex justify-center lg:justify-start max-w-7xl mx-auto mt-8">
+          <button
+            onClick={handleContactUsClick}
+            className="px-6 py-3 bg-greenCustomColor2 text-white font-semibold rounded-lg hover:bg-blueCustomColor transition-colors duration-300"
+          >
+            Contact Us
+          </button>
+        </div>
       </div>
 
-      <div className="bg-white py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto bg-white py-12 px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
           Solutions for the Business Office
         </h2>
