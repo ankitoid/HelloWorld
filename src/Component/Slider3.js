@@ -10,19 +10,22 @@ const Slider3 = () => {
     {
       id: 1,
       percentage: "200%",
-      description: "increase in user-saved properties with AI search",
+      description:
+        "Maximize Network Performance using AI-powered, scalable, and secure infrastructure solutions.",
       img: Img1,
     },
     {
       id: 2,
       percentage: "900%",
-      description: "increase in test drives, through the power of AI",
+      description:
+        "Leverage AI-driven Cloud Solutions for unparalleled agility, efficiency, and multi-cloud security.",
       img: Img2,
     },
     {
       id: 3,
       percentage: "200K+",
-      description: "lives impacted by reducing LA County incarceration",
+      description:
+        "Revolutionize IT Operations with AI-enhanced 24/7 support and intelligent cost optimization strategies.",
       img: Img3,
     },
   ];
@@ -113,7 +116,10 @@ const Slider3 = () => {
                 A Catalyst for Transformation. Harness its power to drive
                 innovation, unlock new opportunities, and accelerate growth.
               </p>
-              <a href="/solutions/GenAI" className="text-blue-500 hover:underline mt-2 block">
+              <a
+                href="/solutions/GenAI"
+                className="text-blue-500 hover:underline mt-2 block"
+              >
                 Get ahead →
               </a>
             </div>

@@ -13,7 +13,7 @@ function SliderSection() {
     <>
       {/* First Section */}
       <div className="bg-white mt-16 flex items-center justify-center">
-        <div className="flex flex-col md:flex-row items-center justify-between w-full h-full mb-8">
+        <div className="flex flex-col  2xl:max-w-[100rem] 2xl:mx-auto md:flex-row items-center justify-between w-full h-full mb-8">
           {/* Left Section */}
           <div className="w-full md:w-3/5 md:ml-14 bg-blue-500 flex items-center justify-center md:rounded-md p-10 md:p-52 relative overflow-hidden">
             <div className="absolute inset-0">
@@ -30,7 +30,7 @@ function SliderSection() {
 
           {/* Right Section */}
           <div className="w-full md:w-3/5 bg-white flex items-center justify-center p-8 md:p-12">
-            <div className="max-w-lg text-center md:text-left">
+            <div className="max-w-lg 2xl:max-w-7xl text-center md:text-left">
               <h2 className="text-3xl md:text-5xl font-bold mb-6">
                 Cloud & DevOps
               </h2>
@@ -39,7 +39,7 @@ function SliderSection() {
                 enhance efficiency, sustainability, and cost optimization.
               </p>
               <Link
-                to="Solutions/Cloud" 
+                to="Solutions/Cloud"
                 className="text-blue-500 hover:text-blue-700 font-bold"
               >
                 Learn more →
@@ -50,7 +50,7 @@ function SliderSection() {
       </div>
 
       <div className="bg-blueCustomColor p-10 mt-16">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
+        <div className="max-w-7xl mx-auto 2xl:max-w-[95rem] 2xl:mx-auto flex flex-col lg:flex-row items-center justify-between">
           {/* Text Section */}
           <div className="text-center lg:text-left lg:w-1/2 lg:pr-8">
             <h2 className="text-3xl md:text-5xl font-bold text-white sm:text-4xl">
@@ -83,7 +83,7 @@ function SliderSection() {
       </div>
       {/* Second Section */}
       <div className="bg-white mt-12 flex items-center justify-center ">
-        <div className="flex flex-col md:flex-row-reverse items-center justify-between w-full h-full">
+        <div className="flex flex-col 2xl:max-w-[100rem] 2xl:mx-auto md:flex-row-reverse items-center justify-between w-full h-full">
           {/* Right Section */}
           <div className="w-full md:w-3/5 md:ml-14 mr-12 bg-yellow-400 flex items-center justify-center p-10 md:p-44  relative overflow-hidden">
             <video
@@ -98,7 +98,7 @@ function SliderSection() {
 
           {/* Left Section */}
           <div className="w-full md:w-3/5 bg-white flex items-center justify-center p-8 md:p-12">
-            <div className="max-w-lg text-center md:text-left">
+            <div className="max-w-lg  2xl:max-w-[100rem] 2xl:mx-auto text-center md:text-left">
               <h2 className="text-3xl md:text-5xl font-bold mb-4">
                 Field Services
               </h2>
@@ -118,11 +118,11 @@ function SliderSection() {
       </div>
       <Slider3 />
       {/* Third Section */}
-      <div className="bg-white flex items-center justify-center">
-        <div className="flex flex-col md:flex-row items-center justify-between w-full h-full">
+      <div className="bg-white flex items-center justify-center 2xl:max-w-[100rem] 2xl:mx-auto  md:ml-4 ">
+        <div className="flex flex-col md:flex-row  items-center justify-between w-full h-full">
           {/* Left Section */}
-          <div className=" w-full md:w-3/5 bg-blue-500 flex items-center justify-center p-10 md:p-48 md:rounded-r-full relative overflow-hidden">
-            <div className="absolute inset-0">
+          <div className="2xl:ml-10 w-full md:w-3/5  flex items-center justify-center p-10 md:p-48 md:rounded-r-full rounded-l-sm md:rounded-l-none relative overflow-hidden">
+            <div className="absolute inset-0 rounded-l-sm md:rounded-l-md overflow-hidden">
               <video
                 src={NetworkCon}
                 className="h-full w-full object-cover"
@@ -135,7 +135,7 @@ function SliderSection() {
           </div>
 
           {/* Right Section */}
-          <div className="w-full md:w-2/5 bg-white flex items-center justify-center p-8 md:p-12">
+          <div className="md:max-w-7xl md:mx-auto w-full md:w-2/5 bg-white flex items-center justify-center  md:p-12">
             <div className="max-w-lg text-center md:text-left">
               <h2 className="text-3xl md:text-5xl font-bold mb-4">
                 Networking Consulting

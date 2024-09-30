@@ -1,6 +1,7 @@
 import React from "react";
 import NetworkingVideo from "../Assets/NetworkingVideo.mp4";
 import { Link } from "react-router-dom";
+import lg from "../Assets/lg1.png";
 
 const Footer = () => {
   return (
@@ -23,6 +24,9 @@ const Footer = () => {
           {/* Top Section with Videos and Title */}
           <div className="flex flex-col md:flex-row justify-left md:justify-start items-start md:items-center space-y-6 md:space-y-0 md:space-x-6 mb-12">
             <h2 className="text-4xl md:text-6xl text-greenCustomColor2 ">GlobalXperts Inc.</h2>
+            {/* <Link to="/" className="flex items-center">
+            <img src={lg} alt="Logo" className="h-20 w-auto" />
+          </Link> */}
           </div>
 
           {/* Footer Middle Section with Address, Quick Links, and Info */}

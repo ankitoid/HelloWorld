@@ -44,28 +44,26 @@ const ManagedServices = () => {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col md:flex-row items-center justify-between mx-14 mt-32">
+      {/* Text Section */}
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between mt-20 px-5">
         {/* Text Section */}
-        <div className="flex-1 md:pr-8 mb-8 md:mb-0">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
+        <div className="flex-1 md:pr-8 mb-8 md:mb-0 text-center md:text-left">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
             Managed Cloud Application
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Looking for a reliable application solution? Our Managed
-            Applications Support provides 24/7 expert assistance for
-            infrastructure management, deployment, and maintenance. We monitor
-            your systems, resolve issues, and ensure optimal performance. With
-            personalized support and flexible pricing, you pay only for what you
-            need. We support AWS, Azure, and GCP. Contact us to streamline
-            operations and grow your business!
+            Looking for reliable application support? Our 24/7 Managed
+            Applications Support ensures optimal performance for AWS, Azure, and
+            GCP, offering personalized assistance and flexible pricing to
+            streamline your operations and grow your business!
           </p>
         </div>
 
-        {/* Image Section */}
-        <div className="flex-1">
+        {/* Video Section */}
+        <div className="flex-1 w-full">
           <video
             src={Managed}
-            className="h-full w-full object-cover"
+            className="w-full h-auto object-cover rounded-lg"
             muted
             autoPlay
             loop
@@ -73,17 +71,17 @@ const ManagedServices = () => {
           ></video>
         </div>
       </div>
+
       {/* Boxes Section */}
-      <div className="mt-20 text-center">
+      <div className="max-w-7xl mx-auto mt-20 text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">
           Value Proposition
         </h2>
         <p className="text-lg text-gray-600 mb-8 px-4">
-          Our Managed Applications Support ensures your business applications
-          run smoothly with 24/7 monitoring and expert management. We handle all
-          technical aspects so you can focus on your business. Our customizable
-          service optimizes performance and resolves issues quickly. Contact us
-          to discover how we can keep your business running efficiently!
+          Our Managed Applications Support offers 24/7 monitoring and expert
+          management to keep your business applications running smoothly. Focus
+          on your business while we handle performance and quick issue
+          resolution. Contact us to learn more!
         </p>
 
         {/* Boxes Section */}
@@ -167,8 +165,12 @@ const ManagedServices = () => {
           </div>
         </div>
       </div>
-
-      <div className="max-w-7xl flex flex-col lg:flex-row items-center mx-5 justify-between mt-32 pb-10">
+      <div className="mt-28">
+        <div className="h-1 bg-blueCustomColor relative overflow-hidden">
+          <div className="h-full w-full bg-gradient-to-r from-white via-blue-300 to-blue-500 animate-pulse"></div>
+        </div>
+      </div>
+      <div className="max-w-7xl flex flex-col lg:flex-row items-center mx-auto justify-between mt-32 pb-10">
         {/* Image Section */}
         <div className="relative mt-12 lg:mt-0 lg:w-1/2 px-5">
           <img
@@ -184,19 +186,15 @@ const ManagedServices = () => {
             Managed Collaboration Technologies
           </h2>
           <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-            Streamline communication with our managed services for Cisco Unified
-            Communications, including installation, upgrades, and maintenance.
-            We ensure seamless operation and proactive support to boost
-            productivity.
-            <br />
-            <br />
-            Maximize reliability and security with our expert solutions. Contact
-            us to enhance your communication infrastructure today.
+            Enhance communication with our managed Cisco Unified Communications
+            services, covering installation, upgrades, and maintenance. We
+            ensure seamless operation and proactive support. Contact us today to
+            improve your communication infrastructure.
           </p>
         </div>
       </div>
 
-      <div className="mt-20 text-center">
+      <div className="max-w-7xl mx-auto mt-20 text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-4"></h2>
         <p className="text-lg text-gray-600 mb-8"></p>
 
@@ -207,13 +205,11 @@ const ManagedServices = () => {
               Managed Help Desk
             </h2>
             <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-              Our Managed Help Desk service offers 24/7 IT support. Level 1
-              handles basic issues like password resets, while Level 2 and 3
-              address more complex problems with advanced troubleshooting. Using
-              top-tier Network Management tools and popular ticketing systems,
-              we monitor your network, prevent downtime, and ensure efficient
-              issue resolution. Let us manage your IT, so you can focus on
-              growing your business. Contact us today to learn more.
+              Our 24/7 Managed Help Desk provides comprehensive IT support.
+              Level 1 handles basic issues, while Level 2 and 3 tackle complex
+              problems with advanced tools. We monitor your network to prevent
+              downtime and resolve issues efficiently, allowing you to focus on
+              business growth. Contact us today.
             </p>
           </div>
           <div className="relative mt-12 lg:mt-0 lg:w-1/2 px-5">
@@ -379,8 +375,14 @@ const ManagedServices = () => {
             </div>
           </div>
         </div>
-
-        <div className="max-w-7xl flex flex-col lg:flex-row items-center mx-5 justify-between mt-32 pb-10">
+      </div>
+      <div className="mt-28">
+        <div className="h-1 bg-blueCustomColor relative overflow-hidden">
+          <div className="h-full w-full bg-gradient-to-r from-white via-blue-300 to-blue-500 animate-pulse"></div>
+        </div>
+      </div>
+      <div>
+        <div className="max-w-7xl flex flex-col lg:flex-row items-center mx-auto justify-between mt-32 pb-10">
           <div className="relative mt-12 lg:mt-0 lg:w-1/2 px-5">
             <img
               className="w-full rounded-lg"
@@ -405,7 +407,7 @@ const ManagedServices = () => {
           </div>
         </div>
 
-        <div className="mt-20 text-center">
+        <div className="max-w-7xl  mx-auto mt-20 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
             Value Proposition
           </h2>
@@ -559,19 +561,23 @@ const ManagedServices = () => {
           </div>
         </div>
 
-        <div className="max-w-7xl   flex flex-col lg:flex-row items-center mx-5 justify-between mt-32 pb-10">
+        <div className="mt-16">
+          <div className="h-1 bg-blueCustomColor relative overflow-hidden">
+            <div className="h-full w-full bg-gradient-to-r from-white via-blue-300 to-blue-500 animate-pulse"></div>
+          </div>
+        </div>
+
+        <div className="max-w-7xl mx-auto  flex flex-col lg:flex-row items-center justify-between mt-16 pb-10">
           {/* Text Section */}
           <div className="text-center lg:text-left lg:w-1/2 lg:pr-8">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
               Network Operations Center – Cyber Security
             </h2>
             <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-              Protect your organization with our Cyber Security NOC, featuring
+              Safeguard your organization with our Cyber Security NOC. Utilizing
               XDR for advanced threat detection and Deep Packet Inspection for
-              real-time network traffic analysis. Our expert team uses
-              cutting-edge technology to guard against sophisticated cyber
-              threats, ensuring your sensitive data remains secure. Contact us
-              today to enhance your cybersecurity.
+              real-time analysis, we protect against sophisticated cyber
+              threats. Contact us to enhance your cybersecurity today.
             </p>
           </div>
           <div className="relative mt-12 lg:mt-0 lg:w-1/2  px-5 ">
@@ -585,51 +591,42 @@ const ManagedServices = () => {
           {/* Image Section */}
         </div>
 
-        <div className="mt-10 ">
-          <div className=" w-full">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4  mt-10 mx-20">
+        <div className="mt-10 max-w-7xl 2xl:mx-auto md:ml-4  ">
+          <div className="">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center  mt-10 ">
               Value Proposition
             </h2>
 
-            <p className="text-lg text-gray-600 mb-8">
-              <strong>Advanced Threat Detection and Response:</strong>
-              Our XDR solution uses advanced machine learning to detect and
-              respond
-              <br />
-              to known and unknown threats in real-time, preventing
-              sophisticated attacks that traditional tools miss.
-              <br /> With Deep Packet Inspection, we gain deeper network
-              visibility for faster, more accurate threat detection.
+            <p className="max-w-7xl 2xl:mx-auto text-lg text-gray-600 mb-8">
+              <strong>Advanced Threat Detection:</strong> Our XDR solution uses
+              machine learning to detect and respond to threats in real-time,
+              with Deep Packet Inspection for enhanced visibility.
               <br />
               <br />
-              <strong>24/7 Monitoring and Support:</strong>
-              Our cybersecurity experts provide 24/7 monitoring and real-time
-              threat response,
-              <br /> ensuring your network is continuously protected from
-              malicious activity.
+              <strong>24/7 Monitoring:</strong> Our experts provide
+              round-the-clock monitoring and threat response, keeping your
+              network safe from malicious activity.
               <br />
               <br />
-              <strong>Cost-Effective Solution:</strong>
-              Outsource your cybersecurity to us and save on the costs of an
-              in-house team.
-              <br />
-              Our cost-effective solution ensures your data remains secure with
+              <strong>Cost-Effective:</strong> Outsource your cybersecurity to
+              us and save on in-house costs while ensuring data security and
               peace of mind.
               <br />
               <br />
-              <strong>Compliance and Regulatory Requirements:</strong>
-              Our solution helps you meet compliance requirements like HIPAA,{" "}
-              <br />
-              GDPR, and PCI DSS, with regular reporting and auditing to ensure
-              your data stays <br />
-              protected and compliant.
+              <strong>Compliance:</strong> We help you meet compliance standards
+              like HIPAA, GDPR, and PCI DSS with regular audits and reports to
+              keep your data protected.
             </p>
           </div>
 
           {/* Boxes Section */}
         </div>
-
-        <div className="max-w-7xl  flex flex-col lg:flex-row items-center mx-5 justify-between mt-32 pb-10">
+        <div className="mt-8">
+          <div className="h-1 bg-blueCustomColor relative overflow-hidden">
+            <div className="h-full w-full bg-gradient-to-r from-white via-blue-300 to-blue-500 animate-pulse"></div>
+          </div>
+        </div>
+        <div className="max-w-7xl  flex flex-col lg:flex-row items-center mx-auto justify-between mt-10 pb-10">
           <div className="relative mt-12 lg:mt-0 lg:w-1/2  px-5 ">
             <img
               className="w-full rounded-lg"
@@ -638,31 +635,24 @@ const ManagedServices = () => {
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 text-white text-center"></div>
           </div>
-          <div className="text-center lg:text-left lg:w-1/2 lg:pr-8">
+
+          <div className="text-center lg:text-left lg:w-1/2 lg:pr-8 mt-4">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
               Network Operations Center – Enterprise Networking
             </h2>
-            <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-              Our Network Operation Center (NOC) manages and monitors your
-              network infrastructure from our centralized facilities. Staffed by
-              trained professionals, we ensure your network's reliability,
-              availability, and security through:
+            <p className="mt-3 text-lg text-gray-500 sm:mt-4">
+              Our Network Operation Center (NOC) ensures the reliability,
+              availability, and security of your network through:
               <br />
-              Network Monitoring: Continuous oversight to prevent issues and
-              security threats.
+              • Continuous network monitoring to prevent issues.
               <br />
-              Incident Management: Quick response to network outages, with root
-              cause analysis and solutions.
+              • Quick incident management with root cause analysis.
               <br />
-              Network Configuration and Change Management: Controlled management
-              of network configurations and changes.
+              • Controlled network configuration and change management.
               <br />
-              Performance Optimization: Enhancements for improved network
-              efficiency and capacity.
-              <br />
-              Security Management: Protection with firewalls, intrusion
-              detection, and other security measures.
-              <br />
+              • Performance optimization for efficiency and capacity.
+              <br />• Security management with firewalls and intrusion
+              detection.
             </p>
           </div>
           {/* Text Section */}
@@ -670,8 +660,8 @@ const ManagedServices = () => {
           {/* Image Section */}
         </div>
 
-        <div className="mt-10 px-4">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        <div className="max-w-7xl mx-auto  mt-10 px-4">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
             Value Proposition
           </h2>
           <p className="text-lg text-gray-600 mb-8">
@@ -680,7 +670,7 @@ const ManagedServices = () => {
           </p>
 
           {/* Boxes Section */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {/* Box 1 */}
             <div className="relative bg-transparent cursor-pointer group perspective ">
               <div className="preserve-3d group-hover:my-rotate-y-180 w-full h-60 duration-1000">
@@ -690,13 +680,13 @@ const ManagedServices = () => {
                     alt="Proactive Monitoring"
                     className="w-full h-full object-cover rounded-lg"
                   />
-                  <div className="flex items-center justify-center text-white text-xl font-semibold bg-opacity-40 rounded-lg">
+                  <div className="flex items-center   justify-center text-white text-xl font-semibold bg-opacity-40 rounded-lg">
                     <p className="w-full text-center bg-blueCustomColor">
                       Proactive Monitoring
                     </p>
                   </div>
                 </div>
-                <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-blueCustomColor overflow-hidden rounded-lg">
+                <div className=" max-w-7xl mx-auto my-rotate-y-180 backface-hidden w-full h-full bg-blueCustomColor overflow-hidden rounded-lg">
                   <div className="text-center flex flex-col items-center justify-center h-full px-2 pb-4 text-gray-300">
                     <p className="text-md py-2 text-gray-200 mt-4">
                       Our NOC team monitors performance to resolve issues before
@@ -820,8 +810,12 @@ const ManagedServices = () => {
             </p>
           </div>
         </div>
-
-        <div className="max-w-7xl flex flex-col lg:flex-row items-center mx-5 justify-between mt-32 pb-10">
+        <div className="mt-20">
+          <div className="h-1 bg-blueCustomColor relative overflow-hidden">
+            <div className="h-full w-full bg-gradient-to-r from-white via-blue-300 to-blue-500 animate-pulse"></div>
+          </div>
+        </div>
+        <div className="max-w-7xl flex flex-col lg:flex-row items-center mx-auto justify-between mt-32 pb-10">
           <div className="relative lg:w-1/2 px-5">
             <img
               className="w-full rounded-lg"
@@ -844,15 +838,20 @@ const ManagedServices = () => {
         </div>
 
         <div>
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center mt-4">
             Overcoming Operational Challenges in Sports Streaming
           </h2>
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="max-w-7xl mx-auto text-center text-lg text-gray-600 mb-8">
             A Network Operation Center (NOC) for Enterprise Networking Services
             ensures reliable and secure infrastructure to support business
             operations. By leveraging a NOC, enterprises can achieve:
           </p>
 
+          <div className="mt-28">
+            <div className="h-1 bg-blueCustomColor relative overflow-hidden">
+              <div className="h-full w-full bg-gradient-to-r from-white via-blue-300 to-blue-500 animate-pulse"></div>
+            </div>
+          </div>
           <div className="p-4 md:p-8 lg:p-12 max-w-7xl mx-auto">
             <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-6">
               The Bleacher Blues
@@ -863,18 +862,16 @@ const ManagedServices = () => {
               behind the thrill lies a complex reality—operational challenges
               that can turn that dream into a digital nightmare.
             </p>
-
             <div className="space-y-6">
               <section className="bg-gray-100 p-6 rounded-lg shadow-md">
                 <h2 className="text-xl font-semibold text-gray-700 mb-4">
                   Scalability: When Fans Outnumber Seats
                 </h2>
                 <p className="text-gray-600">
-                  Imagine the jubilation of a last-minute winning shot
-                  interrupted by buffering wheels. Scalability issues can
-                  cripple systems during peak viewership, frustrating fans and
-                  costing franchises revenue. Upgrading infrastructure is vital
-                  to avoid alienating fans and damaging brand reputation.
+                  A last-minute winning shot shouldn't be interrupted by
+                  buffering. Peak viewership can overwhelm systems, leading to
+                  frustrated fans and lost revenue. Upgrading infrastructure is
+                  crucial to keep fans engaged and protect brand reputation.
                 </p>
               </section>
 
@@ -883,10 +880,9 @@ const ManagedServices = () => {
                   Content Chaos: A Library Lost in the Archives
                 </h2>
                 <p className="text-gray-600">
-                  A treasure trove of historic moments and exclusive footage can
-                  enhance fan engagement, but fragmented systems and outdated
-                  tagging can bury valuable content, limiting monetization
-                  opportunities.
+                  Historic moments and exclusive footage are valuable, but poor
+                  systems and outdated tagging can hide content, reducing
+                  monetization potential.
                 </p>
               </section>
 
@@ -895,10 +891,9 @@ const ManagedServices = () => {
                   Monetization Mayhem: Turning Views into Revenue
                 </h2>
                 <p className="text-gray-600">
-                  Converting viewership into revenue requires creativity.
-                  Traditional advertising struggles against changing viewing
-                  habits, making it essential to diversify revenue streams
-                  through personalized sponsorships and interactive experiences.
+                  Converting views to revenue requires innovation. As
+                  traditional ads decline, personalized sponsorships and
+                  interactive experiences offer new opportunities.
                 </p>
               </section>
 
@@ -907,27 +902,25 @@ const ManagedServices = () => {
                   Data Darkness: Flying Blind in the Digital Arena
                 </h2>
                 <p className="text-gray-600">
-                  Understanding fan behavior is key, yet many franchises lack
-                  insights into viewing habits and engagement. Investing in
-                  robust analytics tools is crucial for unlocking revenue
-                  streams and deepening fan connections.
+                  Knowing fan behavior is critical. Many franchises lack
+                  analytics, missing opportunities for revenue and fan
+                  engagement.
                 </p>
               </section>
             </div>
 
             <footer className="mt-8">
               <p className="text-lg text-gray-700">
-                These challenges are surmountable. By embracing innovation,
-                investing in agile infrastructure, and prioritizing data-driven
-                decision-making, sports franchises can transform their
-                operational hurdles into success. The future of fan engagement
-                lies in the seamless integration of technology, content, and
-                data—ready to fill the stands with cheers, not technical tears.
+                Overcoming these challenges requires innovation, agile
+                infrastructure, and data-driven decisions. By integrating
+                technology, content, and data, franchises can turn obstacles
+                into opportunities and enhance fan engagement without technical
+                setbacks.
               </p>
             </footer>
           </div>
 
-          <div className="p-4">
+          <div className=" max-w-7xl mx-auto p-4">
             <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
               Technologies Utilized
             </h2>

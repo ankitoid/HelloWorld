@@ -25,11 +25,11 @@ const FieldServices = () => {
     <>
       <Navbar />
       <div className="">
-        <div>
+        <div className="max-w-7xl mx-auto">
           <div className="flex flex-col mt-16 md:flex-row items-center justify-between mx-5 md:mx-28">
             {/* Text Section */}
             <div className="flex-1 md:pr-8 mb-8 md:mb-0">
-              <h2 className="text-4xl font-bold text-gray-800 mb-4 text-center mt-8 md:mt-32">
+              <h2 className="text-4xl font-bold text-gray-800 mb-4 text-center mt-6 md:mt-28">
                 Field Services
               </h2>
               <p className="text-lg text-gray-600 mb-4 text-center">
@@ -61,7 +61,7 @@ const FieldServices = () => {
             </div>
 
             {/* Image Section */}
-            <div className="flex-1">
+            <div className="flex-1 mt-28 ">
               <video
                 src={Field}
                 className="h-full w-full object-cover"
@@ -74,7 +74,7 @@ const FieldServices = () => {
           </div>
         </div>
         {/* Boxes Section */}
-        <div className="mt-20 text-center px-4">
+        <div className="max-w-7xl mx-auto mt-20 text-center px-4">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
             Field Engineering Service
           </h2>
@@ -242,7 +242,7 @@ const FieldServices = () => {
           </div>
         </div>
         {/* Boxes Section */}
-        <div className="max-w-7xl mx-5 flex flex-col lg:flex-row items-center justify-between mt-32 pb-10">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between mt-32 pb-10">
           {/* Onsite Service Section */}
           <div className="relative mt-12 lg:mt-0 lg:w-1/2 px-5">
             <video
@@ -271,7 +271,7 @@ const FieldServices = () => {
         </div>
 
         {/* Technology Refresh Section */}
-        <div className="mt-20 max-w-7xl mx-5 flex flex-col lg:flex-row items-center justify-between pb-10">
+        <div className="mt-20 max-w-7xl  mx-auto flex flex-col lg:flex-row items-center justify-between pb-10">
           <div className="text-center lg:text-left lg:w-1/2 lg:pr-8">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
               Technology Refresh
@@ -297,7 +297,7 @@ const FieldServices = () => {
 
         {/* Value Proposition Section */}
         <div className="bg-blueCustomColor p-10 mt-8">
-          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
+          <div className=" max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
             <div className="text-center lg:text-left lg:w-1/2 lg:pr-8">
               <h2 className="text-3xl font-bold text-white sm:text-4xl">
                 Value Proposition
@@ -350,7 +350,7 @@ const FieldServices = () => {
           </div>
         </div>
 
-        <div className="container mx-auto px-4 py-16">
+        <div className="max-w-7xl mx-auto container  px-4 py-16">
           <div className="flex mb-16">
             <Link
               to="/contact-us"

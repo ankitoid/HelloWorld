@@ -63,9 +63,9 @@ const Cloud = () => {
     <>
       <div className="w-full">
         <Navbar />
-        <div className="bg-gray-100 min-h-screen">
+        <div className="bg-gray-100">
           <div className="p-8 max-w-7xl mx-auto">
-            <div className="bg-gray-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8 mt-14">
+            <div className="bg-gray-100  py-12 px-4 sm:px-6 lg:px-8 mt-14">
               <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
                 <div className="text-center lg:text-left lg:w-1/2 lg:pr-8">
                   <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
