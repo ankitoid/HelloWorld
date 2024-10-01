@@ -1,78 +1,225 @@
 import React from "react";
-import companyImage from "../../Assets/imageAbout.jpg"; // Ensure the path to the image is correct
+import companyImage from "../../Assets/imageAbout.jpg";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import AboutImg from "../../Assets/About.png";
+import About3 from "../../Assets/About3.mp4";
+import CollebrationAbout from "../../Assets/CollegrationAbout.png";
+import value from "../../Assets/value.png";
+import Diversity from "../../Assets/Diversity.png";
+import GlobalImpact from "../../Assets/GlobalImpact.png";
+import ContactCard from "../Contact/ContactCard";
 
 const About = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-gray-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8 mt-14">
-        <div className="max-w-7xl mx-auto flex    flex-col lg:flex-row items-center justify-between">
-          {/* Text Section */}
-          <div className="text-center lg:text-left lg:w-1/2 lg:pr-8">
-            <h2 className="text-3xl font-semibold mb-4 text-gray-800 text-center">
-              Cloud Solutions
-            </h2>
-
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Our comprehensive cloud solutions encompass a range of services to
-              support your business’s growth and efficiency. From cloud cost
-              management to AWS migration, our experts are here to provide you
-              with tailored solutions that drive success. Our focus on cloud
-              cost optimization and reduction ensures that you receive maximum
-              value from your cloud investments.
-            </p>
-          </div>
-          {/* Image Section */}
-          <div className="relative mt-12 lg:mt-0 lg:w-1/2 ">
-            <img
-              className="w-full rounded-lg"
-              src={companyImage}
-              alt="A man working on a laptop in a server room."
-            />
-            <div className="absolute bottom-0 left-0 right-0 p-4 text-white text-center"></div>
+      <div
+        className="bg-blueCustomColor text-white min-h-screen flex items-center justify-center bg-cover bg-center mt-8"
+        style={{ backgroundImage: `url(${companyImage})` }}
+      >
+   <div className="2xl:max-w-7xl w-full mx-auto text-left justify-center  px-4">
+          <h1 className="text-4xl sm:text-4xl lg:text-5xl font-bold mb-64">
+            Discover how the world works with <br></br>GlobalXperts
+          </h1>
+          {/* <p className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto">
+            We help organizations of every size, in every industry, put AI to work for people.
+          </p> */}
+          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
+            <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+              <svg
+                className="inline-block mr-2"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+              Watch Video
+            </button>
+            <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+              View Fact Sheet
+              <svg
+                className="inline-block ml-2"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M13 17h8l-4-4-4 4z" />
+              </svg>
+            </button>
           </div>
         </div>
-
-        <h1 className="text-4xl font-bold mt-12 mb-6 text-gray-800 text-center">
-          About GlobalXperts Inc.
-        </h1>
-        <p className="text-lg text-gray-700 leading-relaxed">
-          Founded in 2005 and headquartered in Raleigh, North Carolina,
-          GlobalXperts operates in three key areas: Professional Services,
-          Technical Staffing, and Managed Services support for Data Center for
-          On-Premises & Cloud, Security, Collaboration, and SDN in IT networks.
-          With a vendor-agnostic approach, our technical staff holds expertise
-          in Cisco UC solutions and certifications with AWS Cloud, Microsoft,
-          Arista, VMware, EMC, Oracle, NetApp, and more.
-        </p>
-        <p className="text-lg text-gray-700 leading-relaxed">
-          Our diverse technical resources, from “Smart Hands” to Subject Matter
-          Experts (SMEs), are available globally 24/7. We provide comprehensive
-          professional services, covering the entire life cycle (planning,
-          architecture, design, automation/orchestration, implementation, and
-          operations) worldwide, specializing in enterprise networking, Data
-          Center, and Cloud technologies.
-        </p>
-        <p className="text-lg text-gray-700 leading-relaxed">
-          GlobalXperts offers managed services ensuring the optimal performance
-          of customer IT solutions, particularly catering to dispersed
-          workforces and recognizing that each customer we work with has
-          different needs. Our 24×7 NOC staff utilizes leading network tools
-          like ServiceNow, SolarWinds, N-Able, and ManageEngine ServiceDesk
-          Plus.
-        </p>
-        <p className="text-lg text-gray-700 leading-relaxed">
-          Dedicated to helping customers leverage information technology, we
-          provide strategy consultation, cybersecurity, cloud solutions, DevOps,
-          automation, and installation services. Partnering with us ensures
-          access to the expertise needed for realizing success in today’s
-          digital landscape. We stand by our work and maintain the highest
-          integrity and quality.
-        </p>
       </div>
-      <Footer/>
+
+      <div className="bg-blueCustomColor text-white min-h-screen flex items-center justify-center">
+        <div className="2xl:max-w-7xl  text-center justify-center mt-20 2xl:mx-auto">
+          <div>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+              Discover how the world works with GlobalXperts
+            </h1>
+            <p className="text-lg sm:text-xl mb-8">
+              We help organizations of every size, in every industry, put AI to
+              work for people.
+            </p>
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
+              <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                <svg
+                  className="inline-block mr-2"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                Watch Video
+              </button>
+              <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                View Fact Sheet
+                <svg
+                  className="inline-block ml-2"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M13 17h8l-4-4-4 4z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="w-full max-w-4xl  mt-12 rounded-lg overflow-hidden px-4">
+          <img
+            className="w-full h-full object-cover rounded-md"
+            src={AboutImg}
+            alt="People in an office setting"
+          />
+        </div>
+      </div>
+
+      <div className="2xl:max-w-7xl 2xl:mx-auto w-full flex flex-col md:flex-row p-5 mt-10 gap-2">
+        <div className="w-full rounded-lg">
+          <video
+            src={About3}
+            className="h-full w-full object-cover rounded-md"
+            muted
+            autoPlay
+            loop
+            playsInline
+          ></video>
+        </div>
+        <div className="2xl:max-w-7xl 2xl:mx-auto w-full mx-5">
+          <h1 className="text-3xl sm:text-4xl text-center py-5 text-black font-bold">
+            About GlobalXperts
+          </h1>
+          <p className="text-lg px-2 font-medium">
+            Founded in 2005 and headquartered in Raleigh, North Carolina,
+            GlobalXperts operates in three key areas: Professional Services,
+            Technical Staffing, and Managed Services support for Data Center for
+            On-Premises & Cloud, Security, Collaboration, and SDN in IT
+            networks...
+          </p>
+        </div>
+      </div>
+
+      <div className="2xl:max-w-7xl 2xl:mx-auto mt-10">
+        <div className="bg-gray-100 py-16 px-8">
+          <div className="container mx-auto flex flex-col md:flex-row items-center gap-8">
+            <div className="flex flex-col space-y-8 md:w-1/2">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-800">
+                Our Services
+              </h2>
+              <p className="text-lg text-gray-600">
+                We provide cutting-edge Multi-Cloud, DevOps, AI-driven, and
+                Networking solutions...
+              </p>
+              <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                Contact
+              </button>
+            </div>
+            <div className="md:w-1/2">
+              <img
+                src={CollebrationAbout}
+                alt="People talking"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+              <div className="text-center mt-8">
+                <h3 className="text-4xl sm:text-5xl font-bold text-gray-800">
+                  100%
+                </h3>
+                <p className="text-gray-600">of the Fortune 500® work with GlobalXperts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container 2xl:max-w-7xl 2xl:mx-automx-auto mt-10 px-4">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold py-4 text-center">
+          Our Commitments
+        </h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-white rounded-lg shadow-md p-4">
+            <img
+              src={value}
+              className="w-full h-40 md:h-52 object-cover rounded-t-lg mb-4"
+              alt="Values"
+            />
+            <h2 className="text-xl sm:text-2xl font-bold mb-4">Values</h2>
+            <p className="text-gray-600 text-base">
+              Our values guide us to always do the right thing...
+            </p>
+          </div>
+          <div className="bg-white rounded-lg shadow-md p-4">
+            <img
+              src={Diversity}
+              className="w-full h-40 md:h-52 object-cover rounded-t-lg mb-4"
+              alt="Diversity"
+            />
+            <h2 className="text-xl sm:text-2xl font-bold mb-4">
+              Diversity, Equity, and Inclusion
+            </h2>
+            <p className="text-gray-600 text-base">
+              Building equity at home is the first step to global progress...
+            </p>
+          </div>
+          <div className="bg-white rounded-lg shadow-md p-4">
+            <img
+              src={GlobalImpact}
+              className="w-full h-40 md:h-52 object-cover rounded-t-lg mb-4"
+              alt="Global Impact"
+            />
+            <h2 className="text-xl sm:text-2xl font-bold mb-4">
+              Global Impact
+            </h2>
+            <p className="text-gray-600 text-base">
+              Through promoting a net-zero carbon environment...
+            </p>
+          </div>
+        </div>
+      </div>
+      <ContactCard />
+      <Footer />
     </>
   );
 };

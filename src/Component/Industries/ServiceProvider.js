@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-import ContactCard from "../Contact/ContactCard"; // Assuming you have this component
-import serviceImage from "../../Assets/service.jpg"; // Use an image relevant to service providers
+import ContactCard from "../Contact/ContactCard"; 
+import serviceImage from "../../Assets/service.jpg"; 
 
 const ServiceProvider = () => {
-  const contactRef = useRef(null); // Ref to contact card
+  const contactRef = useRef(null); 
 
   const handleContactUsClick = () => {
     if (contactRef.current) {
@@ -20,21 +20,15 @@ const ServiceProvider = () => {
         <div className="bg-gray-100">
           <div className="p-8 max-w-7xl mx-auto">
             {/* Hero Section */}
-            <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 mt-14">
-              <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
+            <div className="py-12 px-4 sm:px-6 lg:px-8 mt-14">
+              <div className="flex flex-col lg:flex-row items-center justify-between">
                 {/* Text Section */}
                 <div className="text-center lg:text-left lg:w-1/2 lg:pr-8">
                   <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
                     Service Providers
                   </h2>
-                  <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-                    In the service provider industry, IT services and solutions
-                    are essential for enhancing service delivery and customer
-                    satisfaction. Technologies such as CRM tools and field
-                    service management software help optimize operations and
-                    improve efficiency. By leveraging advanced analytics, service
-                    providers can gain insights into customer preferences,
-                    enabling more personalized services and a competitive edge.
+                  <p className="mt-3 text-lg text-gray-500 sm:mt-4">
+                    IT services are crucial for enhancing service delivery and customer satisfaction. Advanced tools optimize operations and provide insights for personalized services.
                   </p>
                 </div>
                 {/* Image Section */}
@@ -62,11 +56,7 @@ const ServiceProvider = () => {
                 Overview
               </h2>
               <p className="mt-3 text-lg text-gray-600">
-                We offer IT solutions tailored to meet diverse business needs. From IT
-                infrastructure management and cloud solutions to cybersecurity and
-                data analytics, our services enhance operational efficiency, drive
-                innovation, and support growth. Our scalable, cost-effective
-                solutions align with your business goals.
+                Our IT solutions improve efficiency, support growth, and drive innovation. From infrastructure to data analytics, we align our services with your business goals.
               </p>
             </div>
           </div>
@@ -78,15 +68,8 @@ const ServiceProvider = () => {
                 Enhancing Service Delivery
               </h2>
               <p className="mt-3 text-lg text-gray-600">
-                IT services and solutions play a critical role in delivering high-quality
-                services. Tools such as CRM and field service management software optimize
-                operations, improve customer satisfaction, and provide personalized
-                services. Leverage IT solutions to streamline processes, reduce costs, and
-                enhance service quality.
+                IT solutions streamline operations and enhance service quality, enabling personalized customer experiences.
               </p>
-
-              {/* Contact Us Button */}
-            
             </div>
           </div>
 

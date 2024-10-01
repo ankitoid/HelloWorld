@@ -17,7 +17,7 @@ const Retail = () => {
         <div className="bg-gray-100 min-h-screen">
           <div className="p-8 max-w-7xl mx-auto">
             {/* Retail Industry Section */}
-            <div className="py-12 px-4 sm:px-6 lg:px-8 mt-24 rounded-lg">
+            <div className="py-12 px-4 sm:px-6 lg:px-8 mt-16 rounded-lg">
               <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
                 {/* Text Section */}
                 <div className="text-center lg:text-left lg:w-1/2 lg:pr-8">
@@ -25,19 +25,9 @@ const Retail = () => {
                     Retail
                   </h2>
                   <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-                    In the fast-paced world of retail, cutting-edge IT solutions
-                    are key to enhancing customer experiences, streamlining
-                    operations, and driving business growth. From advanced
-                    point-of-sale systems and efficient inventory management to
-                    powerful customer relationship management (CRM) tools and
-                    data analytics, these technologies empower retailers to
-                    optimize every aspect of their operations. By leveraging
-                    these IT services, retailers can make smarter decisions,
-                    personalize customer interactions, and deliver seamless
-                    shopping experiences that set them apart in a competitive
-                    market. Embracing technology not only improves efficiency
-                    but also builds deeper connections with customers, fostering
-                    loyalty and boosting sales.{" "}
+                    In the fast-paced retail world, advanced IT solutions
+                    enhance customer experiences, streamline operations, and
+                    drive growth. 
                   </p>
                 </div>
                 {/* Image Section */}
@@ -58,15 +48,12 @@ const Retail = () => {
                 Overview
               </h2>
               <p className="mt-3 text-lg text-gray-600">
-                In the dynamic retail sector, IT solutions play a pivotal role
-                in enhancing customer experiences, optimizing operations, and
-                driving growth. From point-of-sale systems and inventory
-                management to customer relationship management and data
-                analytics, our IT services are designed to transform the way
-                retail businesses operate. Embracing technology allows retailers
-                to streamline processes, improve decision-making, and deliver
-                personalized experiences that resonate with customers, ensuring
-                a competitive edge in the market.
+                In the retail sector, IT solutions enhance customer experiences,
+                optimize operations, and drive growth. From point-of-sale
+                systems and inventory management to CRM and data analytics, our
+                services transform retail operations. Embracing technology
+                enables retailers to streamline processes and deliver
+                personalized experiences, ensuring a competitive edge.
               </p>
             </div>
 

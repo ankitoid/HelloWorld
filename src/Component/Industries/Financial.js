@@ -29,10 +29,7 @@ const Financial = () => {
                     Financial Services Solutions
                   </h2>
                   <p className="mt-3 text-lg sm:text-xl text-gray-500">
-                    Elevate your financial success with advanced IT solutions
-                    from GlobalXperts. Our expertise in the financial sector
-                    helps institutions enhance operational efficiency, manage
-                    risks, and deliver exceptional customer experiences.
+                    Elevate your financial success with GlobalXperts' advanced IT solutions. We help financial institutions boost efficiency, manage risks, and deliver superior customer experiences.
                   </p>
                 </div>
                 {/* Image Section */}
@@ -43,11 +40,12 @@ const Financial = () => {
                     alt="Financial services and IT solutions"
                   />
                 </div>
+                
               </div>
-              <div className="">
+              <div className="text-left mt-8">
                 <button
                   onClick={handleContactUsClick}
-                  className="px-6 py-2 border-2 border-transparent bg-greenCustomColor2 text-white font-semibold rounded hover:bg-blueCustomColor hover:text-white transition-colors duration-300 shadow-md"
+                  className="px-6 py-2 border-2 border-transparent bg-greenCustomColor2 text-white font-semibold rounded-md hover:bg-blueCustomColor hover:text-white transition-colors duration-300 shadow-md"
                 >
                   Contact Us
                 </button>
@@ -57,19 +55,12 @@ const Financial = () => {
 
           {/* Overview Section */}
           <div className="py-12 px-4 sm:px-6 lg:px-8 flex justify-center items-center">
-            <div className="py-12 px-4 sm:px-6 lg:px-8 rounded-lg text-center">
+            <div className="max-w-4xl text-center">
               <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
                 Overview
               </h2>
               <p className="mt-3 text-lg text-gray-600">
-                GlobalXperts provides specialized IT solutions designed to meet
-                the needs of the financial services industry. From advanced
-                analytics <br></br> to cloud-based platforms, our services enable
-                financial institutions to optimize operations, reduce costs, and
-                enhance risk management.<br></br>  By leveraging cutting-edge technologies
-                and industry insights, we help companies stay ahead in a rapidly
-                evolving market, ensuring secure, <br></br>efficient, and scalable
-                solutions that drive business success.
+                We provide specialized IT solutions for financial institutions, focusing on efficiency, risk management, and innovative cloud-based platforms to optimize performance and enhance security.
               </p>
             </div>
           </div>
@@ -86,9 +77,7 @@ const Financial = () => {
                     Risk Management Solutions
                   </h4>
                   <p className="text-gray-700">
-                    Mitigate risks with robust security measures and data
-                    analytics, ensuring compliance with industry regulations and
-                    protecting sensitive financial data.
+                    Robust security measures and data analytics to ensure compliance and protect sensitive financial data.
                   </p>
                 </div>
                 <div className="bg-gray-100 p-6 rounded-lg shadow-md">
@@ -96,9 +85,7 @@ const Financial = () => {
                     Cloud Integration
                   </h4>
                   <p className="text-gray-700">
-                    Streamline operations and enhance data management with
-                    cloud-based solutions tailored to the financial sector’s
-                    unique demands.
+                    Scalable cloud solutions tailored to financial sector needs, improving data management and operations.
                   </p>
                 </div>
                 <div className="bg-gray-100 p-6 rounded-lg shadow-md">
@@ -106,9 +93,7 @@ const Financial = () => {
                     Advanced Data Analytics
                   </h4>
                   <p className="text-gray-700">
-                    Utilize data-driven insights to optimize decision-making,
-                    enhance customer experiences, and drive financial
-                    performance.
+                    Data-driven insights to improve decision-making, customer experiences, and financial performance.
                   </p>
                 </div>
                 <div className="bg-gray-100 p-6 rounded-lg shadow-md">
@@ -116,9 +101,7 @@ const Financial = () => {
                     Cybersecurity Solutions
                   </h4>
                   <p className="text-gray-700">
-                    Protect your financial institution from cyber threats with
-                    customized security measures designed to safeguard critical
-                    assets and maintain trust.
+                    Customized security solutions to safeguard financial assets and maintain customer trust.
                   </p>
                 </div>
               </div>

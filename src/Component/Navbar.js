@@ -650,10 +650,14 @@ const Navbar = () => {
                         Media & Entertainment
                       </Link>
                     </li>
+
                     <li>
                       <Link to="/Industries/ServiceProvider">
                         Service Provider
                       </Link>
+                    </li>
+                    <li>
+                      <Link to="/Industries/Goverment">Government</Link>
                     </li>
                   </ul>
                 )}

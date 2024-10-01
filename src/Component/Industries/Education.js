@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "../Footer";
 import ContactCard from "../Contact/ContactCard";
-import itEdu from '../../Assets/itedu.png';
+import itEdu from "../../Assets/itedu.png";
 
 const Education = () => {
   const [activeQuestion, setActiveQuestion] = useState(null);
@@ -35,13 +35,9 @@ const Education = () => {
                     Education
                   </h2>
                   <p className="mt-3 text-lg sm:text-xl text-gray-500">
-                    In today's digital age, IT services are vital for enhancing
-                    the education sector. Cloud-based tools, virtual learning
-                    environments, and innovative solutions streamline operations,
-                    improve student outcomes, and create dynamic, engaging
-                    learning experiences. By embracing technology, educational
-                    institutions can better prepare students for success in the
-                    digital era.
+                    IT services enable cloud tools and virtual learning,
+                    streamlining education and preparing students for the
+                    digital age.
                   </p>
                 </div>
 
@@ -71,13 +67,9 @@ const Education = () => {
               Overview
             </h2>
             <p className="text-center mt-5 text-lg sm:text-xl text-gray-700 max-w-5xl mx-auto">
-              In today's digital age, IT services are transforming the education
-              sector. With cloud-based tools, virtual learning environments, and
-              innovative solutions, educational institutions can streamline
-              operations, enhance student outcomes, and create engaging learning
-              experiences. Embracing technology empowers schools and
-              universities to better prepare students for success in the digital
-              era.
+              IT services streamline education, improve outcomes, and create
+              engaging learning experiences, preparing students for the digital
+              age.
             </p>
 
             <div className="mt-5 max-w-4xl mx-auto">
@@ -87,40 +79,33 @@ const Education = () => {
                 </h3>
                 <ul className="list-disc list-inside space-y-3 text-gray-700">
                   <li>
-                    <strong>Digital Learning Platforms:</strong> We provide
-                    secure, scalable platforms that support online learning,
-                    virtual classrooms, and digital content management, enabling
-                    a seamless educational experience.
+                    <strong>Digital Learning Platforms:</strong> Secure,
+                    scalable platforms for online learning and content
+                    management.
                   </li>
                   <li>
-                    <strong>Network Infrastructure:</strong> Design and
-                    implement robust network solutions that enhance
-                    connectivity, enabling efficient communication and
-                    collaboration among students, staff, and faculty.
+                    <strong>Network Infrastructure:</strong> Robust solutions to
+                    enhance connectivity and collaboration.
                   </li>
                   <li>
-                    <strong>Cybersecurity:</strong> Protect educational data and
-                    ensure compliance with the latest security standards to
-                    safeguard students' information and institutional assets.
+                    <strong>Cybersecurity:</strong> Protect data and ensure
+                    compliance with security standards.
                   </li>
                   <li>
-                    <strong>Cloud Services:</strong> Migrate educational
-                    resources to the cloud, offering flexible access to learning
-                    materials, reducing costs, and improving scalability.
+                    <strong>Cloud Services:</strong> Migrate resources to the
+                    cloud for flexibility and cost efficiency.
                   </li>
                   <li>
-                    <strong>IT Support & Training:</strong> Provide ongoing IT
-                    support and training for educators and administrators to
-                    ensure optimal use of technology in the classroom.
+                    <strong>IT Support & Training:</strong> Ongoing support and
+                    training for educators.
                   </li>
                 </ul>
               </div>
             </div>
 
             <p className="text-center mt-10 text-lg sm:text-xl text-gray-700">
-              Partner with GlobalXperts to revolutionize your educational
-              institution with advanced IT solutions designed to support and
-              enhance the learning experience.
+              Partner with GlobalXperts to revolutionize education with advanced
+              IT solutions.
             </p>
           </div>
 
@@ -133,11 +118,9 @@ const Education = () => {
                   Customized IT Solutions for Education
                 </h2>
                 <p className="mt-3 text-lg sm:text-xl text-gray-300">
-                  Our customized IT solutions are designed to meet the unique
-                  challenges of the education sector, ensuring that institutions
-                  can provide a safe, efficient, and engaging learning
-                  environment. From infrastructure setup to cybersecurity, we
-                  tailor our services to align with your needs.
+                  We offer tailored IT solutions to meet the challenges of
+                  education, from infrastructure to cybersecurity, ensuring a
+                  safe and efficient learning environment.
                 </p>
               </div>
 

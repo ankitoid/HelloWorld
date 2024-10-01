@@ -29,42 +29,54 @@ const ProfessionalServices = () => {
       title: "Collaboration Technologies Design/Build",
       description:
         "Enhance teamwork with innovative IT solutions. Our services improve communication and collaboration within your business.",
-    },
+        link: "/solutions/collaboration-technologies",
+
+      },
     {
       title: "Cyber Security Practice",
       description:
         "Safeguard your assets with effective security management. Our defense team protects your business from cyber threats.",
-    },
+      link: "/solutions/cyber-security",
+
+      },
     {
       title: "Network Consulting",
       description:
         "Empower your network for success. Our skilled professionals provide comprehensive consulting and design services.",
-    },
+        link: "/solutions/Networking",
+
+      },
     {
       title: "Professional Services",
       description:
         "Connect with us! Fill out the form below or call +1 919-342-5482 for expert assistance.",
-    },
+        link: "/service/Professional-Services",
+
+      },
     {
       title: "Project and Program Management",
       description:
         "Partner with us for reliable project and program management, ensuring efficiency and success.",
-    },
+        link: "/solutions/multi-cloud",
+
+      },
     {
       title: "Site Surveys | Data Center | Wireless",
       description:
-        "Trust our experienced team for professional site surveys that meet your business needs.",
-    },
+          "Trust our experienced team for professional site surveys that meet your business needs.",
+          link: "/solutions/data-center-design",
+
+        },
   ];
 
   return (
     <>
       <Navbar />
 
-      <div className=" max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between  mt-16">
+      <div className=" max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between  mt-0 md:mt-20">
         {/* Text Section */}
         <div className="flex-1 md:pr-8 mb-8 md:mb-0">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center mt-32">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center md:mt-12 mt-20">
             Professional Services
           </h2>
           <p className="text-lg text-gray-600 mb-8 text-center">
@@ -75,10 +87,10 @@ const ProfessionalServices = () => {
           </p>
         </div>
         {/* Image Section */}
-        <div className="relative mt-16 2xl:mt-10 rounded-md 2xl:rounded-md mb-10 lg:mt-0 lg:w-1/2 ">
+        <div className="relative mt-16 md:mt-24 2xl:mt-10 rounded-md 2xl:rounded-md mb-10 lg:mt-0 lg:w-1/2 ">
           <video
             src={Professional}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover rounded-md"
             muted
             autoPlay
             loop
@@ -99,10 +111,13 @@ const ProfessionalServices = () => {
                 <p className="text-gray-700 text-base">{card.description}</p>
               </div>
               <div className="px-6 pt-4 pb-2 mt-auto flex justify-center">
-                <button className="bg-greenCustomColor2 hover:bg-greenCustomColor text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-                  READ MORE
-                </button>
-              </div>
+              <a
+                href={card.link}
+                className="bg-greenCustomColor2 hover:bg-greenCustomColor text-white font-bold py-2 px-4 rounded"
+              >
+                READ MORE
+              </a>
+            </div>
             </div>
           ))}
         </div>
@@ -113,7 +128,7 @@ const ProfessionalServices = () => {
         <div className="relative  lg:mt-0 lg:w-1/2 px-5 rounded-md">
           <video
             src={DataCenterMigration}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover rounded-md"
             muted
             autoPlay
             loop

@@ -25,7 +25,7 @@ const Blog = () => {
     {
       title: "GlobalXperts Takes Pole Position in AWS Storage Expertise",
       description:
-        "Completing the Amazon Storage Field Technical Review, GlobalXperts now leads the way in providing advanced cloud storage solutions to enhance efficiency and reduce operational costs for our clients.",
+      "Completing the Amazon Storage Field Technical Review, GlobalXperts now leads the way in providing advanced cloud storage solutions to significantly enhance operational efficiency and reduce overall operational costs for our clients, ensuring exceptional service delivery and continuous improvement.",
       date: "January 30, 2024",
       link: "/Blog-post2",
     },
@@ -78,7 +78,7 @@ const Blog = () => {
               </div>
               <button
                 onClick={handleContactUsClick}
-                className="mt-8 px-6 py-2 border-2 border-transparent bg-greenCustomColor2 text-white font-semibold rounded-lg hover:bg-blueCustomColor hover:text-white transition-colors duration-300 hover:border hover:border-customblueColor shadow-md"
+                className="mt-8 px-12 py-2 border-2 border-transparent bg-greenCustomColor2 text-white font-semibold rounded-lg hover:bg-blueCustomColor hover:text-white transition-colors duration-300 hover:border hover:border-customblueColor shadow-md"
               >
                 Contact Us
               </button>
@@ -97,15 +97,15 @@ const Blog = () => {
                     {post.title}
                   </h4>
                   <p className="mt-2 text-gray-600">{post.description}</p>
-                  <div className="mt-4">
+                  <p className="mt-4 text-gray-500 text-sm">{post.date}</p>
+                  <div className="mt-4 flex justify-center">
                     <a
                       href={post.link}
-                      className="inline-block px-4 py-2 text-sm font-medium text-white bg-blueCustomColor rounded-lg hover:bg-greenCustomColor2 transition-colors"
+                      className="bg-greenCustomColor2 hover:bg-greenCustomColor text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline flex justify-center items-center"
                     >
-                      Read More
+                      READ MORE
                     </a>
                   </div>
-                  <p className="mt-4 text-gray-500 text-sm">{post.date}</p>
                 </div>
               ))}
             </div>
@@ -122,12 +122,14 @@ const Blog = () => {
                 optimize their infrastructure and operations through innovative
                 IT solutions and cloud services.
               </p>
+              <div className="mt-6 ">
               <button
                 onClick={handleContactUsClick}
                 className="mt-6 px-6 py-2 bg-greenCustomColor2 text-white font-semibold rounded-lg hover:bg-blueCustomColor hover:text-white transition-colors duration-300 hover:border hover:border-customblueColor shadow-md"
               >
                 View Case Studies
               </button>
+              </div>
             </div>
           </div>
 
