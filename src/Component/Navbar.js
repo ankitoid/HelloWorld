@@ -516,7 +516,7 @@ const Navbar = () => {
 
         {/* Get Started Link */}
         <div className="flex items-center ">
-          <div className="2xl:ml-44 py-5 scroll-px-3 lg:py-5 lg:px-4 md:px-6 lg:hover:rounded-l-full hover:bg-greenCustomColor bg-greenCustomColor2 transition-all duration-300">
+          <div className="2xl:ml-44 py-2 scroll-px-3 lg:py-5 lg:px-4 md:px-6 lg:hover:rounded-l-full hover:bg-greenCustomColor bg-greenCustomColor2 transition-all duration-300">
             <Link
               to="/get-started"
               className="text-white font-bold text-sm md:text-base"
