@@ -17,6 +17,7 @@ import Healthcare from "./Component/Industries/Healthcare";
 import ServiceProvider from "./Component/Industries/ServiceProvider";
 import MediaEnter from "./Component/Industries/MediaEnter";
 import SmallandMediumBusiness from "./Component/Solutions/SmallandMediumBusiness";
+
 import About from "./Component/Company/About";
 import ContactUs from "./Component/ContactUs";
 import Careers from "./Component/Company/Careers";
@@ -31,6 +32,9 @@ import GXconnect from './Component/Solutions/SmallMediumBusiness/GxCustomer'
 import TitanGx from './Component/Solutions/SmallMediumBusiness/TitanGx'
 import AWSMigration from './Component/Solutions/SmallMediumBusiness/AWSMigration';
 import VirtualWorks from './Component/Solutions/SmallMediumBusiness/VirtualWork'
+
+
+
 import Blog from "./Component/Insights/Blog";
 import Partner from './Component/Insights/Partner'
 import BlogPost1 from "./Component/Insights/BlogPage/BlogPost1";

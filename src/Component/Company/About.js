@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // For navigation
 import companyImage from "../../Assets/imageAbout.jpg";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
@@ -11,6 +12,8 @@ import GlobalImpact from "../../Assets/GlobalImpact.png";
 import ContactCard from "../Contact/ContactCard";
 
 const About = () => {
+  const navigate = useNavigate(); 
+
   return (
     <>
       <Navbar />
@@ -18,15 +21,15 @@ const About = () => {
         className="bg-blueCustomColor text-white min-h-screen flex items-center justify-center bg-cover bg-center mt-8"
         style={{ backgroundImage: `url(${companyImage})` }}
       >
-   <div className="2xl:max-w-7xl w-full mx-auto text-left justify-center  px-4">
-          <h1 className="text-4xl sm:text-4xl lg:text-5xl font-bold mb-64">
+        <div className="2xl:max-w-7xl w-full mx-auto text-left justify-center px-4">
+          <h1 className="text-4xl sm:text-4xl lg:text-5xl font-bold mb-64 2xl:mb-96">
             Discover how the world works with <br></br>GlobalXperts
           </h1>
-          {/* <p className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto">
-            We help organizations of every size, in every industry, put AI to work for people.
-          </p> */}
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
-            <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center 2xl:mt-96 ">
+            <button
+              onClick={() => navigate("/Insights/Media-Library")} 
+              className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded "
+            >
               <svg
                 className="inline-block mr-2"
                 width="16"
@@ -42,7 +45,10 @@ const About = () => {
               </svg>
               Watch Video
             </button>
-            <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            <button
+              onClick={() => navigate("/Insights/CaseStudies")} 
+              className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+            >
               View Fact Sheet
               <svg
                 className="inline-block ml-2"
@@ -62,53 +68,14 @@ const About = () => {
         </div>
       </div>
 
-      <div className="bg-blueCustomColor text-white min-h-screen flex items-center justify-center">
-        <div className="2xl:max-w-7xl  text-center justify-center mt-20 2xl:mx-auto">
-          <div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-              Discover how the world works with GlobalXperts
-            </h1>
-            <p className="text-lg sm:text-xl mb-8">
-              We help organizations of every size, in every industry, put AI to
-              work for people.
-            </p>
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
-              <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                <svg
-                  className="inline-block mr-2"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-                Watch Video
-              </button>
-              <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                View Fact Sheet
-                <svg
-                  className="inline-block ml-2"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M13 17h8l-4-4-4 4z" />
-                </svg>
-              </button>
-            </div>
-          </div>
+      <div className="bg-blueCustomColor text-white flex items-center justify-center py-16">
+        <div className="2xl:max-w-7xl text-center justify-center mt-20 2xl:mx-auto">
+          <p className="text-lg sm:text-xl mb-8">
+            We help organizations of every size, in every industry, put AI to
+            work for people.
+          </p>
         </div>
-        <div className="w-full max-w-4xl  mt-12 rounded-lg overflow-hidden px-4">
+        <div className="w-full max-w-4xl mt-12 rounded-lg overflow-hidden px-4">
           <img
             className="w-full h-full object-cover rounded-md"
             src={AboutImg}
@@ -117,7 +84,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="2xl:max-w-7xl 2xl:mx-auto w-full flex flex-col md:flex-row p-5 mt-10 gap-2">
+      <div className="2xl:max-w-7xl 2xl:mx-auto w-full flex flex-col md:flex-row p-5 mt-10 gap-4">
         <div className="w-full rounded-lg">
           <video
             src={About3}
@@ -128,16 +95,14 @@ const About = () => {
             playsInline
           ></video>
         </div>
-        <div className="2xl:max-w-7xl 2xl:mx-auto w-full mx-5">
+        <div className="w-full mx-5 mt-5 md:mt-0">
           <h1 className="text-3xl sm:text-4xl text-center py-5 text-black font-bold">
             About GlobalXperts
           </h1>
           <p className="text-lg px-2 font-medium">
             Founded in 2005 and headquartered in Raleigh, North Carolina,
             GlobalXperts operates in three key areas: Professional Services,
-            Technical Staffing, and Managed Services support for Data Center for
-            On-Premises & Cloud, Security, Collaboration, and SDN in IT
-            networks...
+            Technical Staffing, and Managed Services support...
           </p>
         </div>
       </div>
@@ -153,7 +118,9 @@ const About = () => {
                 We provide cutting-edge Multi-Cloud, DevOps, AI-driven, and
                 Networking solutions...
               </p>
-              <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+              <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+              onClick={() => navigate("/contact-us")} 
+              >
                 Contact
               </button>
             </div>
@@ -167,14 +134,16 @@ const About = () => {
                 <h3 className="text-4xl sm:text-5xl font-bold text-gray-800">
                   100%
                 </h3>
-                <p className="text-gray-600">of the Fortune 500® work with GlobalXperts</p>
+                <p className="text-gray-600">
+                  of the Fortune 500® work with GlobalXperts
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="container 2xl:max-w-7xl 2xl:mx-automx-auto mt-10 px-4">
+      <div className="container 2xl:max-w-7xl 2xl:mx-auto mt-10 px-4">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold py-4 text-center">
           Our Commitments
         </h1>
@@ -218,6 +187,7 @@ const About = () => {
           </div>
         </div>
       </div>
+
       <ContactCard />
       <Footer />
     </>

@@ -91,7 +91,7 @@ const Navbar = () => {
           <li className="relative" onMouseEnter={() => handleMouseEnter(0)}>
             <Link
               to="/"
-              className="flex items-center px-4 py-1 hover:text-greenCustomColor hover:font-bold"
+              className="flex items-center px-4 py-1  hover:text-greenCustomColor hover:font-bold"
               onClick={() => handleToggle(0)}
             >
               <FaHome className="mr-2" />
@@ -502,7 +502,7 @@ const Navbar = () => {
 
                   <li>
                     <Link
-                      to="/Company/ContactUs"
+                      to="/contact-us"
                       className="block hover:bg-greenCustomColor2  hover:font-bold  hover:text-white p-2 rounded whitespace-nowrap"
                     >
                       Contact Us
@@ -516,7 +516,7 @@ const Navbar = () => {
 
         {/* Get Started Link */}
         <div className="flex items-center ">
-          <div className="2xl:ml-44 py-2 scroll-px-3 lg:py-5 lg:px-4 md:px-6 lg:hover:rounded-l-full hover:bg-greenCustomColor bg-greenCustomColor2 transition-all duration-300">
+          <div className="2xl:ml-44 py-2  scroll-px-3 lg:py-5 lg:px-4 md:px-8 md:py-8 lg:hover:rounded-l-full hover:bg-greenCustomColor bg-greenCustomColor2 transition-all duration-300">
             <Link
               to="/get-started"
               className="text-white font-bold text-sm md:text-base"
@@ -544,7 +544,7 @@ const Navbar = () => {
           >
             <ul className="flex flex-col space-y-4 transition-all duration-300 ease-in-out">
               <li>
-                <Link to="/" className="px-4 py-2 text-left">
+                <Link to="/" className="w-full text-left font-semibold">
                   Home
                 </Link>
               </li>
@@ -552,7 +552,7 @@ const Navbar = () => {
               {/* Industries Mobile Dropdown */}
               <li>
                 <button
-                  className="w-full text-left"
+                  className="w-full text-left font-semibold"
                   onClick={() => handleToggle(1)}
                 >
                   Solutions
@@ -598,7 +598,7 @@ const Navbar = () => {
               </li>
               <li>
                 <button
-                  className="w-full text-left"
+                  className="w-full text-left font-semibold"
                   onClick={() => handleToggle(2)}
                 >
                   Service
@@ -623,7 +623,7 @@ const Navbar = () => {
               </li>
               <li>
                 <button
-                  className="w-full text-left"
+                  className="w-full text-left font-semibold"
                   onClick={() => handleToggle(3)}
                 >
                   Industries
@@ -664,7 +664,7 @@ const Navbar = () => {
               </li>
               <li>
                 <button
-                  className="w-full text-left"
+                  className="w-full text-left font-semibold"
                   onClick={() => handleToggle(4)}
                 >
                   Insights
@@ -689,7 +689,7 @@ const Navbar = () => {
 
               <li>
                 <button
-                  className="w-full text-left"
+                  className="w-full text-left font-semibold"
                   onClick={() => handleToggle(6)}
                 >
                   Company
@@ -703,7 +703,7 @@ const Navbar = () => {
                       <Link to="/Careers">Careers</Link>
                     </li>
                     <li>
-                      <Link to="/Company/ContactUs">Contact Us</Link>
+                      <Link to="/contact-us">Contact Us</Link>
                     </li>
                   </ul>
                 )}

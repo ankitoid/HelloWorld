@@ -1,31 +1,40 @@
-// NotFound.js
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Make sure to use react-router-dom for navigation
+import { Link } from 'react-router-dom';
+import gxilogo from '../Assets/gxiLogo.svg';  // Replace with actual path to logo
+import illustration404 from '../Assets/404ilution.svg';  // Replace with actual path to 404 illustration
 
 const NotFound = () => {
-  const navigate = useNavigate();
-
-  // Handle back button click
-  const handleGoBack = () => {
-    navigate(-1); // This will take the user back to the previous page
-  };
-
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="text-center p-8 bg-white shadow-md rounded-lg">
-        <h1 className="text-5xl font-bold text-red-600 mb-4">404</h1>
-        <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-2">
-          Page Not Found
-        </h2>
-        <p className="text-gray-600 mb-6">
-          Sorry, the page you are looking for does not exist or has been moved.
-        </p>
-        <button
-          onClick={handleGoBack}
-          className="px-6 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-200"
+    <div className="flex flex-col items-center justify-center h-screen  text-center p-8">
+      {/* GlobalXperts Logo */}
+      <img src={gxilogo} alt="GlobalXperts Logo" className="w-64" />
+
+      {/* 404 Illustration */}
+      <img
+        src={illustration404}
+        alt="404 Illustration"
+        className="mb-5 w-72"
+      />
+
+      {/* Company Message */}
+      <p className="text-lg text-gray-700 mb-6">
+        At GlobalXperts, we keep networks secure and reliable, but it seems we’ve lost our way this time.
+      </p>
+
+      {/* Navigation Links */}
+      <div className="flex space-x-4 mb-28">
+        <Link
+          to="/"
+          className="bg-green-600 text-white px-6 py-2 rounded-md shadow hover:bg-green-700 transition"
         >
-          Go Back
-        </button>
+          Back to Home
+        </Link>
+        <Link
+          to="/contact-us"
+          className="bg-gray-200 text-gray-700 px-6 py-2 rounded-md shadow hover:bg-gray-300 transition"
+        >
+          Contact Support
+        </Link>
       </div>
     </div>
   );

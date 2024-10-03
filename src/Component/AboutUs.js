@@ -1,5 +1,4 @@
 import React from "react";
-import companyImage from "../../Assets/imageAbout.jpg"; // Ensure the path to the image is correct
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import AboutImg from "../../Assets/About.png";

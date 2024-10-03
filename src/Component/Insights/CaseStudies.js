@@ -5,7 +5,7 @@ import Navbar from "../Navbar";
 import AwsLogo from "../../Assets/awsparter.png";
 import AristaLogo from "../../Assets/Aristalogo.png";
 import ServiceImgage from "../../Assets/casestudy.png";
-
+import Footer from '../Footer'
 const CaseStudies = () => {
   return (
     <div className="bg-white">
@@ -134,6 +134,7 @@ const CaseStudies = () => {
       <div className="mt-5">
         <ContactCard />
       </div>
+      <Footer/>
     </div>
   );
 };
