@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import lg from "../Assets/lg1.png";
+import gxilogo from "../Assets/gxilogo.png";
 
 const Navbar = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -79,9 +80,11 @@ const Navbar = () => {
         onMouseLeave={handleMouseLeave}
       >
         {/* Logo */}
-        <div className="flex items-center 2xl:items-start ">
+        <div className="flex items-center 2xl:items-start md:ml-2 ">
           <Link to="/" className="flex items-center">
-            <img src={lg} alt="Logo" className="h-20 w-auto" />
+          <img src={lg} alt="Logo" className="h-20 w-auto" />
+
+            {/* <img src={gxilogo} alt="Logo" className="md:w-auto md:h-[-28px]]" /> */}
           </Link>
         </div>
 

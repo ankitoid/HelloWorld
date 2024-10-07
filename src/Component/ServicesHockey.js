@@ -38,7 +38,7 @@ function ServicesHockey() {
           alt="NHL Image"
           description="GlobalXperts provides cutting-edge technology solutions to enhance the live streaming and broadcasting operational efficiency and fan engagement through advanced analytics and digital transformation."
           hoverEffect={true}
-          textColor="white" 
+          textColor="black" 
         />
 
         <ThoughtCard
@@ -65,7 +65,7 @@ function ServicesHockey() {
           alt="Professional Management Image"
           description="GlobalXperts offers comprehensive management and development services to streamline your operations. Our expert solutions integrate management strategies with advanced development practices to help you achieve your goals efficiently."
           hoverEffect={true}
-          textColor="white" 
+          textColor="black" 
         />
       </div>
     </div>

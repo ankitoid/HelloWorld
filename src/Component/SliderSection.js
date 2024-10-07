@@ -15,7 +15,7 @@ function SliderSection() {
       <div className="bg-white mt-16 flex items-center justify-center">
         <div className="flex flex-col  2xl:max-w-[100rem] 2xl:mx-auto md:flex-row items-center justify-between w-full h-full mb-8">
           {/* Left Section */}
-          <div className="w-full md:w-3/5 md:ml-14 bg-blue-500 flex items-center justify-center md:rounded-md p-10 md:p-52 relative overflow-hidden">
+          <div className="w-full md:w-3/5 md:ml-14 sm:py-24 sm:rounded-lg bg-blue-500 flex items-center justify-center md:rounded-md p-10 md:p-52 relative overflow-hidden">
             <div className="absolute inset-0">
               <video
                 src={b3}
@@ -85,7 +85,7 @@ function SliderSection() {
       <div className="bg-white mt-12 flex items-center justify-center ">
         <div className="flex flex-col 2xl:max-w-[100rem] 2xl:mx-auto md:flex-row-reverse items-center justify-between w-full h-full">
           {/* Right Section */}
-          <div className="w-full md:w-3/5 md:ml-14 mr-12 bg-yellow-400 flex items-center justify-center p-10 md:p-44  relative overflow-hidden">
+          <div className="w-full md:w-3/5 md:ml-14 sm:py-20 sm:rounded-lg bg-yellow-400 flex items-center justify-center p-10 md:p-44  relative overflow-hidden">
             <video
               src={b1}
               className="absolute inset-0 w-full h-full object-cover rounded-sm"
@@ -122,7 +122,7 @@ function SliderSection() {
         <div className="flex flex-col md:flex-row  items-center justify-between w-full h-full">
           {/* Left Section */}
           <div className="2xl:ml-10 w-full md:w-3/5  flex items-center justify-center p-10 md:p-48 md:rounded-r-full rounded-l-sm md:rounded-l-none relative overflow-hidden">
-            <div className="absolute inset-0 rounded-l-sm md:rounded-l-md overflow-hidden">
+            <div className="absolute inset-0 rounded-l-sm sm:py-28 sm:rounded-lg  md:rounded-l-md overflow-hidden">
               <video
                 src={NetworkCon}
                 className="h-full w-full object-cover"
@@ -135,7 +135,7 @@ function SliderSection() {
           </div>
 
           {/* Right Section */}
-          <div className="md:max-w-7xl md:mx-auto w-full md:w-2/5 bg-white flex items-center justify-center  md:p-12">
+          <div className="md:max-w-7xl md:mx-auto w-full md:w-2/5 sm:mt-6 bg-white flex items-center justify-center  md:p-12">
             <div className="max-w-lg text-center md:text-left">
               <h2 className="text-3xl md:text-5xl font-bold mb-4">
                 Networking Consulting
@@ -163,7 +163,7 @@ function SliderSection() {
       <div className="bg-white mt-24 flex items-center justify-center">
         <div className="flex flex-col md:flex-row-reverse items-center justify-between w-full h-full">
           {/* Right Section */}
-          <div className="w-full md:w-3/5 bg-yellow-400 flex items-center justify-center p-10 md:p-48 md:rounded-l-full relative overflow-hidden">
+          <div className="w-full md:w-3/5 sm:py-20 sm:rounded-lg bg-yellow-400 flex items-center justify-center p-10 md:p-48 md:rounded-l-full relative overflow-hidden">
             <video
               src={ProfessionalService}
               className="absolute inset-0 w-full h-full object-cover"
