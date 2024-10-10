@@ -523,7 +523,7 @@ const Navbar = () => {
             {/* hidden for mobile, visible on sm and larger */}
             <Link
               to="/get-started"
-              className="text-white font-bold text-sm md:text-base"
+              className="text-white font-bold text-sm md:text-base sm:block  hidden"
             >
               Get Started
             </Link>
