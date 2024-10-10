@@ -519,7 +519,7 @@ const Navbar = () => {
 
         {/* Get Started Link */}
         <div className="flex items-center">
-          <div className="2xl:ml-44 sm:hidden  scroll-px-3 lg:py-5 lg:px-4 md:px-8 md:py-8 lg:hover:rounded-l-full hover:bg-greenCustomColor bg-greenCustomColor2 transition-all duration-300 hidden  sm:rounded-md">
+          <div className="2xl:ml-44 sm:hidden  scroll-px-3 lg:py-5 lg:px-4 md:px-8 md:py-8 lg:hover:rounded-l-full hover:bg-greenCustomColor bg-greenCustomColor2 transition-all duration-300   sm:rounded-md">
             {/* hidden for mobile, visible on sm and larger */}
             <Link
               to="/get-started"
